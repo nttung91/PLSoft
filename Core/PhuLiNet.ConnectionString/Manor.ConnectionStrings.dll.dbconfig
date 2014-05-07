@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dbconfig xmlns="http://www.manor.ch/ConnectionStrings.xsd"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="ConnectionStrings.xsd">
+
+  <connectionStrings>
+    <!--WWS-->
+    <connection id="pkopie" crypted="false" connectionString="Data Source=pkopie;User Id=my_user;Proxy User Id=PROXY_WWS;Proxy Password=a2quilibris;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=10;Incr Pool Size=1;Decr Pool Size=1;"/>
+    <connection id="produ" crypted="true" connectionString="OCwwPJTdPF0xefX73FhW2IO918l+bUrQZaYD0nLO2tkOgBXy2c3/b89tSWvcc0S1x6VbqrNNycS5kfXUmgktNwgp1bpM/9i+e7vPuthUG5PSbDEy9RuArqnh6LNnJowcstyizNMr/9w33WIS/DMQgAKeLfYBshVjCnhsUSnT/ms0+42PmCnP+jsGyUoi1Ial2lK679HC4gDqsgZNEy+E3TRwCPyLUjPSsKMX73clphq5Zm9sgkYzYlZOTV3u9x3uyJ4ZeIRL6Q+ncoDHjw10tdAvVqw/rLUxm/6kZHMqBtjqPQMp8WzHL7pYnzgG3YOV/sHsTLRIPTx5jZkKGBjedEX5kbgFjiJKvns9nnBq2yX6STOlsF0uq5xkUU/BnFoac3I9cqbm1E9acLeibn1W7drFJZrFzHHVxoeXE6+RG2069jHEvUH8qSkTpUyK5He/xhZL1cbMaROONiMs3w+EiG6AgBCat6J6cHUOloDs0OoEuO+yk1rTTLqKFTTJGVSczg1Buk+3IdGHmHyDQR3cU0vsI7ymiBjtXBqSIQ+BbQ4cIYIaYhQYEA=="/>
+
+    <connection id="elcakopie" crypted="false" connectionString="Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=wwsnetoracle-2)(PORT=1521)))(CONNECT_DATA=(SID=WWSDMZ)));User Id=net_ww;Password=net_ww;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=3;Incr Pool Size=1;Decr Pool Size=1;" />
+    <connection id="elcavpnkopie" crypted="false" connectionString="Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=baze610)(PORT=1819)))(CONNECT_DATA=(SID=PKOPIE)));User Id=net_ww;Password=net_ww;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=3;Incr Pool Size=1;Decr Pool Size=1;" />
+
+    <!--WWS-HAUS-->
+    <connection id="hautes" crypted="false" connectionString="Data Source=hautes;User Id=my_user;Proxy User Id=PROXY_WWS;Proxy Password=a2quilibris;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=10;Incr Pool Size=1;Decr Pool Size=1;"/>
+    <connection id="haupro" crypted="true" connectionString="OCwwPJTdPF0xefX73FhW2IO918l+bUrQPzkG/rJ9a+Z6r9IEkB8es09KnKSUuyzakL8bwWv/5mtFJ8aVUUgCVkZ3G8iQt1+rNFOCJl7W9AZCx9VR4ivVA0IIj2Ff3JLHtjVAepi6Ay4tlBtxymCKCp4X4AGYLLagTa6K5si2L9PRrCUbfZK5+u7NCfMrcgTXNOcx3zMb6py4j0tkCnGbXpOVhdn04R1gwtymsgdvyP4xAlZBOTMyH2MusO/uXbNHcVlqCIuUD4bN4eWqZH8HiDpholjkLK42QNhuDmU9m0m87IYyGQcdhTrzj0Ly5qxm3fXcMusYa+Y2lsluUSK2VCaKEg8ZTwwNzwuhUVGA9bfJTVidY/ue0Ed5P+TrBnX2cq/hZHgAszjShs43k91tFBxh9MEK6PvJrRqYkhlD8vX63rsc3Zn2GRQMLl2lZQYozy1vAdgoIn3uNZ0hWpltXfyxP1+2oQUBe0rUEYiCg1A7qQiaq/OiFw5Ioc0V8XdhlA0RqxVSlwQ705FA3vXtgzbG1WhJ4NknxiNETcsepla5bqbgFiSNSA=="/>
+
+    <!--MAIN-->
+    <connection id="maites" crypted="true" connectionString="OCwwPJTdPF0xefX73FhW2IO918l+bUrQ1lvx2lSnBl4XBWO+d/97Ip+o1sJ++4USSumrML/YBlNP0IF+VTgY3kwCn+HVgrLGVYN7uYvHMQSLkQm/WL+/DgVEkS5VcFpFNwDj/7G7cGHhrup/C3KR/jTbXaeNKVHi8k+Nkvmvex+dLSN2/3SKPCP6c17H2TOEUy7R8plBWRc7BtWn3XPmF+9wYul2xh3GW+tFU5ozrChiljDP+QZSALyrcM+Gg3Bt09LbPcEryEGk9Z3ThJB3kbbHTx31NHwbFxcxMK0zMXte+W8C4J950mfdbHAMQi8X0HCEFTyudXGpI25BSHeU/ZXxhyAMbF184CWcFZ+neQv92Qg5iIDv/fIe5xxRaaB6qUXp1Iy14NwlipdJX+5m0tBAxeJ9up/pJd8iZVIboqrXUAK6W2F9AbNtwnEpAzdz8M9DT7/NqIk="/>
+    <connection id="maindb" crypted="true" connectionString="OCwwPJTdPF0xefX73FhW2IO918l+bUrQLsdM8jWIrVOUcj654gUNjSwsjZgZiWBXDTW3ekwsrRtiYIqtNIPYgxvNMOHKko2/IWlZEX4KR/bZcTgwaF0oV9qWGACM1zuLQie8RqNC6WRS7/W8dTMPVrO42H+nZGE+vboF4U89xyIpX+1DEqIz/qi+UNb9ECLHH3RIrRe2wsyHFeBTTilOFj1be/C1NvMAknmZ+QC5qA4lSEuri1SYBdebJ5foav5GilXkS00yb47wsaR908ktk/DM0t2F0teZYIUp6jdyDfhwskx6sabDynrQkl+RL9QinQC5yJonLdFKcCeGyod39HwDVGy7lWeiMxqqVrk1gytBSOpG4Xp8oyhER2hB9nAsv6Gp9K6H4DRvFW1/obl9wGm/c/mtMMVxHWueBeqMtyP0oTjH3X4Cx6nciGgoiwMe8txKwSA4lmU2hFpt+28Myg=="/>
+
+    <connection id="elcavpnmaites" crypted="false" connectionString="Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=baze610)(PORT=1817)))(CONNECT_DATA=(SID=MAITES)));User Id=net_ww;Password=net_ww;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=3;Incr Pool Size=1;Decr Pool Size=1;" />
+
+    <!--AIM-->
+    <connection id="aimtes" crypted="false" connectionString="Data Source=aimtes;User Id=UNDEFINED;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=10;Incr Pool Size=1;Decr Pool Size=1;"/>
+    <connection id="aimabn" crypted="false" connectionString="Data Source=aimabn;User Id=UNDEFINED;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=10;Incr Pool Size=1;Decr Pool Size=1;"/>
+    <connection id="aimpro" crypted="false" connectionString="Data Source=aimpro;User Id=UNDEFINED;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=10;Incr Pool Size=1;Decr Pool Size=1;"/>
+
+    <!--FIS-->
+    <connection id="fistes" crypted="false" connectionString="Data Source=fistes;User Id=UNDEFINED;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=10;Incr Pool Size=1;Decr Pool Size=1;"/>
+    <connection id="fisabn" crypted="false" connectionString="Data Source=fisabn;User Id=UNDEFINED;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=10;Incr Pool Size=1;Decr Pool Size=1;"/>
+    <connection id="fispro" crypted="false" connectionString="Data Source=fispro;User Id=UNDEFINED;Connection Timeout=720;Enlist=true;Pooling=true;Min Pool Size=1;Max Pool Size=10;Incr Pool Size=1;Decr Pool Size=1;"/>
+
+  </connectionStrings>
+
+  <databaseTypes>
+    <!--WWS databases-->
+    <database-type type="Wws">
+      <database id="pkopie" mode="Kopie"/>
+      <database id="prolrn" mode="Schulung"/>
+      <database id="proabn" mode="Abnahme"/>
+      <database id="produ" mode="Produktion"/>
+
+      <database id="elcakopie" mode="ElcaKopie"/>
+      <database id="elcavpnkopie" mode="ElcaAbnahme"/>
+    </database-type>
+    <!--WWS-HAUS databases-->
+    <database-type type="WwHaus">
+      <database id="hautes" mode="Kopie"/>
+      <database id="haulrn" mode="Schulung"/>
+      <database id="hauabn" mode="Abnahme"/>
+      <database id="haupro" mode="Produktion"/>
+    </database-type>
+    <!--Menu databases-->
+    <database-type type="MainDb">
+      <database id="maites" mode="Kopie"/>
+      <database id="mailrn" mode="Schulung"/>
+      <database id="maiabn" mode="Abnahme"/>
+      <database id="maindb" mode="Produktion"/>
+
+      <database id="elcakopie" mode="ElcaKopie"/>
+      <database id="elcavpnmaites" mode="ElcaAbnahme"/>
+    </database-type>
+    <!--AIM databases -->
+    <database-type type="Aim">
+      <database id="aimtes" mode="Kopie"/>
+      <database id="aimlrn" mode="Schulung"/>
+      <database id="aimabn" mode="Abnahme"/>
+      <database id="aimpro" mode="Produktion"/>
+    </database-type>
+    <!--FIS databases -->
+    <database-type type="Fis">
+      <database id="fistes" mode="Kopie"/>
+      <database id="fislrn" mode="Schulung"/>
+      <database id="fisabn" mode="Abnahme"/>
+      <database id="fispro" mode="Produktion"/>
+    </database-type>
+  </databaseTypes>
+
+</dbconfig>

@@ -1,0 +1,795 @@
+<?xml version="1.0"?>
+<Styles>
+  <StyleNameNew name="Pastel#1">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=216, G=209, B=170]" bordercolor="Color [A=255, R=216, G=209, B=170]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style backcolor="Color [A=255, R=216, G=209, B=179]" bordercolor="Color [A=255, R=216, G=209, B=179]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=236, G=232, B=201]" backcolor2="Color [White]">Empty</Style>
+    <Style backcolor="Color [A=255, R=225, G=220, B=198]" bordercolor="Color [A=255, R=225, G=220, B=198]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=245, G=247, B=240]">FocusedRecord</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=200, G=192, B=157]" bordercolor="Color [A=255, R=226, G=219, B=188]">FocusedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=237, G=230, B=203]" bordercolor="Color [A=255, R=237, G=230, B=203]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=216, G=209, B=170]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=242, G=244, B=236]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=236, G=232, B=201]" bordercolor="Color [A=255, R=236, G=232, B=201]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=216, G=209, B=170]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Pastel#2">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=211, G=226, B=216]" bordercolor="Color [A=255, R=211, G=226, B=216]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style backcolor="Color [A=255, R=178, G=209, B=188]" bordercolor="Color [A=255, R=178, G=209, B=188]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=242, G=244, B=236]" backcolor2="Color [White]">Empty</Style>
+    <Style backcolor="Color [A=255, R=197, G=220, B=204]" bordercolor="Color [A=255, R=197, G=220, B=204]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=245, G=247, B=240]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=129, G=171, B=177]">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=104, G=130, B=134]" backcolor="Color [A=255, R=186, G=211, B=215]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=172, G=197, B=180]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=242, G=244, B=236]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=215, G=234, B=221]" bordercolor="Color [A=255, R=215, G=234, B=221]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=172, G=197, B=180]" bordercolor="Color [A=255, R=117, G=136, B=122]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Pastel#3">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=224, G=214, B=211]" bordercolor="Color [A=255, R=224, G=214, B=211]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style backcolor="Color [A=255, R=210, G=188, B=184]" bordercolor="Color [A=255, R=210, G=188, B=184]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=249, G=250, B=240]" backcolor2="Color [White]">Empty</Style>
+    <Style backcolor="Color [A=255, R=221, G=205, B=202]" bordercolor="Color [A=255, R=221, G=205, B=202]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=250, G=251, B=244]">FocusedRecord</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=210, G=188, B=184]">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=124, G=100, B=111]" backcolor="Color [A=255, R=240, G=223, B=220]" bordercolor="Color [A=255, R=216, G=195, B=191]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=210, G=188, B=184]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=249, G=250, B=240]" bordercolor="Color [A=255, R=249, G=250, B=240]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=233, G=224, B=222]" bordercolor="Color [A=255, R=224, G=214, B=211]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=210, G=188, B=184]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Winter">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=139, G=201, B=254]" bordercolor="Color [A=255, R=139, G=201, B=254]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style backcolor="Color [A=255, R=104, G=184, B=251]" bordercolor="Color [A=255, R=104, G=184, B=251]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=236, G=246, B=255]" backcolor2="Color [White]">Empty</Style>
+    <Style backcolor="Color [A=255, R=141, G=202, B=252]" bordercolor="Color [A=255, R=141, G=202, B=252]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=249, G=252, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=38, G=109, B=189]" bordercolor="Color [A=255, R=59, G=139, B=206]">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=236, G=246, B=255]" backcolor="Color [A=255, R=105, G=170, B=225]" bordercolor="Color [A=255, R=83, G=155, B=215]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=104, G=184, B=251]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=247, G=251, B=255]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=170, G=216, B=254]" bordercolor="Color [A=255, R=170, G=216, B=254]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=104, G=184, B=251]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Spring">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=180, G=214, B=115]" bordercolor="Color [A=255, R=180, G=214, B=115]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=162, G=194, B=102]" bordercolor="Color [A=255, R=162, G=194, B=102]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=207, G=229, B=128]" backcolor2="Color [White]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=185, G=209, B=139]" bordercolor="Color [A=255, R=185, G=209, B=139]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=250, G=251, B=193]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=129, G=152, B=49]" bordercolor="Color [A=255, R=144, G=167, B=62]">FocusedRow</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=155, G=176, B=84]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=162, G=194, B=102]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=248, G=249, B=173]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=207, G=229, B=128]" bordercolor="Color [A=255, R=207, G=229, B=128]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=162, G=194, B=102]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Summer">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=98, G=166, B=57]" bordercolor="Color [A=255, R=98, G=166, B=57]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=82, G=139, B=48]" bordercolor="Color [A=255, R=82, G=139, B=48]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=209, G=231, B=177]" backcolor2="Color [White]">Empty</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=119, G=193, B=74]" bordercolor="Color [A=255, R=119, G=193, B=74]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=242, G=249, B=236]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=82, G=114, B=50]" bordercolor="Color [A=255, R=82, G=114, B=50]">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=209, G=231, B=177]" backcolor="Color [A=255, R=93, G=158, B=64]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=98, G=166, B=37]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=238, G=247, B=230]">RecordValue</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=138, G=193, B=55]" bordercolor="Color [A=255, R=138, G=193, B=55]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=98, G=166, B=37]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Autumn">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=248, G=204, B=124]" bordercolor="Color [A=255, R=248, G=204, B=124]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style backcolor="Color [A=255, R=248, G=204, B=124]" bordercolor="Color [A=255, R=248, G=204, B=124]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=251, G=244, B=232]" backcolor2="Color [White]">Empty</Style>
+    <Style backcolor="Color [A=255, R=250, G=217, B=156]" bordercolor="Color [A=255, R=250, G=217, B=156]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=253, G=249, B=240]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=217, G=154, B=91]">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=251, G=244, B=232]" backcolor="Color [A=255, R=225, G=183, B=125]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=240, G=177, B=94]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=253, G=248, B=236]" bordercolor="Color [A=255, R=253, G=248, B=236]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=250, G=217, B=156]" bordercolor="Color [A=255, R=248, G=204, B=124]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=240, G=177, B=94]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Brown">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=212, G=166, B=93]" bordercolor="Color [A=255, R=212, G=166, B=93]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style backcolor="Color [A=255, R=195, G=143, B=62]" bordercolor="Color [A=255, R=195, G=143, B=62]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=255, G=247, B=219]" backcolor2="Color [White]">Empty</Style>
+    <Style backcolor="Color [A=255, R=210, G=170, B=111]" bordercolor="Color [A=255, R=210, G=170, B=111]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=249, B=227]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=164, G=136, B=91]">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=245, G=234, B=216]" backcolor="Color [A=255, R=196, G=172, B=134]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=209, G=169, B=107]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=247, B=219]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=230, G=189, B=125]" bordercolor="Color [A=255, R=230, G=189, B=125]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=209, G=169, B=107]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Chiaroscuro">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=193, B=95]" bordercolor="Color [A=255, R=255, G=193, B=95]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style backcolor="Color [A=255, R=243, G=174, B=66]" bordercolor="Color [A=255, R=243, G=174, B=66]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=238, G=238, B=238]" backcolor2="Color [White]">Empty</Style>
+    <Style backcolor="Color [A=255, R=245, G=192, B=114]" bordercolor="Color [A=255, R=245, G=192, B=114]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=242, G=242, B=242]">FocusedRecord</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=194, G=194, B=194]">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=100, G=100, B=100]" backcolor="Color [Gainsboro]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=175, G=175, B=175]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=238, G=238, B=238]" bordercolor="Color [A=255, R=238, G=238, B=238]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=207, B=136]" bordercolor="Color [A=255, R=255, G=193, B=95]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=175, G=175, B=175]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Vagabond">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [A=255, R=239, G=235, B=220]" backcolor="Color [A=255, R=81, G=109, B=158]" bordercolor="Color [A=255, R=81, G=109, B=158]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [A=255, R=239, G=235, B=220]" backcolor="Color [A=255, R=57, G=87, B=138]" bordercolor="Color [A=255, R=57, G=87, B=138]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=239, G=235, B=220]" backcolor2="Color [White]">Empty</Style>
+    <Style forecolor="Color [A=255, R=239, G=235, B=220]" backcolor="Color [A=255, R=88, G=125, B=186]" bordercolor="Color [A=255, R=88, G=125, B=186]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=251, G=252, B=253]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=57, G=87, B=138]">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=239, G=235, B=220]" backcolor="Color [A=255, R=128, G=153, B=195]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=167, G=178, B=185]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=249, G=251, B=252]">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=239, G=235, B=220]" backcolor="Color [A=255, R=120, G=145, B=186]" bordercolor="Color [A=255, R=81, G=109, B=158]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=167, G=178, B=185]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Gray">
+    <Style>BandBorder</Style>
+    <Style backcolor="Color [DarkGray]" bordercolor="Color [DarkGray]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style backcolor="Color [Silver]" bordercolor="Color [Silver]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [DimGray]" gradient="BackwardDiagonal">Empty</Style>
+    <Style backcolor="Color [A=255, R=208, G=208, B=208]" bordercolor="Color [A=255, R=208, G=208, B=208]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Black]" fontname="Tahoma" fontsize="8" fontstyle="Regular">FocusedRow</Style>
+    <Style backcolor="Color [LightSlateGray]" fontname="Tahoma" fontsize="8" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [LightGray]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style backcolor="Color [White]">RecordValue</Style>
+    <Style backcolor="Color [Silver]" fontname="Tahoma" fontsize="8" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [LightGray]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Orange">
+    <Style>BandBorder</Style>
+    <Style backcolor="Color [Orange]" bordercolor="Color [Orange]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style backcolor="Color [Wheat]" bordercolor="Color [Wheat]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [LightSkyBlue]" backcolor2="Color [SkyBlue]" gradient="BackwardDiagonal">Empty</Style>
+    <Style backcolor="Color [A=255, R=248, G=231, B=199]" bordercolor="Color [A=255, R=248, G=231, B=199]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=0, G=0, B=192]" backcolor2="Color [RoyalBlue]" fontname="Tahoma" fontsize="8" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style backcolor="Color [LightSlateGray]" fontname="Tahoma" fontsize="8" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [Tan]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style backcolor="Color [White]">RecordValue</Style>
+    <Style backcolor="Color [Wheat]" fontname="Tahoma" fontsize="8" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [Tan]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Blue Office">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=221, G=236, B=254]" backcolor2="Color [A=255, R=132, G=171, B=228]" bordercolor="Color [A=255, R=221, G=236, B=254]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold" gradient="Vertical">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=193, G=216, B=247]" bordercolor="Color [A=255, R=193, G=216, B=247]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [White]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=208, G=225, B=249]" bordercolor="Color [A=255, R=208, G=225, B=249]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=49, G=106, B=197]" fontname="Tahoma" fontsize="8" fontstyle="Regular">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=208, G=224, B=251]" backcolor="Color [A=255, R=106, G=153, B=228]" fontname="Tahoma" fontsize="8" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=99, G=127, B=196]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=193, G=216, B=247]" bordercolor="Color [A=255, R=193, G=216, B=247]" fontname="Tahoma" fontsize="8" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=99, G=127, B=196]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Olive Office">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=244, G=247, B=222]" backcolor2="Color [A=255, R=184, G=199, B=146]" bordercolor="Color [A=255, R=244, G=247, B=222]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold" gradient="Vertical">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=223, G=230, B=195]" bordercolor="Color [A=255, R=223, G=230, B=195]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [White]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=231, G=236, B=210]" bordercolor="Color [A=255, R=231, G=236, B=210]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=147, G=160, B=112]" fontname="Tahoma" fontsize="8" fontstyle="Regular">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=147, G=160, B=112]" backcolor="Color [A=255, R=197, G=207, B=170]" fontname="Tahoma" fontsize="8" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=136, G=168, B=128]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=223, G=230, B=195]" bordercolor="Color [A=255, R=223, G=230, B=195]" fontname="Tahoma" fontsize="8" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=136, G=160, B=188]">VertLine</Style>
+  </StyleNameNew>
+  <StyleNameNew name="Silver Office">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=243, G=244, B=250]" backcolor2="Color [A=255, R=154, G=153, B=182]" bordercolor="Color [A=255, R=243, G=244, B=250]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold" gradient="Vertical">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=215, G=215, B=229]" bordercolor="Color [A=255, R=215, G=215, B=229]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [White]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=225, G=225, B=236]" bordercolor="Color [A=255, R=225, G=225, B=236]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=178, G=180, B=191]" fontname="Tahoma" fontsize="8" fontstyle="Regular">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=133, G=131, B=161]" backcolor="Color [A=255, R=218, G=219, B=226]" fontname="Tahoma" fontsize="8" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=164, G=164, B=188]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=215, G=215, B=229]" bordercolor="Color [A=255, R=215, G=215, B=229]" fontname="Tahoma" fontsize="8" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=164, G=164, B=188]">VertLine</Style>
+  </StyleNameNew>
+  <StyleName name="UserFormat1">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [BurlyWood]" bordercolor="Color [BurlyWood]" fontname="Arial Narrow" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=228, B=195]" bordercolor="Color [A=255, R=255, G=228, B=195]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=250]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=235, B=210]" bordercolor="Color [A=255, R=255, G=235, B=210]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=253, G=247, B=236]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=100, G=100, B=228]" backcolor2="Color [Navy]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [Tan]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [MidnightBlue]" backcolor="Color [OldLace]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [PeachPuff]">RowHeaderPanel</Style>
+    <Style backcolor="Color [Tan]">VertLine</Style>
+  </StyleName>
+  <StyleName name="UserFormat2">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [DarkSeaGreen]" bordercolor="Color [DarkSeaGreen]" fontname="Tahoma" fontsize="8.25" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=112, G=215, B=180]" bordercolor="Color [A=255, R=112, G=215, B=180]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=255, G=250, B=160]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=147, G=225, B=198]" bordercolor="Color [A=255, R=147, G=225, B=198]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=146, G=239, B=187]" backcolor2="Color [SeaGreen]" fontname="Times New Roman" fontsize="9" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Times New Roman" fontsize="9" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [Gray]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [MediumAquamarine]" fontname="Times New Roman" fontsize="9" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [Gray]">VertLine</Style>
+  </StyleName>
+  <StyleName name="UserFormat3">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [DarkTurquoise]" bordercolor="Color [DarkTurquoise]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=186, G=206, B=232]" bordercolor="Color [A=255, R=186, G=206, B=232]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [White]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=204, G=219, B=238]" bordercolor="Color [A=255, R=204, G=219, B=238]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [MistyRose]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=255, G=100, B=100]" backcolor2="Color [Red]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [Gray]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [LightSteelBlue]">RowHeaderPanel</Style>
+    <Style backcolor="Color [Gray]">VertLine</Style>
+  </StyleName>
+  <StyleName name="UserFormat4">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [White]" backcolor="Color [DimGray]" bordercolor="Color [DimGray]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=138, G=138, B=138]" bordercolor="Color [A=255, R=138, G=138, B=138]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=189, G=189, B=189]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=166, G=166, B=166]" bordercolor="Color [A=255, R=166, G=166, B=166]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=100, G=100, B=100]" backcolor2="Color [Black]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [Black]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Gray]">RowHeaderPanel</Style>
+    <Style backcolor="Color [Black]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Brick">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=194, G=191, B=165]" bordercolor="Color [A=255, R=194, G=191, B=165]" fontname="Tahoma" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=194, G=191, B=165]" bordercolor="Color [A=255, R=194, G=191, B=165]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=214, G=211, B=185]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=209, G=207, B=188]" bordercolor="Color [A=255, R=209, G=207, B=188]">ExpandButton</Style>
+    <Style forecolor="Color [Maroon]" backcolor="Color [A=255, R=225, G=224, B=210]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=191, G=187, B=147]" backcolor2="Color [A=255, R=141, G=137, B=97]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=194, G=191, B=165]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=225, G=224, B=210]" backcolor="Color [A=255, R=141, G=137, B=97]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=194, G=191, B=165]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Desert">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=213, G=204, B=187]" bordercolor="Color [A=255, R=213, G=204, B=187]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=213, G=204, B=187]" bordercolor="Color [A=255, R=213, G=204, B=187]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=233, G=224, B=207]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=223, G=217, B=204]" bordercolor="Color [A=255, R=223, G=217, B=204]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=50, G=178, B=178]" backcolor2="Color [Teal]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=213, G=204, B=187]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=162, G=141, B=104]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=213, G=204, B=187]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Eggplant">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=144, G=176, B=168]" bordercolor="Color [A=255, R=144, G=176, B=168]" fontname="Times New Roman" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=144, G=176, B=168]" bordercolor="Color [A=255, R=144, G=176, B=168]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=164, G=196, B=188]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=172, G=196, B=190]" bordercolor="Color [A=255, R=172, G=196, B=190]">ExpandButton</Style>
+    <Style forecolor="Color [Purple]" backcolor="Color [White]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=138, G=178, B=170]" backcolor2="Color [A=255, R=88, G=128, B=120]" fontname="Times New Roman" fontsize="10" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=144, G=176, B=168]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=0, G=0, B=8]" backcolor="Color [A=255, R=88, G=128, B=120]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=144, G=176, B=168]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Lilac">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=174, G=168, B=217]" bordercolor="Color [A=255, R=174, G=168, B=217]" fontname="Tahoma" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=174, G=168, B=217]" bordercolor="Color [A=255, R=174, G=168, B=217]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=194, G=188, B=237]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=194, G=190, B=226]" bordercolor="Color [A=255, R=194, G=190, B=226]">ExpandButton</Style>
+    <Style fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=140, G=128, B=227]" backcolor2="Color [A=255, R=90, G=78, B=177]" fontname="Tahoma" fontsize="10" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=174, G=168, B=217]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RecordValue</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=90, G=78, B=177]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=174, G=168, B=217]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Maple">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=230, G=216, B=174]" bordercolor="Color [A=255, R=230, G=216, B=174]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=230, G=216, B=174]" bordercolor="Color [A=255, R=230, G=216, B=174]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=250, G=236, B=194]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=236, G=225, B=193]" bordercolor="Color [A=255, R=236, G=225, B=193]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=248, G=216, B=120]" backcolor2="Color [A=255, R=198, G=166, B=70]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=230, G=216, B=174]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=242, G=236, B=215]" backcolor="Color [A=255, R=198, G=166, B=70]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=230, G=216, B=174]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Marine (high color)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=136, G=192, B=184]" bordercolor="Color [A=255, R=136, G=192, B=184]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=136, G=192, B=184]" bordercolor="Color [A=255, R=136, G=192, B=184]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=156, G=212, B=204]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=165, G=207, B=201]" bordercolor="Color [A=255, R=165, G=207, B=201]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=200, G=224, B=216]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=215, G=232, B=226]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=50, G=50, B=178]" backcolor2="Color [Navy]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=136, G=192, B=184]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=200, G=224, B=216]">RecordValue</Style>
+    <Style forecolor="Color [Silver]" backcolor="Color [A=255, R=72, G=144, B=136]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=136, G=192, B=184]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Plum (high color)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=168, G=152, B=144]" bordercolor="Color [A=255, R=168, G=152, B=144]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=168, G=152, B=144]" bordercolor="Color [A=255, R=168, G=152, B=144]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=188, G=172, B=164]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=189, G=177, B=172]" bordercolor="Color [A=255, R=189, G=177, B=172]">ExpandButton</Style>
+    <Style forecolor="Color [A=255, R=48, G=0, B=88]" backcolor="Color [A=255, R=213, G=204, B=200]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=226, G=220, B=214]">FocusedRecord</Style>
+    <Style forecolor="Color [A=255, R=216, G=208, B=200]" backcolor="Color [A=255, R=50, G=178, B=178]" backcolor2="Color [Teal]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=168, G=152, B=144]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=216, G=208, B=200]">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=168, G=152, B=144]" backcolor="Color [A=255, R=120, G=96, B=88]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=168, G=152, B=144]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Pumpkin (large)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=236, G=213, B=157]" bordercolor="Color [A=255, R=236, G=213, B=157]" fontname="Tahoma" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=236, G=213, B=157]" bordercolor="Color [A=255, R=236, G=213, B=157]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=255, G=233, B=177]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=241, G=223, B=182]" bordercolor="Color [A=255, R=241, G=223, B=182]">ExpandButton</Style>
+    <Style forecolor="Color [Purple]" backcolor="Color [White]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=178, G=50, B=178]" backcolor2="Color [Purple]" fontname="Tahoma" fontsize="10" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=236, G=213, B=157]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=245, G=234, B=207]" backcolor="Color [A=255, R=215, G=165, B=47]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=236, G=213, B=157]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Rainy Day">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=131, G=153, B=177]" bordercolor="Color [A=255, R=131, G=153, B=177]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=131, G=153, B=177]" bordercolor="Color [A=255, R=131, G=153, B=177]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=151, G=173, B=197]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=163, G=179, B=197]" bordercolor="Color [A=255, R=163, G=179, B=197]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=129, G=151, B=175]" backcolor2="Color [A=255, R=79, G=101, B=125]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=131, G=153, B=177]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=193, G=204, B=217]" backcolor="Color [A=255, R=79, G=101, B=125]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=131, G=153, B=177]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Red, White, and Blue (VGA)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]" fontname="Times New Roman" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=212, G=212, B=212]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=208, G=208, B=208]" bordercolor="Color [A=255, R=208, G=208, B=208]">ExpandButton</Style>
+    <Style forecolor="Color [Navy]" backcolor="Color [White]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=178, G=50, B=50]" backcolor2="Color [Maroon]" fontname="Times New Roman" fontsize="10" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [Silver]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">RecordValue</Style>
+    <Style forecolor="Color [Silver]" backcolor="Color [Gray]" fontname="Times New Roman" fontsize="10" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [Silver]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Rose">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=207, G=175, B=183]" bordercolor="Color [A=255, R=207, G=175, B=183]" fontname="Times New Roman" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=207, G=175, B=183]" bordercolor="Color [A=255, R=207, G=175, B=183]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=227, G=195, B=203]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=219, G=196, B=202]" bordercolor="Color [A=255, R=219, G=196, B=202]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=209, G=146, B=162]" backcolor2="Color [A=255, R=159, G=96, B=112]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=207, G=175, B=183]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=221, G=221, B=221]" backcolor="Color [A=255, R=159, G=96, B=112]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=207, G=175, B=183]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Rose (large)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=208, G=176, B=184]" bordercolor="Color [A=255, R=208, G=176, B=184]" fontname="Times New Roman" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=208, G=176, B=184]" bordercolor="Color [A=255, R=208, G=176, B=184]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=228, G=196, B=204]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=220, G=197, B=203]" bordercolor="Color [A=255, R=220, G=197, B=203]">ExpandButton</Style>
+    <Style fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=210, G=146, B=162]" backcolor2="Color [A=255, R=160, G=96, B=112]" fontname="Tahoma" fontsize="10" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=208, G=176, B=184]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=221, G=221, B=221]" backcolor="Color [A=255, R=160, G=96, B=112]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=208, G=176, B=184]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Slate">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=157, G=185, B=200]" bordercolor="Color [A=255, R=157, G=185, B=200]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=157, G=185, B=200]" bordercolor="Color [A=255, R=157, G=185, B=200]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=177, G=205, B=220]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=182, G=203, B=214]" bordercolor="Color [A=255, R=182, G=203, B=214]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=135, G=178, B=201]" backcolor2="Color [A=255, R=85, G=128, B=151]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=157, G=185, B=200]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [Silver]" backcolor="Color [A=255, R=85, G=128, B=151]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=157, G=185, B=200]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Spruce">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=162, G=200, B=169]" bordercolor="Color [A=255, R=162, G=200, B=169]" fontname="Tahoma" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=162, G=200, B=169]" bordercolor="Color [A=255, R=162, G=200, B=169]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=182, G=220, B=189]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=184, G=214, B=189]" bordercolor="Color [A=255, R=184, G=214, B=189]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=139, G=201, B=150]" backcolor2="Color [A=255, R=89, G=151, B=100]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=162, G=200, B=169]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=208, G=227, B=211]" backcolor="Color [A=255, R=89, G=151, B=100]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=162, G=200, B=169]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Storm (VGA)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=212, G=212, B=212]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=208, G=208, B=208]" bordercolor="Color [A=255, R=208, G=208, B=208]">ExpandButton</Style>
+    <Style forecolor="Color [Purple]" backcolor="Color [White]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=178, G=50, B=178]" backcolor2="Color [Purple]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [Silver]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [Silver]" backcolor="Color [Gray]">RowHeaderPanel</Style>
+    <Style backcolor="Color [Silver]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Teal (VGA)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=212, G=212, B=212]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=208, G=208, B=208]" bordercolor="Color [A=255, R=208, G=208, B=208]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=50, G=178, B=178]" backcolor2="Color [Teal]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [Silver]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=255, G=251, B=240]" backcolor="Color [Gray]">RowHeaderPanel</Style>
+    <Style backcolor="Color [Silver]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Wheat">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=222, G=222, B=160]" bordercolor="Color [A=255, R=222, G=222, B=160]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=222, G=222, B=160]" bordercolor="Color [A=255, R=222, G=222, B=160]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=242, G=242, B=180]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=231, G=231, B=184]" bordercolor="Color [A=255, R=231, G=231, B=184]">ExpandButton</Style>
+    <Style>FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=178, G=178, B=50]" backcolor2="Color [Olive]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=222, G=222, B=160]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=188, G=188, B=65]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=222, G=222, B=160]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Windows Classic">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=243, G=243, B=243]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=208, G=208, B=208]" bordercolor="Color [A=255, R=208, G=208, B=208]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=255, B=225]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=50, G=50, B=178]" backcolor2="Color [Navy]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [Silver]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [Silver]" backcolor="Color [Gray]">RowHeaderPanel</Style>
+    <Style backcolor="Color [Silver]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Windows Classic (large)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]" fontname="Tahoma" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Silver]" bordercolor="Color [Silver]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=243, G=243, B=243]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=208, G=208, B=208]" bordercolor="Color [A=255, R=208, G=208, B=208]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=255, B=225]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=50, G=50, B=178]" backcolor2="Color [Navy]" fontname="Tahoma" fontsize="10" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [Silver]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RecordValue</Style>
+    <Style forecolor="Color [Silver]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [Silver]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Windows Standard">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=212, G=208, B=200]" bordercolor="Color [A=255, R=212, G=208, B=200]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=212, G=208, B=200]" bordercolor="Color [A=255, R=212, G=208, B=200]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=232, G=228, B=220]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=222, G=219, B=214]" bordercolor="Color [A=255, R=222, G=219, B=214]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=255, B=225]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=60, G=86, B=156]" backcolor2="Color [A=255, R=10, G=36, B=106]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=212, G=208, B=200]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=212, G=208, B=200]">VertLine</Style>
+  </StyleName>
+  <StyleName name="Windows Standard (large)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=212, G=208, B=200]" bordercolor="Color [A=255, R=212, G=208, B=200]" fontname="Tahoma" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=212, G=208, B=200]" bordercolor="Color [A=255, R=212, G=208, B=200]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=232, G=228, B=220]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=222, G=219, B=214]" bordercolor="Color [A=255, R=222, G=219, B=214]">ExpandButton</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=255, B=225]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=60, G=86, B=156]" backcolor2="Color [A=255, R=10, G=36, B=106]" fontname="Tahoma" fontsize="10" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [A=255, R=212, G=208, B=200]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RecordValue</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [A=255, R=212, G=208, B=200]">VertLine</Style>
+  </StyleName>
+  <StyleName name="High Contrast Black">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Black]" bordercolor="Color [Black]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Black]" bordercolor="Color [Black]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [White]">Empty</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=63, G=63, B=63]" bordercolor="Color [A=255, R=63, G=63, B=63]">ExpandButton</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Black]">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=63, G=63, B=63]">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=178, G=50, B=178]" backcolor2="Color [Purple]" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]">HideSelectionRow</Style>
+    <Style backcolor="Color [Yellow]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Black]">RecordValue</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Gray]">RowHeaderPanel</Style>
+    <Style backcolor="Color [Yellow]">VertLine</Style>
+  </StyleName>
+  <StyleName name="High Contrast Black (large)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Black]" bordercolor="Color [Black]" fontname="Tahoma" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Black]" bordercolor="Color [Black]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [White]">Empty</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=63, G=63, B=63]" bordercolor="Color [A=255, R=63, G=63, B=63]">ExpandButton</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Black]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=63, G=63, B=63]" fontname="Tahoma" fontsize="10" fontstyle="Regular">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=178, G=50, B=178]" backcolor2="Color [Purple]" fontname="Tahoma" fontsize="10" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [Yellow]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Black]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RecordValue</Style>
+    <Style forecolor="Color [White]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [Yellow]">VertLine</Style>
+  </StyleName>
+  <StyleName name="High Contrast White">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" bordercolor="Color [White]" fontname="Tahoma" fontsize="8" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" bordercolor="Color [White]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=212, G=212, B=212]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=255, B=255]" bordercolor="Color [A=255, R=255, G=255, B=255]">ExpandButton</Style>
+    <Style fontname="Tahoma" fontsize="8" fontstyle="Bold">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]" fontname="Tahoma" fontsize="8" fontstyle="Bold">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=50, G=50, B=50]" backcolor2="Color [Black]" fontname="Tahoma" fontsize="8" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="8" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [Gray]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" fontname="Tahoma" fontsize="8" fontstyle="Bold">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="8" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [Gray]">VertLine</Style>
+  </StyleName>
+  <StyleName name="High Contrast White (large)">
+    <Style>BandBorder</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" bordercolor="Color [White]" fontname="Tahoma" fontsize="10" fontstyle="Bold">Category</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" bordercolor="Color [White]">CategoryExpandButton</Style>
+    <Style>DisabledRecordValue</Style>
+    <Style>DisabledRow</Style>
+    <Style backcolor="Color [A=255, R=212, G=212, B=212]">Empty</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [A=255, R=255, G=255, B=255]" bordercolor="Color [A=255, R=255, G=255, B=255]">ExpandButton</Style>
+    <Style fontname="Tahoma" fontsize="10" fontstyle="Bold">FocusedCell</Style>
+    <Style backcolor="Color [A=255, R=255, G=255, B=255]" fontname="Tahoma" fontsize="10" fontstyle="Bold">FocusedRecord</Style>
+    <Style forecolor="Color [White]" backcolor="Color [A=255, R=50, G=50, B=50]" backcolor2="Color [Black]" fontname="Tahoma" fontsize="10" fontstyle="Regular" gradient="Vertical">FocusedRow</Style>
+    <Style forecolor="Color [A=255, R=212, G=208, B=200]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">HideSelectionRow</Style>
+    <Style backcolor="Color [Gray]">HorzLine</Style>
+    <Style>PressedRow</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [White]" fontname="Tahoma" fontsize="10" fontstyle="Bold">RecordValue</Style>
+    <Style forecolor="Color [Black]" backcolor="Color [Gray]" fontname="Tahoma" fontsize="10" fontstyle="Regular">RowHeaderPanel</Style>
+    <Style backcolor="Color [Gray]">VertLine</Style>
+  </StyleName>
+</Styles>

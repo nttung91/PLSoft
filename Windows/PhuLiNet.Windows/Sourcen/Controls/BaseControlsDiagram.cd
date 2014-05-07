@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Windows.Core.Controls.UCBase" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAIAACAAAACAAAABEAAAAAABAQAAAI=</HashCode>
+      <FileName>Controls\UCBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Controls.UCBusinessControlBase" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAAQACAAAAgIAACACAACAAAEBAAACAAAAAAAAAA=</HashCode>
+      <FileName>Controls\UCBusinessControlBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Windows.Core.Controls.UCEditBusinessBase" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAMBCAAQEAAAAAgAAAAAAAAAAAAABAAAIACAAAAAAAA=</HashCode>
+      <FileName>Controls\UCEditBusinessBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Controls.UCEditBusinessListBase" Collapsed="true">
+    <Position X="2.5" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIBAIDAABAAAAAAAIQEAAAAAABgAAAAIAAAAQAAAAA=</HashCode>
+      <FileName>Controls\UCEditBusinessListBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Controls.UCGridBase" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMJAACQETABgAgAQRDABAwCABAABAAAIAAAAQIUAAA=</HashCode>
+      <FileName>Controls\UCGridBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Windows.Core.Controls.UCPreviewGridBase" Collapsed="true">
+    <Position X="5" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIGAIAAABAAEAQSAAEAEAgCAYBAYIAAAAAAAAAAABA=</HashCode>
+      <FileName>Controls\UCPreviewGridBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Controls.UCDescriptions" Collapsed="true">
+    <Position X="2.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEBCACQFSEAAAAwAECEJAgmAgAIAQgAICAAEAEAgCI=</HashCode>
+      <FileName>Controls\UCDescriptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

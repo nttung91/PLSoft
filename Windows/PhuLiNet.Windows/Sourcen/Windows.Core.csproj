@@ -1,0 +1,1449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07CB80C9-B2FA-4A96-B82A-4C19945F63EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Windows.Core</RootNamespace>
+    <AssemblyName>Windows.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>Manor.Windows.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\Windows.Core.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\Windows.Core.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Csla">
+      <HintPath>..\..\..\ExternalLibs\cslacs-4.3.13.0\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.BonusSkins.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.Docs.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.Office.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.Printing.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.Data.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v13.1.Core, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.Spreadsheet.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.Utils.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.XtraBars.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.XtraEditors.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.XtraGrid.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.XtraLayout.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.PivotGrid.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.XtraPivotGrid.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.XtraPrinting.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.XtraTreeList.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Misc\ELCA\DevExpress\Framework\DevExpress.XtraVerticalGrid.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.1.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ExternalLibs\epplus-3.1.3\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Misc\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="BaseForms\FrmEditBusinessListBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\IInitializableForm.cs" />
+    <Compile Include="Commands\CommandLookup.cs" />
+    <Compile Include="Commands\CommandLookupObjectList.cs" />
+    <Compile Include="Commands\BaseDeleteBusinessObjectCommand.cs" />
+    <Compile Include="Commands\BeforeDeleteChildBusinessObjectCommand.cs" />
+    <Compile Include="Commands\CommandInitWindowsFormsApp.cs" />
+    <Compile Include="Commands\StartEditListForm.cs" />
+    <Compile Include="Commands\DeleteChildBusinessObjectCommand.cs" />
+    <Compile Include="Commands\EditFormStartedEventArgs.cs" />
+    <Compile Include="Commands\StartEditForm.cs" />
+    <Compile Include="Commands\StartEditFormCopyBusinessObject.cs" />
+    <Compile Include="Commands\StartPreviewForm.cs" />
+    <Compile Include="Controls\Adapters\ElementUpdatedEventArgs.cs" />
+    <Compile Include="Controls\Adapters\ElementUpdatedEventHandler.cs" />
+    <Compile Include="Controls\Adapters\ItemChangingEventArgs.cs" />
+    <Compile Include="Controls\Adapters\ItemChangingEventHandler.cs" />
+    <Compile Include="Controls\Adapters\TreeListAdapter.cs" />
+    <Compile Include="Controls\CurrentItemSelectionChanging.cs" />
+    <Compile Include="Controls\DXEditors\Helpers\LookupEditDisplayTextHelper.cs" />
+    <Compile Include="Controls\UCDescriptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCDescriptions.Designer.cs">
+      <DependentUpon>UCDescriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Adapters\GridViewAdapter.cs" />
+    <Compile Include="Controls\Adapters\ListControlAdapter.cs" />
+    <Compile Include="Controls\UCEditBusinessListBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCGridBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCGridBase.Designer.cs">
+      <DependentUpon>UCGridBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DxExtensions\ColumnViewExtension.cs" />
+    <Compile Include="DxExtensions\GridExtensions.cs" />
+    <Compile Include="Dynamic\GridOptions.cs" />
+    <Compile Include="Dynamic\BandOptions.cs" />
+    <Compile Include="Dynamic\ColumnOptions.cs" />
+    <Compile Include="Dynamic\GridColumnManagerContainer.cs" />
+    <Compile Include="Dynamic\ColumnManagerParameter.cs" />
+    <Compile Include="Dynamic\IGridOptions.cs" />
+    <Compile Include="Dynamic\IGridCreateParameters.cs" />
+    <Compile Include="Execution\PluginExecutorRes.Designer.cs">
+      <DependentUpon>PluginExecutorRes.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Export\DxExcelExporter.cs" />
+    <Compile Include="Export\DxExporterBase.cs" />
+    <Compile Include="Export\ExporterBase.cs" />
+    <Compile Include="Export\ExportOptions.cs" />
+    <Compile Include="Export\PdfExporter.cs" />
+    <Compile Include="Export\PrintExporter.cs" />
+    <Compile Include="Filter\CommandFilterBase.cs" />
+    <Compile Include="Filter\FilterBaseControler.cs" />
+    <Compile Include="BaseForms\FrmEditBusinessBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\FrmPreviewBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\IFormSettings.cs" />
+    <Compile Include="Filter\IFrmFilterEnabled.cs" />
+    <Compile Include="Commands\BaseCommand.cs" />
+    <Compile Include="Commands\CommandApplicationExit.cs" />
+    <Compile Include="Commands\CommandCloseAllForms.cs" />
+    <Compile Include="Commands\CommandExecutorRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommandExecutorRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\CommandInputDialog.cs" />
+    <Compile Include="Commands\CommandSelectForm.cs" />
+    <Compile Include="Commands\CommandShowCryptForm.cs" />
+    <Compile Include="Commands\CommandShowDisplayOptions.cs" />
+    <Compile Include="Commands\CommandSetCulture.cs" />
+    <Compile Include="Commands\CommandResetCulture.cs" />
+    <Compile Include="Commands\CommandSetApplicationVersion.cs" />
+    <Compile Include="Commands\CommandSetApplicationDate.cs" />
+    <Compile Include="Commands\CommandShowSettings.cs" />
+    <Compile Include="Commands\CommandSetCustomFont.cs" />
+    <Compile Include="Commands\CommandExcelExport.cs" />
+    <Compile Include="Commands\DeleteBusinessObjectCommand.cs" />
+    <Compile Include="Components\Permissions\IUIPermissionActivator.cs" />
+    <Compile Include="Components\Permissions\UIPermissionActivator.cs" />
+    <Compile Include="Components\XtraGrid\XtraGridCheckBoxHelper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\XtraGrid\XtraGridCheckBoxHelper.Designer.cs">
+      <DependentUpon>XtraGridCheckBoxHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CurrentItemSelectionChanged.cs" />
+    <Compile Include="Controls\DXEditors\CalcEdits\PercentCalcEditRepositoryItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXEditors\CalcEdits\PercentCalcEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXEditors\CalcEdits\MoneyCalcEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXEditors\CalcEdits\MoneyCalcEditRepositoryItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXEditors\CalcEdits\QuantityCalcEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXEditors\CalcEdits\QuantityCalcEditRepositoryItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Permissions\UIPermissionInfo.cs" />
+    <Compile Include="Components\Permissions\UIPermissionProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Permissions\UIPermissionProvider.Designer.cs">
+      <DependentUpon>UIPermissionProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DXGrids\Common\BasicGridColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXGrids\Common\BasicGridColumnCollection.cs" />
+    <Compile Include="Controls\DXGrids\ReadOnly\BasicGridOptionsBehaviorReadOnly.cs" />
+    <Compile Include="Controls\DXGrids\Common\BasicGridOptionsCustomization.cs" />
+    <Compile Include="Controls\DXGrids\Common\BasicGridOptionsView.cs" />
+    <Compile Include="Controls\DXGrids\ReadOnly\BasicGridViewControlReadOnly.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXGrids\ReadOnly\BasicGridViewInfoRegistratorReadOnly.cs" />
+    <Compile Include="Controls\DXGrids\ReadOnly\BasicGridViewReadOnly.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXGrids\Editable\BasicGridViewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXGrids\Editable\BasicGridViewInfoRegistrator.cs" />
+    <Compile Include="Controls\DXGrids\Editable\BasicGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UCEditBusinessBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCPreviewGridBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCPreviewGridBase.Designer.cs">
+      <DependentUpon>UCPreviewGridBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DxExtensions\AppearanceExtension.cs" />
+    <Compile Include="DxExtensions\ControlExtensions.cs" />
+    <Compile Include="DxExtensions\GridBandExtensions.cs" />
+    <Compile Include="DxExtensions\GridColumnCollectionExtension.cs" />
+    <Compile Include="DxExtensions\GridColumnExtension.cs" />
+    <Compile Include="DxExtensions\LookupEditExtension.cs" />
+    <Compile Include="DxExtensions\PopupMenuExtensions.cs" />
+    <Compile Include="DxExtensions\RepositoryItemImageComboBoxExtension.cs" />
+    <Compile Include="DxExtensions\TreeListExtensions.cs" />
+    <Compile Include="Dynamic\GridColumnParameters.cs" />
+    <Compile Include="Export\ExcelExporter.cs" />
+    <Compile Include="Export\ControlExporter.cs" />
+    <Compile Include="Forms\AdminConsole\AssemblyInformation.cs" />
+    <Compile Include="Forms\AdminConsole\FrmAssemblies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminConsole\FrmAssemblies.Designer.cs">
+      <DependentUpon>FrmAssemblies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmExceptionMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmExceptionMessageBox.Designer.cs">
+      <DependentUpon>FrmExceptionMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cryptography\FrmCryptString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cryptography\FrmCryptString.Designer.cs">
+      <DependentUpon>FrmCryptString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAsyncWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAsyncWait.Designer.cs">
+      <DependentUpon>FrmAsyncWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDisappearInfoMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDisappearInfoMessageBox.Designer.cs">
+      <DependentUpon>FrmDisappearInfoMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmProgress.Designer.cs">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmInputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInputDialog.Designer.cs">
+      <DependentUpon>FrmInputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmWarningMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmWarningMessageBox.Designer.cs">
+      <DependentUpon>FrmWarningMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\FrmFilterBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\FrmFilterBase.Designer.cs">
+      <DependentUpon>FrmFilterBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\FormInstructionInitParameter.cs" />
+    <Compile Include="Helpers\AsyncStatusBusy.cs" />
+    <Compile Include="Helpers\BaseEditHelper.cs" />
+    <Compile Include="Helpers\Controls\ControlEnablerDisabler.cs" />
+    <Compile Include="Helpers\Controls\ControlInfoList.cs" />
+    <Compile Include="Helpers\Controls\Item\GridEnablerDisabler.cs" />
+    <Compile Include="Helpers\Controls\Item\EditorEnablerDisabler.cs" />
+    <Compile Include="Helpers\Controls\IControlInfo.cs" />
+    <Compile Include="Helpers\GridBandHelper.cs" />
+    <Compile Include="Helpers\GridLayout\LayoutManager\ListControlLayoutManager.cs" />
+    <Compile Include="Helpers\GridViewExpandedRowsHelper.cs" />
+    <Compile Include="Helpers\GridViewTypeChanger.cs" />
+    <Compile Include="Helpers\KeyHelper.cs" />
+    <Compile Include="Helpers\PivotGridExport.cs" />
+    <Compile Include="Helpers\FormPositionHandler.cs" />
+    <Compile Include="Helpers\DXGridColumnHelper.cs" />
+    <Compile Include="Helpers\FixableColumnHandler.cs" />
+    <Compile Include="Helpers\IFixableBandColumns.cs" />
+    <Compile Include="BaseForms\IFormMessages.cs" />
+    <Compile Include="BaseForms\IFormLayout.cs" />
+    <Compile Include="BaseForms\ISpyObject.cs" />
+    <Compile Include="BaseForms\IFormStatusText.cs" />
+    <Compile Include="BaseForms\IHelpOnForm.cs" />
+    <Compile Include="BaseForms\ILoadableForm.cs" />
+    <Compile Include="BaseForms\IShowFilterRow.cs" />
+    <Compile Include="BaseForms\IFormInstructions.cs" />
+    <Compile Include="BaseForms\IPrintableForm.cs" />
+    <Compile Include="BaseForms\IExportableForm.cs" />
+    <Compile Include="BaseForms\IFilterableForm.cs" />
+    <Compile Include="BaseForms\FrmDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\FrmDialogBase.Designer.cs">
+      <DependentUpon>FrmDialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\IFormPermissions.cs" />
+    <Compile Include="BaseForms\FrmReadOnlyBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\FrmReadOnlyBase.Designer.cs">
+      <DependentUpon>FrmReadOnlyBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\FrmEditableBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\FrmEditableBase.Designer.cs">
+      <DependentUpon>FrmEditableBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Binding\SaveManager\SaveManagerBase.cs" />
+    <Compile Include="Binding\SaveManager\StandardSaveManager.cs" />
+    <Compile Include="Binding\BindingSourceNode.cs" />
+    <Compile Include="Colors\ColorRepository.cs" />
+    <Compile Include="Commands\BaseDialogCommand.cs" />
+    <Compile Include="Commands\BaseWindowCommand.cs" />
+    <Compile Include="Commands\CommandGetCurrentMemory.cs" />
+    <Compile Include="Commands\CommandSetAppearance.cs" />
+    <Compile Include="Commands\CommandSetApplicationName.cs" />
+    <Compile Include="Commands\CommandSetDefaultCulture.cs" />
+    <Compile Include="Commands\CommandShowExternalFile.cs" />
+    <Compile Include="Commands\CommandShowHelp.cs" />
+    <Compile Include="Commands\CommandSpy.cs" />
+    <Compile Include="Commands\CommandShowAssemblies.cs" />
+    <Compile Include="Commands\CommandSpyForm.cs" />
+    <Compile Include="Commands\CommandSpyObject.cs" />
+    <Compile Include="Commands\CommandStartFrmImage.cs" />
+    <Compile Include="Commands\BaseReflectionCommand.cs" />
+    <Compile Include="Commands\CommandShowSplash.cs" />
+    <Compile Include="Forms\Navigator\FocusChainProcessor.cs" />
+    <Compile Include="Forms\Navigator\Interfaces\ISetFocusOnBusinessObject.cs" />
+    <Compile Include="Forms\Navigator\NodeEventArgs\NavigatorNodeClickEventArgs.cs" />
+    <Compile Include="Forms\Navigator\Operations\IconSetOperation.cs" />
+    <Compile Include="Forms\Navigator\Operations\ExpandNodesOperation.cs" />
+    <Compile Include="Forms\Navigator\Controls\UCNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Navigator\Controls\UCNavigator.Designer.cs">
+      <DependentUpon>UCNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Navigator\FrmNavigator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Navigator\FrmNavigator.Designer.cs">
+      <DependentUpon>FrmNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Navigator\Interfaces\IShowNavigator.cs" />
+    <Compile Include="Forms\Navigator\Interfaces\ITreeNodeIconBuilder.cs" />
+    <Compile Include="Helpers\PivotGridHelper.cs" />
+    <Compile Include="Helpers\PopupHelper\PopupMenuHelper.cs" />
+    <Compile Include="Helpers\PopupHelper\PopupMenuHelperEventArgs.cs" />
+    <Compile Include="Helpers\PopupHelper\PopupMenuItemType.cs" />
+    <Compile Include="Helpers\VGridControlHelper.cs" />
+    <Compile Include="Helpers\XtraLayout\EmptyLayoutHandler.cs" />
+    <Compile Include="Helpers\XtraLayout\FormsLayoutControlInfos.cs" />
+    <Compile Include="Controls\DXEditors\GridLookups\GenericGridLookUpEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXEditors\GridLookups\GenericGridLookUpEditRepositoryItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXEditors\Lookups\GenericLookupEditRepositoryItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DXEditors\Lookups\GenericLookupEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminConsole\FrmSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminConsole\FrmSelectForm.Designer.cs">
+      <DependentUpon>FrmSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\ClipboardImagePaster.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\ClipboardImagePaster.Designer.cs">
+      <DependentUpon>ClipboardImagePaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\ClipboardImagePasterWithCheck.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\ClipboardImagePasterWithCheck.Designer.cs">
+      <DependentUpon>ClipboardImagePasterWithCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\ImageOpenFileDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\ImageOpenFileDialog.Designer.cs">
+      <DependentUpon>ImageOpenFileDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\FrmImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\FrmImage.Designer.cs">
+      <DependentUpon>FrmImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\ImageOpenFileDialogWithCheck.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\ImageOpenFileDialogWithCheck.Designer.cs">
+      <DependentUpon>ImageOpenFileDialogWithCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageMgmt\ImageOpenDialogStarter.cs" />
+    <Compile Include="Forms\ImageMgmt\ImageMessages.cs" />
+    <Compile Include="Forms\ObjectSpy\FrmObjectSpy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ObjectSpy\FrmObjectSpy.Designer.cs">
+      <DependentUpon>FrmObjectSpy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmWait.Designer.cs">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\IEditableForm.cs" />
+    <Compile Include="BaseForms\IFormBusinessContext.cs" />
+    <Compile Include="BaseForms\IIdentifiableForm.cs" />
+    <Compile Include="BaseForms\IReloadableForm.cs" />
+    <Compile Include="BaseForms\ISavableForm.cs" />
+    <Compile Include="BaseForms\ISwitchableForm.cs" />
+    <Compile Include="Commands\CommandShowFilterRow.cs" />
+    <Compile Include="Commands\CommandShowLog.cs" />
+    <Compile Include="Controls\GenericValueEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IBusinessControl.cs" />
+    <Compile Include="Controls\IExportableControl.cs" />
+    <Compile Include="Controls\IFilterableControl.cs" />
+    <Compile Include="Controls\IControlBusinessContext.cs" />
+    <Compile Include="Controls\IControlInstructions.cs" />
+    <Compile Include="Controls\IPrintableControl.cs" />
+    <Compile Include="Forms\Validation\FrmBrokenRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Validation\FrmBrokenRules.Designer.cs">
+      <DependentUpon>FrmBrokenRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\EditorHelper.cs" />
+    <Compile Include="Helpers\FileHelperDialog.cs" />
+    <Compile Include="Helpers\FormsControlHelper.cs" />
+    <Compile Include="Helpers\DXCheckedComboBoxEditHelper.cs" />
+    <Compile Include="Helpers\DXComboBoxHelper.cs" />
+    <Compile Include="Helpers\GridCellHelper.cs" />
+    <Compile Include="Helpers\GridLayout\LayoutManager\VerticalGridLayoutManager.cs" />
+    <Compile Include="Helpers\GridLayout\LayoutManager\PivotGridLayoutManager.cs" />
+    <Compile Include="Helpers\GridLayout\DefaultLayouts.cs" />
+    <Compile Include="Helpers\GridLayout\GridLayoutManagerList.cs" />
+    <Compile Include="Helpers\GridLayout\LayoutManager\BaseViewLayoutManager.cs" />
+    <Compile Include="Helpers\GridLayout\IGridLayoutHandler.cs" />
+    <Compile Include="Helpers\GridLayout\IGridLayoutManager.cs" />
+    <Compile Include="Helpers\GridLayout\LayoutManagerBase.cs" />
+    <Compile Include="Helpers\XtraLayout\IFormsLayoutControlInfos.cs" />
+    <Compile Include="Helpers\XtraLayout\IXtraLayoutHandler.cs" />
+    <Compile Include="Helpers\XtraLayout\XtraLayoutHandler.cs" />
+    <Compile Include="Helpers\LookupHelper.cs" />
+    <Compile Include="Helpers\MruHelper.cs" />
+    <Compile Include="Helpers\OwnedFormsHelper.cs" />
+    <Compile Include="Helpers\ToolTipHelper.cs" />
+    <Compile Include="Helpers\TreeHelper.cs" />
+    <Compile Include="HelpProvider\HelpFromFileSystemProvider.cs" />
+    <Compile Include="HelpProvider\HelpFromSharepointProvider.cs" />
+    <Compile Include="HelpProvider\HelpProviderBase.cs" />
+    <Compile Include="HelpProvider\Settings\HelpProviderSettingsException.cs" />
+    <Compile Include="HelpProvider\HelpProviderException.cs" />
+    <Compile Include="HelpProvider\Settings\HelpProviderSettings.cs" />
+    <Compile Include="HelpProvider\IHelpProvider.cs" />
+    <Compile Include="HelpProvider\Provider.cs" />
+    <Compile Include="Instructions\TransmitInstruction.cs" />
+    <Compile Include="Instructions\Manager\ApplyInstructionEventArgs.cs" />
+    <Compile Include="Instructions\Manager\NoInstructionManager.cs" />
+    <Compile Include="Instructions\Manager\OnDeactivateInstructionEventHandler.cs" />
+    <Compile Include="Instructions\Manager\InstructionEventArgs.cs" />
+    <Compile Include="Instructions\Manager\OnActivateInstructionEventHandler.cs" />
+    <Compile Include="Instructions\Manager\DefaultInstructionManager.cs" />
+    <Compile Include="Instructions\Manager\IInstructionManager.cs" />
+    <Compile Include="Instructions\Manager\BaseInstructionManager.cs" />
+    <Compile Include="Instructions\Manager\InstructionManagerFactory.cs" />
+    <Compile Include="Instructions\Manager\OnApplyInstructionEventHandler.cs" />
+    <Compile Include="Forms\Logging\FrmShowLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Logging\FrmShowLog.Designer.cs">
+      <DependentUpon>FrmShowLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\BaseFormMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseFormMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\BrokenRulesMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BrokenRulesMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\CommandRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommandRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\ControlsRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlsRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\General.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>General.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\GridCheckboxHelperMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GridCheckboxHelperMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\HelperRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HelperRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\HelpProviderMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HelpProviderMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\ImageMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\SaveManagerMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SaveManagerMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\StatusBusyRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusBusyRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\WindowManagerRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WindowManagerRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Adapters\DxMenuAdapter.cs" />
+    <Compile Include="Controls\Adapters\IMenuAdapter.cs" />
+    <Compile Include="Messaging\BaseMessage.cs" />
+    <Compile Include="Messaging\CloseMessage.cs" />
+    <Compile Include="Messaging\DataExpiredMessage.cs" />
+    <Compile Include="Messaging\Handler\BaseMessageHandler.cs" />
+    <Compile Include="Messaging\Handler\IMessageReceiver.cs" />
+    <Compile Include="Messaging\Handler\ReceiveMessageEventArgs.cs" />
+    <Compile Include="Messaging\Handler\DefaultMessageHandler.cs" />
+    <Compile Include="Messaging\Handler\IMessageHandler.cs" />
+    <Compile Include="Messaging\Handler\MessageHandlerFactory.cs" />
+    <Compile Include="Messaging\Handler\NoMessageHandler.cs" />
+    <Compile Include="Messaging\Handler\OnReceiveMessageEventHandler.cs" />
+    <Compile Include="Messaging\IMessage.cs" />
+    <Compile Include="Messaging\ItemChangedMessage.cs" />
+    <Compile Include="Messaging\MessageFactory.cs" />
+    <Compile Include="Messaging\PreviewItemBaseMessage.cs" />
+    <Compile Include="Messaging\Sender\DefaultMessageSender.cs" />
+    <Compile Include="Messaging\Sender\IMessageSender.cs" />
+    <Compile Include="Messaging\Sender\MessageSenderFactory.cs" />
+    <Compile Include="Messaging\Sender\NoMessageSender.cs" />
+    <Compile Include="ResFinder.cs" />
+    <Compile Include="Settings\RegistryHelper.cs" />
+    <Compile Include="SmartPart\AbstractSmartPart.cs" />
+    <Compile Include="SmartPart\BusinessControlSmartPart.cs" />
+    <Compile Include="SmartPart\ControlSmartPart.cs" />
+    <Compile Include="SmartPart\Controls\ISmartPartPlaceholder.cs" />
+    <Compile Include="SmartPart\Controls\SmartPartPlaceholder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SmartPart\Controls\SmartPartPlaceholderEventArgs.cs" />
+    <Compile Include="SmartPart\ISmartPart.cs" />
+    <Compile Include="SmartPart\Localization\SmartPart.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmartPart.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SmartPart\Manager\AbstractSmartPartManager.cs" />
+    <Compile Include="SmartPart\Manager\ISmartPartManager.cs" />
+    <Compile Include="SmartPart\Manager\SimpleSmartPartManager.cs" />
+    <Compile Include="SmartPart\Utility\Guard.cs" />
+    <Compile Include="SmartPart\WorkspaceSmartPart.cs" />
+    <Compile Include="SmartPart\Workspace\IWorkspace.cs" />
+    <Compile Include="SmartPart\Workspace\TabWorkspace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SmartPart\Workspace\TabWorkspace.Designer.cs">
+      <DependentUpon>TabWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startup\IApplicationStartup.cs" />
+    <Compile Include="Style\DefaultFont.cs" />
+    <Compile Include="Style\EStyles.cs" />
+    <Compile Include="Validation\UCBrokenRules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\UCBrokenRules.Designer.cs">
+      <DependentUpon>UCBrokenRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\UCValidationMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Validation\UCValidationMessage.Designer.cs">
+      <DependentUpon>UCValidationMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsManager\DefaultWindowManager.cs" />
+    <Compile Include="WindowsManager\IWindowManager.cs" />
+    <Compile Include="WindowsManager\WindowManager.cs" />
+    <Compile Include="Binding\ObjectBindingManagerBase.cs" />
+    <Compile Include="Binding\ObjectBindingManagerReadOnly.cs" />
+    <Compile Include="Binding\ObjectBindingManagerEditable.cs" />
+    <Compile Include="Binding\IObjectBindingManager.cs" />
+    <Compile Include="Commands\CommandExecutor.cs" />
+    <Compile Include="Commands\CommandReload.cs" />
+    <Compile Include="Commands\CommandSave.cs" />
+    <Compile Include="Commands\CommandSwitch.cs" />
+    <Compile Include="Commands\CommandLookupObject.cs" />
+    <Compile Include="Commands\CommandRunPaintNet.cs" />
+    <Compile Include="Commands\CommandViewEnvironmentVariables.cs" />
+    <Compile Include="Commands\CommandQuickView.cs" />
+    <Compile Include="Commands\CommandFilter.cs" />
+    <Compile Include="Commands\CommandExport.cs" />
+    <Compile Include="Commands\CommandSaveLayout.cs" />
+    <Compile Include="Commands\CommandRestoreLayout.cs" />
+    <Compile Include="Commands\CommandAbout.cs" />
+    <Compile Include="Commands\CommandPrint.cs" />
+    <Compile Include="Commands\CommandSelectLanguage.cs" />
+    <Compile Include="Commands\CommandSetLanguage.cs" />
+    <Compile Include="Commands\IApplicationCommand.cs" />
+    <Compile Include="Controls\UCBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCBase.Designer.cs">
+      <DependentUpon>UCBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\FrmOptionenBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\FrmOptionenBase.Designer.cs">
+      <DependentUpon>FrmOptionenBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\FrmStartFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\FrmStartFormBase.Designer.cs">
+      <DependentUpon>FrmStartFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCBusinessControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCBusinessControlBase.Designer.cs">
+      <DependentUpon>UCBusinessControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dynamic\DynamicBandedGridHelper.cs" />
+    <Compile Include="Dynamic\DynamicGridHelper.cs" />
+    <Compile Include="Forms\Environment\FrmEnvironmentVariables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Environment\FrmEnvironmentVariables.Designer.cs">
+      <DependentUpon>FrmEnvironmentVariables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmYesNoMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmYesNoMessageBox.Designer.cs">
+      <DependentUpon>FrmYesNoMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmInfoMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmInfoMessageBox.Designer.cs">
+      <DependentUpon>FrmInfoMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmErrorMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmErrorMessageBox.Designer.cs">
+      <DependentUpon>FrmErrorMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Localization\FrmSelectLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Localization\FrmSelectLanguage.Designer.cs">
+      <DependentUpon>FrmSelectLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lookup\FrmLookupObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lookup\FrmLookupObject.Designer.cs">
+      <DependentUpon>FrmLookupObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lookup\LookupButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBox.cs" />
+    <Compile Include="Forms\QuickView\FrmQuickView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuickView\FrmQuickView.Designer.cs">
+      <DependentUpon>FrmQuickView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizardv2\ContainerInfo.cs" />
+    <Compile Include="Forms\Wizardv2\FrmWizardPageBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizardv2\FrmWizardPageBase.Designer.cs">
+      <DependentUpon>FrmWizardPageBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizardv2\IDataModel.cs" />
+    <Compile Include="Forms\Wizardv2\IDataModelBind.cs" />
+    <Compile Include="Forms\Wizardv2\IPlugin.cs" />
+    <Compile Include="Forms\Wizardv2\Plugin.cs" />
+    <Compile Include="Forms\Wizardv2\PluginBase.cs" />
+    <Compile Include="Forms\Wizardv2\PluginManager.cs" />
+    <Compile Include="Forms\Wizardv2\WizardController.cs" />
+    <Compile Include="Forms\Wizard\FrmWizardBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizard\FrmWizardBase.Designer.cs">
+      <DependentUpon>FrmWizardBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizard\FrmWizardPluginBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizard\FrmWizardPluginBase.Designer.cs">
+      <DependentUpon>FrmWizardPluginBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizard\IDataModel.cs" />
+    <Compile Include="Forms\Wizard\IDataModelBind.cs" />
+    <Compile Include="Helpers\GridPrint.cs" />
+    <Compile Include="Helpers\GridCheckboxHelper.cs" />
+    <Compile Include="Helpers\GridExport.cs" />
+    <Compile Include="Helpers\StatusBusy.cs" />
+    <Compile Include="Helpers\ApplicationHelper.cs" />
+    <Compile Include="Helpers\BaseFormsUtilities.cs" />
+    <Compile Include="Helpers\GridHelper.cs" />
+    <Compile Include="Helpers\WaitFormHelper.cs" />
+    <Compile Include="Instructions\BaseInstruction.cs" />
+    <Compile Include="Instructions\SearchInstruction.cs" />
+    <Compile Include="Instructions\DeleteInstruction.cs" />
+    <Compile Include="Instructions\CopyInstruction.cs" />
+    <Compile Include="Instructions\EditInstruction.cs" />
+    <Compile Include="Instructions\IInstruction.cs" />
+    <Compile Include="Instructions\InstructionFactory.cs" />
+    <Compile Include="Instructions\NewInstruction.cs" />
+    <Compile Include="BaseForms\ISaveAndRestoreGridLayout.cs" />
+    <Compile Include="Localization\CurrentCulture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\IPrepareReport.cs" />
+    <Compile Include="Style\SetAppearance.cs" />
+    <Compile Include="Forms\Wizard\ContainerInfo.cs" />
+    <Compile Include="Forms\Wizard\IPlugin.cs" />
+    <Compile Include="Forms\Wizard\Plugin.cs" />
+    <Compile Include="Forms\Wizard\PluginManager.cs" />
+    <Compile Include="Forms\Wizard\PluginBase.cs" />
+    <Compile Include="Forms\Wizard\WizardController.cs" />
+    <Compile Include="WindowsManager\WindowPrepareOptions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForms\FrmOptionenBase.fr-CH.resx">
+      <DependentUpon>FrmOptionenBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmOptionenBase.it-CH.resx">
+      <DependentUpon>FrmOptionenBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmReadOnlyBase.resx">
+      <DependentUpon>FrmReadOnlyBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmDialogBase.en.resx">
+      <DependentUpon>FrmDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmDialogBase.fr-CH.resx">
+      <DependentUpon>FrmDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmDialogBase.it-CH.resx">
+      <DependentUpon>FrmDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmDialogBase.resx">
+      <DependentUpon>FrmDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmEditableBase.resx">
+      <DependentUpon>FrmEditableBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\CommandExecutorRes.fr-CH.resx">
+      <DependentUpon>CommandExecutorRes.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\CommandExecutorRes.it-CH.resx">
+      <DependentUpon>CommandExecutorRes.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\CommandExecutorRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommandExecutorRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DXEditors\CalcEdits\PercentCalcEditRepositoryItem.resx">
+      <DependentUpon>PercentCalcEditRepositoryItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DXEditors\CalcEdits\MoneyCalcEditRepositoryItem.resx">
+      <DependentUpon>MoneyCalcEditRepositoryItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DXEditors\CalcEdits\QuantityCalcEditRepositoryItem.resx">
+      <DependentUpon>QuantityCalcEditRepositoryItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCDescriptions.resx">
+      <DependentUpon>UCDescriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCEditBusinessBase.resx">
+      <DependentUpon>UCEditBusinessBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCEditBusinessListBase.resx">
+      <DependentUpon>UCEditBusinessListBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCPreviewGridBase.resx">
+      <DependentUpon>UCPreviewGridBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Execution\PluginExecutorRes.fr-CH.resx" />
+    <EmbeddedResource Include="Execution\PluginExecutorRes.it-CH.resx" />
+    <EmbeddedResource Include="Execution\PluginExecutorRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PluginExecutorRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminConsole\FrmSelectForm.fr-CH.resx">
+      <DependentUpon>FrmSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminConsole\FrmSelectForm.it-CH.resx">
+      <DependentUpon>FrmSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmExceptionMessageBox.fr-CH.resx">
+      <DependentUpon>FrmExceptionMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmExceptionMessageBox.it-CH.resx">
+      <DependentUpon>FrmExceptionMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmExceptionMessageBox.resx">
+      <DependentUpon>FrmExceptionMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cryptography\FrmCryptString.resx">
+      <DependentUpon>FrmCryptString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Environment\FrmEnvironmentVariables.fr-CH.resx">
+      <DependentUpon>FrmEnvironmentVariables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Environment\FrmEnvironmentVariables.it-CH.resx">
+      <DependentUpon>FrmEnvironmentVariables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAbout.fr-CH.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAbout.it-CH.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAsyncWait.resx">
+      <DependentUpon>FrmAsyncWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDisappearInfoMessageBox.fr-CH.resx">
+      <DependentUpon>FrmDisappearInfoMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDisappearInfoMessageBox.it-CH.resx">
+      <DependentUpon>FrmDisappearInfoMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDisappearInfoMessageBox.resx">
+      <DependentUpon>FrmDisappearInfoMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmErrorMessageBox.fr-CH.resx">
+      <DependentUpon>FrmErrorMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmErrorMessageBox.it-CH.resx">
+      <DependentUpon>FrmErrorMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInfoMessageBox.fr-CH.resx">
+      <DependentUpon>FrmInfoMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInfoMessageBox.it-CH.resx">
+      <DependentUpon>FrmInfoMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInputDialog.fr-CH.resx">
+      <DependentUpon>FrmInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInputDialog.it-CH.resx">
+      <DependentUpon>FrmInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmProgress.fr-CH.resx">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmProgress.it-CH.resx">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmProgress.resx">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInputDialog.resx">
+      <DependentUpon>FrmInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWait.fr-CH.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWait.it-CH.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWarningMessageBox.fr-CH.resx">
+      <DependentUpon>FrmWarningMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWarningMessageBox.it-CH.resx">
+      <DependentUpon>FrmWarningMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWarningMessageBox.resx">
+      <DependentUpon>FrmWarningMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmWait.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCBase.resx">
+      <DependentUpon>UCBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmOptionenBase.resx">
+      <DependentUpon>FrmOptionenBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmStartFormBase.resx">
+      <DependentUpon>FrmStartFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCBusinessControlBase.resx">
+      <DependentUpon>UCBusinessControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmYesNoMessageBox.fr-CH.resx">
+      <DependentUpon>FrmYesNoMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmYesNoMessageBox.it-CH.resx">
+      <DependentUpon>FrmYesNoMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageMgmt\FrmImage.fr-CH.resx">
+      <DependentUpon>FrmImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageMgmt\FrmImage.it-CH.resx">
+      <DependentUpon>FrmImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Localization\FrmSelectLanguage.fr-CH.resx">
+      <DependentUpon>FrmSelectLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Localization\FrmSelectLanguage.it-CH.resx">
+      <DependentUpon>FrmSelectLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Logging\FrmShowLog.fr-CH.resx">
+      <DependentUpon>FrmShowLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Logging\FrmShowLog.it-CH.resx">
+      <DependentUpon>FrmShowLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lookup\FrmLookupObject.fr-CH.resx">
+      <DependentUpon>FrmLookupObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lookup\FrmLookupObject.it-CH.resx">
+      <DependentUpon>FrmLookupObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Navigator\Controls\UCNavigator.fr-CH.resx">
+      <DependentUpon>UCNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Navigator\Controls\UCNavigator.it-CH.resx">
+      <DependentUpon>UCNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Navigator\FrmNavigator.fr-CH.resx">
+      <DependentUpon>FrmNavigator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Navigator\FrmNavigator.it-CH.resx">
+      <DependentUpon>FrmNavigator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Validation\FrmBrokenRules.fr-CH.resx">
+      <DependentUpon>FrmBrokenRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Validation\FrmBrokenRules.it-CH.resx">
+      <DependentUpon>FrmBrokenRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Validation\FrmBrokenRules.resx">
+      <DependentUpon>FrmBrokenRules.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Environment\FrmEnvironmentVariables.resx">
+      <DependentUpon>FrmEnvironmentVariables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmYesNoMessageBox.resx">
+      <DependentUpon>FrmYesNoMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmInfoMessageBox.resx">
+      <DependentUpon>FrmInfoMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmErrorMessageBox.resx">
+      <DependentUpon>FrmErrorMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Localization\FrmSelectLanguage.en.resx">
+      <DependentUpon>FrmSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Localization\FrmSelectLanguage.resx">
+      <DependentUpon>FrmSelectLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lookup\FrmLookupObject.resx">
+      <DependentUpon>FrmLookupObject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lookup\LookupButtonEdit.resx">
+      <DependentUpon>LookupButtonEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuickView\FrmQuickView.resx">
+      <DependentUpon>FrmQuickView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizardv2\FrmWizardPageBase.fr-CH.resx">
+      <DependentUpon>FrmWizardPageBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizardv2\FrmWizardPageBase.it-CH.resx">
+      <DependentUpon>FrmWizardPageBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizardv2\FrmWizardPageBase.resx">
+      <DependentUpon>FrmWizardPageBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizard\FrmWizardBase.fr-CH.resx">
+      <DependentUpon>FrmWizardBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizard\FrmWizardBase.it-CH.resx">
+      <DependentUpon>FrmWizardBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizard\FrmWizardBase.resx">
+      <DependentUpon>FrmWizardBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizard\FrmWizardPluginBase.resx">
+      <DependentUpon>FrmWizardPluginBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmFilterBase.en.resx">
+      <DependentUpon>FrmFilterBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmFilterBase.fr-CH.resx">
+      <DependentUpon>FrmFilterBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmFilterBase.it-CH.resx">
+      <DependentUpon>FrmFilterBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\FrmFilterBase.resx">
+      <DependentUpon>FrmFilterBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\BaseFormMessages.fr-CH.resx">
+      <DependentUpon>BaseFormMessages.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\BaseFormMessages.it-CH.resx">
+      <DependentUpon>BaseFormMessages.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\BrokenRulesMessages.fr-CH.resx" />
+    <EmbeddedResource Include="Localization\BrokenRulesMessages.it-CH.resx" />
+    <EmbeddedResource Include="Localization\BrokenRulesMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BrokenRulesMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\CommandRes.fr-CH.resx">
+      <DependentUpon>CommandRes.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\CommandRes.it-CH.resx">
+      <DependentUpon>CommandRes.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\CommandRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommandRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ControlsRes.fr-CH.resx">
+      <DependentUpon>ControlsRes.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ControlsRes.it-CH.resx">
+      <DependentUpon>ControlsRes.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ControlsRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ControlsRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\General.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>General.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\GridCheckboxHelperMessages.en.resx">
+      <DependentUpon>GridCheckboxHelperMessages.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\GridCheckboxHelperMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GridCheckboxHelperMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\HelperRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HelperRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\HelpProviderMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HelpProviderMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ImageMessages.fr-CH.resx">
+      <DependentUpon>ImageMessages.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ImageMessages.it-CH.resx">
+      <DependentUpon>ImageMessages.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\SaveManagerMessages.fr-CH.resx">
+      <DependentUpon>SaveManagerMessages.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\SaveManagerMessages.it-CH.resx">
+      <DependentUpon>SaveManagerMessages.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\StatusBusyRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusBusyRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\WindowManagerRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WindowManagerRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartPart\Controls\SmartPartPlaceholder.resx">
+      <DependentUpon>SmartPartPlaceholder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartPart\Localization\SmartPart.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BaseForms\BaseFormsDiagram.cd" />
+    <None Include="Controls\BaseControlsDiagram.cd" />
+    <None Include="Properties\DataSources\Manor.Icons.IconInfo.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ManorIcon.ico" />
+    <Content Include="DevExpress.XtraGrid.Appearances.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DevExpress.XtraVerticalGrid.Appearances.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AddGroup.png" />
+    <Content Include="Resources\DeselectAll.png" />
+    <Content Include="Resources\InvertSelection.png" />
+    <Content Include="Resources\SelectAll.png" />
+    <Content Include="Resources\SelectGroup.png" />
+    <EmbeddedResource Include="Forms\Logging\FrmShowLog.resx">
+      <DependentUpon>FrmShowLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartPart\Controls\SmartPartPlaceholder.bmp">
+      <DependentUpon>SmartPartPlaceholder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartPart\Workspace\TabWorkspace.resx">
+      <DependentUpon>TabWorkspace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ClassDiagram\BaseForms.cd" />
+    <None Include="ClassDiagram\Commands.cd" />
+    <None Include="ClassDiagram\CommandsAndForms.cd" />
+    <None Include="ClassDiagram\Forms.cd" />
+    <None Include="ClassDiagram\Wizard.cd" />
+    <None Include="Forms\Wizard\ClassDiagram\Wizard.cd" />
+    <None Include="Manor.Windows.snk" />
+    <None Include="Properties\DataSources\Manor.Business.Common.Logging.ILogTableEntry.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Manor.Business.Common.Messages.IValidationMessage.datasource" />
+    <None Include="Properties\DataSources\Manor.Business.Context.AbstractContext.datasource" />
+    <None Include="Properties\DataSources\Manor.Business.Localization.Language.datasource" />
+    <None Include="Properties\DataSources\Manor.Business.Lookup.ILookupObject.datasource" />
+    <None Include="Properties\DataSources\Manor.Business.Navigator.INodeItem.datasource" />
+    <None Include="Properties\DataSources\Manor.Business.Validation.ExtendedBrokenRule.datasource" />
+    <None Include="Properties\DataSources\Manor.Dynamic.Property.IDynamicProperty.datasource" />
+    <None Include="Properties\DataSources\Manor.Plugin.Contracts.IPlugin.datasource" />
+    <None Include="Properties\DataSources\System.Windows.Forms.Form.datasource" />
+    <None Include="Resources\manor_header_1_logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Plugin\Manor.Plugin.Contracts\Sourcen\Manor.Plugin.Contracts.csproj">
+      <Project>{6d0e3256-004c-4cde-babd-7f9e334428d5}</Project>
+      <Name>Manor.Plugin.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Plugin\Manor.Plugin\Sourcen\Manor.Plugin.csproj">
+      <Project>{0a28be05-ce82-4c8e-b01c-aec6757ae79d}</Project>
+      <Name>Manor.Plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Manor.Caching\Sourcen\Manor.Caching.csproj">
+      <Project>{8227516b-7920-4e87-8218-39df1a1facac}</Project>
+      <Name>Manor.Caching</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Manor.External.Commands\Sourcen\Manor.External.Commands.csproj">
+      <Project>{50748B6E-BC22-4AF5-A202-8725BEFA5DE2}</Project>
+      <Name>Manor.External.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Manor.Icons\Sourcen\Manor.Icons.csproj">
+      <Project>{FA611AEB-D058-4EFC-AC58-DEBC477A9057}</Project>
+      <Name>Manor.Icons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Manor.Logging\Sourcen\Manor.Logging.csproj">
+      <Project>{A85C8A77-A01B-4A9C-9556-31E9FA5B87C5}</Project>
+      <Name>Manor.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Manor.MsExcel\Manor.MsExcel.csproj">
+      <Project>{c15122a4-e5f4-40a5-9da4-3daafeee94a6}</Project>
+      <Name>Manor.MsExcel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\DXEditors\GridLookups\GenericGridLookUpEdit.resx">
+      <DependentUpon>GenericGridLookUpEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DXEditors\Lookups\GenericLookupEdit.resx">
+      <DependentUpon>GenericLookupEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminConsole\FrmAssemblies.resx">
+      <DependentUpon>FrmAssemblies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminConsole\FrmSelectForm.resx">
+      <DependentUpon>FrmSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageMgmt\ClipboardImagePaster.resx">
+      <DependentUpon>ClipboardImagePaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageMgmt\ClipboardImagePasterWithCheck.resx">
+      <DependentUpon>ClipboardImagePasterWithCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageMgmt\ImageOpenFileDialog.resx">
+      <DependentUpon>ImageOpenFileDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageMgmt\FrmImage.resx">
+      <DependentUpon>FrmImage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageMgmt\ImageOpenFileDialogWithCheck.resx">
+      <DependentUpon>ImageOpenFileDialogWithCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Navigator\Controls\UCNavigator.resx">
+      <DependentUpon>UCNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Navigator\FrmNavigator.resx">
+      <DependentUpon>FrmNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ObjectSpy\FrmObjectSpy.resx">
+      <DependentUpon>FrmObjectSpy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\BaseFormMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BaseFormMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ImageMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\SaveManagerMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaveManagerMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManorIcon.bmp" />
+    <EmbeddedResource Include="Validation\UCBrokenRules.fr-CH.resx">
+      <DependentUpon>UCBrokenRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\UCBrokenRules.it-CH.resx">
+      <DependentUpon>UCBrokenRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\UCBrokenRules.resx">
+      <DependentUpon>UCBrokenRules.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\UCValidationMessage.fr-CH.resx">
+      <DependentUpon>UCValidationMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\UCValidationMessage.it-CH.resx">
+      <DependentUpon>UCValidationMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation\UCValidationMessage.resx">
+      <DependentUpon>UCValidationMessage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

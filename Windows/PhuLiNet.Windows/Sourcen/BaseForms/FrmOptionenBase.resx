@@ -1,0 +1,807 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="depBase.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="xtcOptions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xtcOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tlpLayout.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ceWaitForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 24</value>
+  </data>
+  <data name="ceWaitForm.Properties.Caption" xml:space="preserve">
+    <value>Wartefenster anzeigen</value>
+  </data>
+  <data name="ceWaitForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 19</value>
+  </data>
+  <data name="ceWaitForm.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;ceWaitForm.Name" xml:space="preserve">
+    <value>ceWaitForm</value>
+  </data>
+  <data name="&gt;&gt;ceWaitForm.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ceWaitForm.Parent" xml:space="preserve">
+    <value>gcMisc</value>
+  </data>
+  <data name="&gt;&gt;ceWaitForm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gcMisc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 175</value>
+  </data>
+  <data name="gcMisc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 131</value>
+  </data>
+  <data name="gcMisc.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="gcMisc.Text" xml:space="preserve">
+    <value>Sonstiges</value>
+  </data>
+  <data name="&gt;&gt;gcMisc.Name" xml:space="preserve">
+    <value>gcMisc</value>
+  </data>
+  <data name="&gt;&gt;gcMisc.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gcMisc.Parent" xml:space="preserve">
+    <value>pnlLayout</value>
+  </data>
+  <data name="&gt;&gt;gcMisc.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="meInfo.EditValue" xml:space="preserve">
+    <value>Änderungen an der Schriftart werden erst nach einem Neustart wirksam.</value>
+  </data>
+  <data name="meInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 121</value>
+  </data>
+  <data name="meInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 35</value>
+  </data>
+  <data name="meInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;meInfo.Name" xml:space="preserve">
+    <value>meInfo</value>
+  </data>
+  <data name="&gt;&gt;meInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;meInfo.Parent" xml:space="preserve">
+    <value>gcFont</value>
+  </data>
+  <data name="&gt;&gt;meInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblFont.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFont.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 26</value>
+  </data>
+  <data name="lblFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="lblFont.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="lblFont.Text" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="&gt;&gt;lblFont.Name" xml:space="preserve">
+    <value>lblFont</value>
+  </data>
+  <data name="&gt;&gt;lblFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFont.Parent" xml:space="preserve">
+    <value>gcFont</value>
+  </data>
+  <data name="&gt;&gt;lblFont.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="sbStandardFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 84</value>
+  </data>
+  <data name="sbStandardFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
+  </data>
+  <data name="sbStandardFont.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="sbStandardFont.Text" xml:space="preserve">
+    <value>Standardschrift</value>
+  </data>
+  <data name="sbStandardFont.ToolTip" xml:space="preserve">
+    <value>Zurück zur Standardschrift</value>
+  </data>
+  <data name="&gt;&gt;sbStandardFont.Name" xml:space="preserve">
+    <value>sbStandardFont</value>
+  </data>
+  <data name="&gt;&gt;sbStandardFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;sbStandardFont.Parent" xml:space="preserve">
+    <value>gcFont</value>
+  </data>
+  <data name="&gt;&gt;sbStandardFont.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 68</value>
+  </data>
+  <data name="lblFontSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="lblFontSize.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="lblFontSize.Text" xml:space="preserve">
+    <value>Grösse</value>
+  </data>
+  <data name="&gt;&gt;lblFontSize.Name" xml:space="preserve">
+    <value>lblFontSize</value>
+  </data>
+  <data name="&gt;&gt;lblFontSize.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblFontSize.Parent" xml:space="preserve">
+    <value>gcFont</value>
+  </data>
+  <data name="&gt;&gt;lblFontSize.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ceFontBold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 88</value>
+  </data>
+  <data name="ceFontBold.Properties.Caption" xml:space="preserve">
+    <value>Fett</value>
+  </data>
+  <data name="ceFontBold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 19</value>
+  </data>
+  <data name="ceFontBold.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;ceFontBold.Name" xml:space="preserve">
+    <value>ceFontBold</value>
+  </data>
+  <data name="&gt;&gt;ceFontBold.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ceFontBold.Parent" xml:space="preserve">
+    <value>gcFont</value>
+  </data>
+  <data name="&gt;&gt;ceFontBold.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="spiFontSize.EditValue" type="System.Decimal, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="spiFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 87</value>
+  </data>
+  <data name="spiFontSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 20</value>
+  </data>
+  <data name="spiFontSize.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;spiFontSize.Name" xml:space="preserve">
+    <value>spiFontSize</value>
+  </data>
+  <data name="&gt;&gt;spiFontSize.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spiFontSize.Parent" xml:space="preserve">
+    <value>gcFont</value>
+  </data>
+  <data name="&gt;&gt;spiFontSize.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="fontEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 42</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="fontEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+    <value>Combo</value>
+  </data>
+  <data name="fontEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 20</value>
+  </data>
+  <data name="fontEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;fontEdit.Name" xml:space="preserve">
+    <value>fontEdit</value>
+  </data>
+  <data name="&gt;&gt;fontEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.FontEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fontEdit.Parent" xml:space="preserve">
+    <value>gcFont</value>
+  </data>
+  <data name="&gt;&gt;fontEdit.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gcFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 8</value>
+  </data>
+  <data name="gcFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 161</value>
+  </data>
+  <data name="gcFont.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="gcFont.Text" xml:space="preserve">
+    <value>Schriftart</value>
+  </data>
+  <data name="&gt;&gt;gcFont.Name" xml:space="preserve">
+    <value>gcFont</value>
+  </data>
+  <data name="&gt;&gt;gcFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gcFont.Parent" xml:space="preserve">
+    <value>pnlLayout</value>
+  </data>
+  <data name="&gt;&gt;gcFont.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblStyles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 26</value>
+  </data>
+  <data name="lblStyles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblStyles.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblStyles.Text" xml:space="preserve">
+    <value>Styles</value>
+  </data>
+  <data name="&gt;&gt;lblStyles.Name" xml:space="preserve">
+    <value>lblStyles</value>
+  </data>
+  <data name="&gt;&gt;lblStyles.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblStyles.Parent" xml:space="preserve">
+    <value>gcLookAndFeel</value>
+  </data>
+  <data name="&gt;&gt;lblStyles.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rgStyles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 45</value>
+  </data>
+  <data name="rgStyles.Properties.Items" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="rgStyles.Properties.Items1" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="rgStyles.Properties.Items2" xml:space="preserve">
+    <value>Flat</value>
+  </data>
+  <data name="rgStyles.Properties.Items3" xml:space="preserve">
+    <value>Flat</value>
+  </data>
+  <data name="rgStyles.Properties.Items4" xml:space="preserve">
+    <value>Ultraflat</value>
+  </data>
+  <data name="rgStyles.Properties.Items5" xml:space="preserve">
+    <value>Ultraflat</value>
+  </data>
+  <data name="rgStyles.Properties.Items6" xml:space="preserve">
+    <value>Style3D</value>
+  </data>
+  <data name="rgStyles.Properties.Items7" xml:space="preserve">
+    <value>Style3D</value>
+  </data>
+  <data name="rgStyles.Properties.Items8" xml:space="preserve">
+    <value>Office2003</value>
+  </data>
+  <data name="rgStyles.Properties.Items9" xml:space="preserve">
+    <value>Office2003</value>
+  </data>
+  <data name="rgStyles.Properties.Items10" xml:space="preserve">
+    <value>Skin</value>
+  </data>
+  <data name="rgStyles.Properties.Items11" xml:space="preserve">
+    <value>Skin</value>
+  </data>
+  <data name="rgStyles.Properties.Items12" xml:space="preserve">
+    <value>XP</value>
+  </data>
+  <data name="rgStyles.Properties.Items13" xml:space="preserve">
+    <value>XP</value>
+  </data>
+  <data name="rgStyles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 145</value>
+  </data>
+  <data name="rgStyles.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;rgStyles.Name" xml:space="preserve">
+    <value>rgStyles</value>
+  </data>
+  <data name="&gt;&gt;rgStyles.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rgStyles.Parent" xml:space="preserve">
+    <value>gcLookAndFeel</value>
+  </data>
+  <data name="&gt;&gt;rgStyles.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbSkins.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 45</value>
+  </data>
+  <data name="lbSkins.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 253</value>
+  </data>
+  <data name="lbSkins.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;lbSkins.Name" xml:space="preserve">
+    <value>lbSkins</value>
+  </data>
+  <data name="&gt;&gt;lbSkins.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lbSkins.Parent" xml:space="preserve">
+    <value>gcLookAndFeel</value>
+  </data>
+  <data name="&gt;&gt;lbSkins.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblSkins.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSkins.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 25</value>
+  </data>
+  <data name="lblSkins.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lblSkins.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblSkins.Text" xml:space="preserve">
+    <value>Skins</value>
+  </data>
+  <data name="&gt;&gt;lblSkins.Name" xml:space="preserve">
+    <value>lblSkins</value>
+  </data>
+  <data name="&gt;&gt;lblSkins.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSkins.Parent" xml:space="preserve">
+    <value>gcLookAndFeel</value>
+  </data>
+  <data name="&gt;&gt;lblSkins.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblTableStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 304</value>
+  </data>
+  <data name="lblTableStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 13</value>
+  </data>
+  <data name="lblTableStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lblTableStyle.Text" xml:space="preserve">
+    <value>Style Schema für Tabellen</value>
+  </data>
+  <data name="&gt;&gt;lblTableStyle.Name" xml:space="preserve">
+    <value>lblTableStyle</value>
+  </data>
+  <data name="&gt;&gt;lblTableStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblTableStyle.Parent" xml:space="preserve">
+    <value>gcLookAndFeel</value>
+  </data>
+  <data name="&gt;&gt;lblTableStyle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cboSchemas.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cboSchemas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 323</value>
+  </data>
+  <data name="cboSchemas.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+    <value>Combo</value>
+  </data>
+  <data name="cboSchemas.Properties.NullValuePrompt" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="cboSchemas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 20</value>
+  </data>
+  <data name="cboSchemas.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;cboSchemas.Name" xml:space="preserve">
+    <value>cboSchemas</value>
+  </data>
+  <data name="&gt;&gt;cboSchemas.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cboSchemas.Parent" xml:space="preserve">
+    <value>gcLookAndFeel</value>
+  </data>
+  <data name="&gt;&gt;cboSchemas.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gcLookAndFeel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 8</value>
+  </data>
+  <data name="gcLookAndFeel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 357</value>
+  </data>
+  <data name="gcLookAndFeel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="gcLookAndFeel.Text" xml:space="preserve">
+    <value>Look And Feel</value>
+  </data>
+  <data name="&gt;&gt;gcLookAndFeel.Name" xml:space="preserve">
+    <value>gcLookAndFeel</value>
+  </data>
+  <data name="&gt;&gt;gcLookAndFeel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gcLookAndFeel.Parent" xml:space="preserve">
+    <value>pnlLayout</value>
+  </data>
+  <data name="&gt;&gt;gcLookAndFeel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlLayout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlLayout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="pnlLayout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>612, 373</value>
+  </data>
+  <data name="pnlLayout.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.Name" xml:space="preserve">
+    <value>pnlLayout</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.Parent" xml:space="preserve">
+    <value>tlpLayout</value>
+  </data>
+  <data name="&gt;&gt;pnlLayout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="sbAbbrechen.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="sbAbbrechen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>526, 385</value>
+  </data>
+  <data name="sbAbbrechen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 27</value>
+  </data>
+  <data name="sbAbbrechen.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="sbAbbrechen.Text" xml:space="preserve">
+    <value>A&amp;bbrechen</value>
+  </data>
+  <data name="&gt;&gt;sbAbbrechen.Name" xml:space="preserve">
+    <value>sbAbbrechen</value>
+  </data>
+  <data name="&gt;&gt;sbAbbrechen.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;sbAbbrechen.Parent" xml:space="preserve">
+    <value>tlpLayout</value>
+  </data>
+  <data name="&gt;&gt;sbAbbrechen.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="sbOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="sbOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 385</value>
+  </data>
+  <data name="sbOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 27</value>
+  </data>
+  <data name="sbOk.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="sbOk.Text" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="&gt;&gt;sbOk.Name" xml:space="preserve">
+    <value>sbOk</value>
+  </data>
+  <data name="&gt;&gt;sbOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;sbOk.Parent" xml:space="preserve">
+    <value>tlpLayout</value>
+  </data>
+  <data name="&gt;&gt;sbOk.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tlpLayout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpLayout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tlpLayout.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tlpLayout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 419</value>
+  </data>
+  <data name="tlpLayout.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;tlpLayout.Name" xml:space="preserve">
+    <value>tlpLayout</value>
+  </data>
+  <data name="&gt;&gt;tlpLayout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpLayout.Parent" xml:space="preserve">
+    <value>xtpOptions</value>
+  </data>
+  <data name="&gt;&gt;tlpLayout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpLayout.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pnlLayout" Row="0" RowSpan="1" Column="0" ColumnSpan="3" /&gt;&lt;Control Name="sbAbbrechen" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="sbOk" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,95,Absolute,95" /&gt;&lt;Rows Styles="Percent,100,Absolute,40" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="xtpOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 419</value>
+  </data>
+  <data name="xtpOptions.Text" xml:space="preserve">
+    <value>Look and feel</value>
+  </data>
+  <data name="&gt;&gt;xtpOptions.Name" xml:space="preserve">
+    <value>xtpOptions</value>
+  </data>
+  <data name="&gt;&gt;xtpOptions.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtpOptions.Parent" xml:space="preserve">
+    <value>xtcOptions</value>
+  </data>
+  <data name="&gt;&gt;xtpOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtcOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>624, 447</value>
+  </data>
+  <data name="xtcOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="xtpApplication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>618, 419</value>
+  </data>
+  <data name="xtpApplication.Text" xml:space="preserve">
+    <value>Applikationsparameter</value>
+  </data>
+  <data name="&gt;&gt;xtpApplication.Name" xml:space="preserve">
+    <value>xtpApplication</value>
+  </data>
+  <data name="&gt;&gt;xtpApplication.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtpApplication.Parent" xml:space="preserve">
+    <value>xtcOptions</value>
+  </data>
+  <data name="&gt;&gt;xtpApplication.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;xtcOptions.Name" xml:space="preserve">
+    <value>xtcOptions</value>
+  </data>
+  <data name="&gt;&gt;xtcOptions.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtcOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xtcOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>46</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>624, 447</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAQZQAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIiIAAAAAAAAAA
+        AAAAAIiIiIiIAAAAAAAAAAAACIiIiP/4iIAAAAAAAAAIiIiIj///+IiAAAAAAAiIiIiI//////iIAAAA
+        AIiIiIiP///////4iAAACIiIiI//////////+IgAAAiIiP////////////iIAACIj//////////////4
+        iAAAiI//////////////+IgAAIiP//////////////iIAACIj//////////////4iAAAiI//////////
+        ////+HgAAIiP/////////////4h4AACIj/////////////+IeAAAiI//////////////iHgAAIiP////
+        ////+IiIiIh4AACIj//////4iIiIiIiIeAAAiI/////4iIiIiIiIeHgAAIiP///4iIiId3d4eIh4AACI
+        j/+IiId3eId4eHiIeAAAiIiId3eIiIiIiIiIh3AAAIh4iIiIj///iIiIiHeAAACIj/////iIiIiHd3iI
+        AAAAiP//+IiIh3d3iIgAAAAAAIj/iIh3d4iIgAAAAAAAAAAIh3eIiIAAAAAAAAAAAAAAAIiAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////wf///AD//+AAf/4
+        AAH/gAAD/AAAA+AAAAPgAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AA
+        AAPAAAADwAAAA8AAAAfAAAAHwAAAD8AAAP/AAB//4Af///H//////////////w==
+</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>640, 480</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="&gt;&gt;depBase.Name" xml:space="preserve">
+    <value>depBase</value>
+  </data>
+  <data name="&gt;&gt;depBase.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmOptionenBase</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Windows.Core.BaseForms.FrmBase, Windows.Core, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b9383eb3392436fa</value>
+  </data>
+</root>

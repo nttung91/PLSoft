@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9517EE68-C144-41BE-BE3A-222EF12A036D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Techical.Dynamic</RootNamespace>
+    <AssemblyName>Techical.Dynamic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Manor.Dynamic.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Misc\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Attributes\CopyProperyAttribute.cs" />
+    <Compile Include="Helper\AttributeCopyHelper.cs" />
+    <Compile Include="Manager\ColumnManagerBase.cs" />
+    <Compile Include="Manager\ColumnManagerHandler.cs" />
+    <Compile Include="Manager\FakeColumnManager.cs" />
+    <Compile Include="Manager\IColumnManager.cs" />
+    <Compile Include="Manager\IColumnManagerBase.cs" />
+    <Compile Include="Manager\IColumnManagerHandler.cs" />
+    <Compile Include="Manager\ISynchronizableColumnManager.cs" />
+    <Compile Include="Manager\ColumnManagerHandlerBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Property\DynamicPropertyList.cs" />
+    <Compile Include="Property\Filtering\EAutoFilterCondition.cs" />
+    <Compile Include="Property\Filtering\FilterCriteria.cs" />
+    <Compile Include="Property\Filtering\IFilterCriteria.cs" />
+    <Compile Include="Property\Grouping\GroupCriteria.cs" />
+    <Compile Include="Property\Grouping\IGroupCriteria.cs" />
+    <Compile Include="Property\IDynamicProperty.cs" />
+    <Compile Include="Property\IDynamicPropertyList.cs" />
+    <Compile Include="Property\IHasDynamicProperties.cs" />
+    <Compile Include="Property\DynamicPropertyHelper.cs" />
+    <Compile Include="Property\SimpleProperty.cs" />
+    <Compile Include="Property\Sorting\PropertySortCriteriaComparerDesc.cs" />
+    <Compile Include="Property\Sorting\PropertyDescriptionComparerDesc.cs" />
+    <Compile Include="Property\Sorting\PropertyDisplayNameComparerDesc.cs" />
+    <Compile Include="Property\Sorting\PropertyKeyComparerDesc.cs" />
+    <Compile Include="Property\Sorting\PropertySortCriteriaComparer.cs" />
+    <Compile Include="Property\Sorting\PropertyValueAsStringComparerDesc.cs" />
+    <Compile Include="Property\Sorting\ESortDirection.cs" />
+    <Compile Include="Property\Sorting\PropertyDescriptionComparer.cs" />
+    <Compile Include="Property\Sorting\PropertyDisplayNameComparer.cs" />
+    <Compile Include="Property\Sorting\PropertyValueAsStringComparer.cs" />
+    <Compile Include="Property\Sorting\ESortBy.cs" />
+    <Compile Include="Property\Sorting\PropertyKeyComparer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Manor.Dynamic.snk" />
+    <None Include="Property\DynamicTypes.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Manor.Reflection\Sourcen\Manor.Reflection\Techical.Reflection.csproj">
+      <Project>{7507AEDB-AEFE-49DC-A191-AB136882AE56}</Project>
+      <Name>Techical.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical.Utilities\Sourcen\Techical.Utilities.csproj">
+      <Project>{DDE7DD51-7E9F-4264-AA59-BADABED19DE3}</Project>
+      <Name>Techical.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

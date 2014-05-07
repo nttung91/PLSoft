@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBF6D4C2-B84D-406F-B9C2-E0D58ED0BACA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Manor.ConnectionStrings</RootNamespace>
+    <AssemblyName>Manor.ConnectionStrings</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Misc\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Configuration\AppConfigDataAdapter.cs" />
+    <Compile Include="Configuration\ConnectionStringConfigurationElement.cs" />
+    <Compile Include="Configuration\ConnectionStringDecrypter.cs" />
+    <Compile Include="Configuration\ConnectionStringLoader.cs" />
+    <Compile Include="Configuration\ConnectionStringsElementCollection.cs" />
+    <Compile Include="Configuration\DatabaseConfigurationElement.cs" />
+    <Compile Include="Configuration\DatabaseConfigurationElementCollection.cs" />
+    <Compile Include="Configuration\DatabaseTypeConfigurationElement.cs" />
+    <Compile Include="Configuration\DatabaseTypesElementCollection.cs" />
+    <Compile Include="Configuration\DbConfigurationSection.cs" />
+    <Compile Include="Configuration\IDataAdapter.cs" />
+    <Compile Include="Configurators\MainDbConfigurator.cs" />
+    <Compile Include="Configurators\ManualConfigurator.cs" />
+    <Compile Include="Configurators\IConnectionStringConfigurator.cs" />
+    <Compile Include="ConnectionStringEntry.cs" />
+    <Compile Include="ConnectionStringList.cs" />
+    <Compile Include="ConnectionStringRegistry.cs" />
+    <Compile Include="Configurators\DatabaseModeConfigurator.cs" />
+    <Compile Include="ConnectionStringRegistryException.cs" />
+    <Compile Include="DbTypes\AllowedSourceModeAttribute.cs" />
+    <Compile Include="DbTypes\DatabaseModeValidator.cs" />
+    <Compile Include="DbTypes\AppConfigDataAdapter.cs" />
+    <Compile Include="DbTypes\DatabaseTypesLoader.cs" />
+    <Compile Include="DbTypes\Database.cs" />
+    <Compile Include="DbTypes\DatabaseType.cs" />
+    <Compile Include="DbTypes\DatabaseTypeList.cs" />
+    <Compile Include="DbTypes\EDbType.cs" />
+    <Compile Include="DbTypes\IDataAdapter.cs" />
+    <Compile Include="IConnectionString.cs" />
+    <Compile Include="IConnectionStringList.cs" />
+    <Compile Include="OracleConnectionString.cs" />
+    <Compile Include="OracleConnectionStringParser.cs" />
+    <Compile Include="OracleUserIdChanger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Configuration\ConnectionStringSetter.cs" />
+    <Compile Include="TextualConnectionString.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Manor.ConnectionStrings.dll.dbconfig">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Technical\Manor.Utilities\Sourcen\Techical.Utilities.csproj">
+      <Project>{dde7dd51-7e9f-4264-aa59-badabed19de3}</Project>
+      <Name>Manor.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

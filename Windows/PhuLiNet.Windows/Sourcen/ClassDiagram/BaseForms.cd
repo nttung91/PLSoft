@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="BaseForms">
+    <Position X="0.5" Y="0.5" Height="0.51" Width="1.7" />
+  </Comment>
+  <Comment CommentText="BaseForm Interfaces">
+    <Position X="6.25" Y="0.5" Height="0.51" Width="1.7" />
+  </Comment>
+  <Class Name="Windows.Core.BaseForms.FrmBase" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Windows.Core.BaseForms.FrmBase.RequiredFieldValidatorAction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BaseForms\FrmBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIgAIBAACAACAgAIQCAAAICAAAQBAAAAABABAAAgAA=</HashCode>
+      <FileName>BaseForms\FrmBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Windows.Core.BaseForms.FrmCsla" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIQAAAAACAAAAAAIACAAAACAAAABAAAAACAAAAACAA=</HashCode>
+      <FileName>BaseForms\FrmCsla.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.BaseForms.FrmCslaEditable" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="Windows.Core.BaseForms.FrmCsla" FixedToPoint="true">
+      <Path>
+        <Point X="1.25" Y="3.38" />
+        <Point X="1.25" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAAAAAAABiAgAACAAAAAAAACIABAAAAAAA=</HashCode>
+      <FileName>BaseForms\FrmCslaEditable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Windows.Core.BaseForms.FrmOptionenBase" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMBIAAACCAARIIAgACBAAFCEpCgAEAQAACCAAABAKA=</HashCode>
+      <FileName>BaseForms\FrmOptionenBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.BaseForms.FrmStartFormBase" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAADAAECAAQIAAACCAEAACAAAAAAIAgACAAAAAGAA=</HashCode>
+      <FileName>BaseForms\FrmStartFormBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.BaseForms.FrmWait" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAEAAAAAAAAAABBAAAA=</HashCode>
+      <FileName>BaseForms\FrmWait.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Windows.Core.BaseForms.IIdentifiableForm">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>BaseForms\IIdentifiableForm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Windows.Core.BaseForms.IEditableForm">
+    <Position X="9.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>BaseForms\IEditableForm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Windows.Core.BaseForms.INotifiableForm">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>BaseForms\INotifiableForm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Windows.Core.BaseForms.IReloadableForm">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>BaseForms\IReloadableForm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Windows.Core.BaseForms.IFormAuthorization">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseForms\IFormAuthorization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Windows.Core.BaseForms.ISavableForm">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseForms\ISavableForm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Windows.Core.BaseForms.ISaveAndRestoreGridLayout">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseForms\ISaveAndRestoreGridLayout.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Windows.Core.BaseForms.ISwitchableForm">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseForms\ISwitchableForm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

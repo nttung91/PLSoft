@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Commands">
+    <Position X="0.5" Y="0.5" Height="0.263" Width="1.7" />
+  </Comment>
+  <Class Name="Windows.Core.Commands.CommandBase" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CommandBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.231" />
+  </Class>
+  <Class Name="Windows.Core.Commands.CommandExecutor" Collapsed="true">
+    <Position X="4" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CommandExecutor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Commands.CommandReload" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CommandReload.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Commands.CommandSave" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CommandSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Commands.CommandSwitch" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CommandSwitch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

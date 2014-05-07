@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Containerform&#xD;&#xA;&#xD;&#xA;">
+    <Position X="4.427" Y="7.865" Height="0.375" Width="1.325" />
+  </Comment>
+  <Comment CommentText="In der Plugin Liste werden die  Plugins eingetragen und Position zeigt auf das aktuell angezeigte.&#xD;&#xA;&#xD;&#xA;Der PluginManager hat Zugriff auf das DataModel">
+    <Position X="6.729" Y="0.521" Height="0.969" Width="2.315" />
+  </Comment>
+  <Comment CommentText="Jeder Wizardstep besteht aus einem Form mit den Controls und einem PluginBaseform das Pluginbase implementiert">
+    <Position X="13" Y="1.25" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Der WizardController hat einen Pluginmanager der die Plugins koordiniert.">
+    <Position X="4.719" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="tell the wizard framework about the button instances and page container instance">
+    <Position X="0.542" Y="6.219" Height="0.573" Width="1.7" />
+  </Comment>
+  <Class Name="Windows.Core.Forms.Wizard.Plugin">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEAAIAEAAAAAAJAAAAAAAAEAAAABAAQIAACAAAAAA=</HashCode>
+      <FileName>Forms\Wizard\Plugin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Forms.Wizard.ContainerInfo">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAQAAAAAAAACAABAAAgAASAAAAAAAgABAQoAAA=</HashCode>
+      <FileName>Forms\Wizard\ContainerInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Forms.Wizard.PluginBase">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAgAIAAAAIAAAIAAgAAAAAEAAARAAABAAwCEAQBAA=</HashCode>
+      <FileName>Forms\Wizard\PluginBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_dataModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Windows.Core.Forms.Wizard.PluginManager">
+    <Position X="5.75" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EwAAhAIQAEAAAwAIAAgACAAEEACAQAAAAAAAnAEAAAA=</HashCode>
+      <FileName>Forms\Wizard\PluginManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_dataModel" />
+      <Property Name="DataModel" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_pluginList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Windows.Core.Forms.Wizard.WizardController">
+    <Position X="2.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QEQABCGIASAAAQAAAAACAQQEAACAQAgQBRQgAAABBkA=</HashCode>
+      <FileName>Forms\Wizard\WizardController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_info" />
+      <Field Name="_manager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Windows.Core.Forms.Wizard.FrmWizardBase">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAARAEAAACAAAACAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\Wizard\FrmWizardBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Windows.Core.Forms.Wizard.FrmWizardPluginBase">
+    <Position X="12.75" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABgAAAACBAAAAIgAiAAQACEAAAAAAAAAAxAAAAAAA=</HashCode>
+      <FileName>Forms\Wizard\FrmWizardPluginBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_dataModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Windows.Core.Forms.Wizard.IDataModel">
+    <Position X="10.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAQAAACAAAAAgAAAAAAAAAAAAAAAADAAAAiAA=</HashCode>
+      <FileName>Forms\Wizard\IDataModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Windows.Core.Forms.Wizard.IDataModelBind">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAA=</HashCode>
+      <FileName>Forms\Wizard\IDataModelBind.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Windows.Core.Forms.Wizard.IPlugin" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAIAAAAIAAAIAAgAAAAAEAAAQAAAAAAACEAAAAA=</HashCode>
+      <FileName>Forms\Wizard\IPlugin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<metadata name="bsExtendedBrokenRule.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+		<value>17, 17</value>
+	</metadata>
+	<assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+	<data name="gcBrokenRules.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+		<value>Fill</value>
+	</data>
+	<metadata name="prBrokenRules.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+		<value>333, 16</value>
+	</metadata>
+	<assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+	<data name="riicSeverity.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+		<value>Combo</value>
+	</data>
+	<metadata name="icStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+		<value>243, 16</value>
+	</metadata>
+	<data name="icStatus.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxMy4xLCBWZXJzaW9uPTEzLjEu
+        Ny4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFFT
+        eXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRv
+        a2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAChEZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0
+        cmVhbWVyAgAAAAlJbWFnZVNpemUERGF0YQQHE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAAAgIAAAAF/P//
+        /xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAwAAABAAAAAQAAAACQUAAAAP
+        BQAAAMQIAAAC4AIAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAAFzUkdCAK7OHOkA
+        AAAEZ0FNQQAAsY8L/GEFAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwA
+        AAJeSURBVDhPrVJbSJNhGP7QXGp2kC4ataLoZloq4bI207k8bDKrNTsn05Y2G4wsbzQMB1GWZVe5UOoi
+        R9CBGAUToYxBJwiCSRC18qLUm2gLa8S23/1P37utjZFd1Qs/33/xPc/3Pgf238d7XKd4bdHaX7XVel6Y
+        a/xPW7b7PSaNZ7ypyv7osFqRuDb/cLBlwlrvm3EO4LujG8L5FginDQh0NuBdxw6MGjf7XI1KS+J6+hD4
+        rU0fnL03CNzqA4a7gEutQI8RsKmBI0WYOlQMl25D0KlXpJPQ2hPtWt/s3avAwyHg9gDw5A5EUYx9uHkW
+        MBcj2ijDxwYZblTJfdeqS1JySPPMCAfRywR2XoD45nmSQHzpBpo3Ys64CpHqHIxpZOhXFdgTcMbIMNIc
+        W/t6DzDE/589SBGMjUBskkPYtQIhzUJ4y/NwZtN6TwLOGLlNhqG/DbjSDlw+BrgGkwQY7kZ0/zoI9fkI
+        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
+</value>
+	</data>
+	<assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+	<data name="ribeJumpTo.AutoHeight" type="System.Boolean, mscorlib">
+		<value>False</value>
+	</data>
+	<data name="ribeJumpTo.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+		<value>Close</value>
+	</data>
+	<data name="ribeJumpTo.Buttons1" xml:space="preserve">
+    <value></value>
+  </data>
+	<data name="ribeJumpTo.Buttons2" type="System.Int32, mscorlib">
+		<value>-1</value>
+	</data>
+	<data name="ribeJumpTo.Buttons3" type="System.Boolean, mscorlib">
+		<value>True</value>
+	</data>
+	<data name="ribeJumpTo.Buttons4" type="System.Boolean, mscorlib">
+		<value>True</value>
+	</data>
+	<data name="ribeJumpTo.Buttons5" type="System.Boolean, mscorlib">
+		<value>False</value>
+	</data>
+	<assembly alias="DevExpress.XtraEditors.v13.1" name="DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+	<data name="ribeJumpTo.Buttons6" type="DevExpress.XtraEditors.ImageLocation, DevExpress.XtraEditors.v13.1">
+		<value>MiddleCenter</value>
+	</data>
+	<data name="ribeJumpTo.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+		<value />
+	</data>
+	<data name="ribeJumpTo.Buttons8" xml:space="preserve">
+    <value></value>
+  </data>
+	<data name="ribeJumpTo.Buttons9" type="System.Resources.ResXNullRef, System.Windows.Forms">
+		<value />
+	</data>
+	<data name="ribeJumpTo.Buttons10" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxMy4xLCBWZXJzaW9uPTEzLjEu
+        Ny4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjEzLjEsIFZlcnNpb249MTMuMS43LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtCgAAAA1BbGxvd0h0bWxUZXh0BEljb24FSW1hZ2UKSW1hZ2VB
+        bGlnbgpJbWFnZUluZGV4E0ltYWdlVG9UZXh0RGlzdGFuY2UKTGVmdEluZGVudAhNYXhXaWR0aBJPd25l
+        ckFsbG93SHRtbFRleHQEVGV4dAQEBAQAAAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAUU3lzdGVtLkRyYXdpbmcuSW1hZ2UJAAAAJkRldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AgAAAAgICAgBAgAAAAH2/////P///wIAAAAK
+        CgX1////JkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgC
+        AAAAAAAAAP////8OAAAAAAAAADwBAAAABgwAAAAQRWluZ2FiZSBhbnplaWdlbgUIAAAAHERldkV4cHJl
+        c3MuVXRpbHMuVG9vbFRpcEl0ZW0KAAAADUFsbG93SHRtbFRleHQESWNvbgVJbWFnZQpJbWFnZUFsaWdu
+        CkltYWdlSW5kZXgTSW1hZ2VUb1RleHREaXN0YW5jZQpMZWZ0SW5kZW50CE1heFdpZHRoEk93bmVyQWxs
+        b3dIdG1sVGV4dARUZXh0BAQEBAAAAAAAAR9EZXZFeHByZXNzLlV0aWxzLkRlZmF1bHRCb29sZWFuAwAA
+        ABNTeXN0ZW0uRHJhd2luZy5JY29uCQAAABRTeXN0ZW0uRHJhd2luZy5JbWFnZQkAAAAmRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQCAAAACAgICAECAAAAAfP////8////AgAAAAoKAfL/
+        ///1////AAAAAP////8OAAAABgAAADwBAAAABg8AAAArS2xpY2tlbiBTaWUgaGllciwgdW0gZGVuIEZl
+        aGxlciBhbnp1emVpZ2VuLgs=
+</value>
+	</data>
+	<data name="ribeJumpTo.Buttons11" type="System.Boolean, mscorlib">
+		<value>True</value>
+	</data>
+	<assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+	<data name="gcBrokenRules.Location" type="System.Drawing.Point, System.Drawing">
+		<value>0, 0</value>
+	</data>
+	<data name="colSeverity.Caption" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+	<data name="colSeverity.Visible" type="System.Boolean, mscorlib">
+		<value>True</value>
+	</data>
+	<data name="colSeverity.VisibleIndex" type="System.Int32, mscorlib">
+		<value>0</value>
+	</data>
+	<data name="colSeverity.Width" type="System.Int32, mscorlib">
+		<value>138</value>
+	</data>
+	<data name="colDescription.Caption" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+	<data name="colDescription.Visible" type="System.Boolean, mscorlib">
+		<value>True</value>
+	</data>
+	<data name="colDescription.VisibleIndex" type="System.Int32, mscorlib">
+		<value>1</value>
+	</data>
+	<data name="colDescription.Width" type="System.Int32, mscorlib">
+		<value>365</value>
+	</data>
+	<data name="colLink.Caption" xml:space="preserve">
+    <value>Anzeigen</value>
+  </data>
+	<data name="colLink.Width" type="System.Int32, mscorlib">
+		<value>83</value>
+	</data>
+	<data name="gcBrokenRules.Size" type="System.Drawing.Size, System.Drawing">
+		<value>607, 291</value>
+	</data>
+	<data name="gcBrokenRules.TabIndex" type="System.Int32, mscorlib">
+		<value>0</value>
+	</data>
+	<data name="&gt;&gt;gcBrokenRules.Name" xml:space="preserve">
+    <value>gcBrokenRules</value>
+  </data>
+	<data name="&gt;&gt;gcBrokenRules.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;gcBrokenRules.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+	<data name="&gt;&gt;gcBrokenRules.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+	<metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+		<value>True</value>
+	</metadata>
+	<data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+		<value>6, 13</value>
+	</data>
+	<data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+		<value>607, 291</value>
+	</data>
+	<data name="&gt;&gt;bsExtendedBrokenRule.Name" xml:space="preserve">
+    <value>bsExtendedBrokenRule</value>
+  </data>
+	<data name="&gt;&gt;bsExtendedBrokenRule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+	<data name="&gt;&gt;prBrokenRules.Name" xml:space="preserve">
+    <value>prBrokenRules</value>
+  </data>
+	<data name="&gt;&gt;prBrokenRules.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.PersistentRepository, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;riicSeverity.Name" xml:space="preserve">
+    <value>riicSeverity</value>
+  </data>
+	<data name="&gt;&gt;riicSeverity.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;icStatus.Name" xml:space="preserve">
+    <value>icStatus</value>
+  </data>
+	<data name="&gt;&gt;icStatus.Type" xml:space="preserve">
+    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;ribeJumpTo.Name" xml:space="preserve">
+    <value>ribeJumpTo</value>
+  </data>
+	<data name="&gt;&gt;ribeJumpTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;rimeDescr.Name" xml:space="preserve">
+    <value>rimeDescr</value>
+  </data>
+	<data name="&gt;&gt;rimeDescr.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;gvBrokenRules.Name" xml:space="preserve">
+    <value>gvBrokenRules</value>
+  </data>
+	<data name="&gt;&gt;gvBrokenRules.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;colSeverity.Name" xml:space="preserve">
+    <value>colSeverity</value>
+  </data>
+	<data name="&gt;&gt;colSeverity.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;colDescription.Name" xml:space="preserve">
+    <value>colDescription</value>
+  </data>
+	<data name="&gt;&gt;colDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;colLink.Name" xml:space="preserve">
+    <value>colLink</value>
+  </data>
+	<data name="&gt;&gt;colLink.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+	<data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UCBrokenRules</value>
+  </data>
+	<data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Windows.Core.Controls.UCBusinessControlBase, Windows.Core, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b9383eb3392436fa</value>
+  </data>
+</root>

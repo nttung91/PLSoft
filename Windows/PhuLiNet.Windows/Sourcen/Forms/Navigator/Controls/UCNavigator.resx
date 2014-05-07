@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;icNodeIcons.Name" xml:space="preserve">
+    <value>icNodeIcons</value>
+  </data>
+  <data name="&gt;&gt;prNavigator.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.PersistentRepository, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v13.1" name="DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="ribeJumpTo.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v13.1">
+    <value>Default</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ribeJumpTo.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="riteDescription.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v13.1">
+    <value>None</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="barDockControlRight.Appearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
+    <value>Horizontal</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="barDockControlRight.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v13.1">
+    <value>None</value>
+  </data>
+  <data name="ribeJumpTo.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+    <value>Close</value>
+  </data>
+  <data name="colIsValid.Caption" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="ribeJumpTo.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="barDockControlLeft.Appearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="colDescription.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="barDockControlBottom.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bmNavigator.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tlObjectTree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>493, 471</value>
+  </data>
+  <data name="&gt;&gt;tcNavigator.Type" xml:space="preserve">
+    <value>DevExpress.Utils.ToolTipController, DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="tlObjectTree.Appearance.Preview.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Red</value>
+  </data>
+  <data name="colDescription.Width" type="System.Int32, mscorlib">
+    <value>461</value>
+  </data>
+  <data name="&gt;&gt;tcNavigator.Name" xml:space="preserve">
+    <value>tcNavigator</value>
+  </data>
+  <data name="$this.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="barDockControlRight.Appearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ripeLinkIcon.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="barDockControlLeft.Appearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="toolTipTitleItem1.Text" xml:space="preserve">
+    <value>Eingabe anzeigen</value>
+  </data>
+  <data name="icStatus.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxMS4xLCBWZXJzaW9uPTExLjEu
+        Ny4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFFT
+        eXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRv
+        a2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAChEZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0
+        cmVhbWVyAgAAAAlJbWFnZVNpemUERGF0YQQHE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAAAgIAAAAF/P//
+        /xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAwAAABAAAAAQAAAACQUAAAAP
+        BQAAALgIAAAC2QIAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAAFzUkdCAK7OHOkA
+        AAAEZ0FNQQAAsY8L/GEFAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwA
+        AAJXSURBVDhPrVNdSFNhGD5oLjX7kS4ataLoZloq4bI207n82WRWa/afTFvabDCyvHFhOIiyLLvKhVIX
+        KYEVMQomQhmD/iAIJkHUKS9KvYm2sEZsO+48fe9G5yBZV35w+M7N+7zP38dxC32CJ02aNw6j53VLdeCl
+        vSr0rGlnKGAzBMYaKjyPj+o1/93Hhh3jzlp+eqgXP7xuCBebIJy1INxeh/dtuzBi3cr76rWOeUFo+J3L
+        HJm53wfc6QYGOoArzUCnFXDpgWMFmDxSCJ9pU2TIrJkLQrTHW438zL3rwKN+YLgXeHoXoigmP9w+D9gL
+        kahX4VOdCrcq1PyNyiJZDmmeHmRDtJmGhy5BfPtCAhBf+YHGzZi1rkG8MgujBhV6dHkeSQoZRpqTtG92
+        Av3s//lDGWB0EGKDGsKeVYgaFiNYmoNzWzYGJABymwxDTwtwrRW4egLw9ckSBtxIHNwAoTYX0fI0fNGm
+        oy1vXUgCoKiEjr0pw7r2p+4LNgkg4SqDYFEiVp2Nn6UcJkrS0LxeKQNQzuEz5pTbpwzsLgecWsbGCbHb
+        ntQumJYiWsbhq5bDWLECh5QrZQlUkg8sZzKK4kJjAcTLxyUGgtuCmD4dYR2HqRIO3vws7M5dJptIDfNb
+        innKOWFdi4RlNWa7DkgAcc9hfGfUp7ZxGCnKwL7lmXzVkuy5raSGPahRRyZYzhRVzKBAvN2IX6dr8G07
+        h0m22c+GbSsyIrpFivnbSA2jklDOwR05+Mzc/sgMe8I0e/Mzk5v/OfwnEmoYlYRypqjIbTKMNP9FeyFe
+        8m9UwKOL2C2olgAAAABJRU5ErkJggswCAACJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EA
+        AAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpg
+        AAA6mAAAF3CculE8AAAACXBIWXMAAAr2AAAK9gHCr3ADAAACNUlEQVQ4T5WS30uTURjHHzc3M8psepFU
+        FNFtNS+MVrkZZM0ay9EMtYuQoAtDqAYpQhBFdONF9A/UbUUF3XilRZldrEY53lUUTlFxm1OHuh9uc9++
+        7xGCqJke+HLe85zn+Tzfc94jUmQAht1AmbPY/ppxQEwreQFntLa5Hm0YkpiVvuRiNQEHEI8aICU9fRuC
+        xCb07uUUT0EXHR2nIHLPtC5IKi53kTZi9IcZr16WKFBssowubt5fF2BharW7yCYY5Sjaz7mUi/YLLsb+
+        MxI/pTc3U8oCM5OrUCotaDrm5pqOAhWMdfeuiYiOsHtqi+rYWL8H26QTl8+f5NqiYu4znlxRwHxIfLER
+        A7C0WSXf6d6PfdU3cO2KA8iZGTNBG9Bd3Pb9ExLxSzYzweIZE8A38ORxDe3XY7C/CtkFgguVKn72dHPq
+        L8BiULriASMwWwGEeYyYYDFkxvOHO4Es10u6tqq7CfZX0sWtzj8gkXeCfJjF/F34zuS4YDooGOrn9yyV
+        pJapAu+Cs9vZnPwNWPDL1fgwLU7x8r4yaZSKCLvw30s93j7dBSQYy+gQ5q2YEHhhgRh6uhQkMijjaT83
+        w3w0evcxKirYW7MdjkPPMPe5TgHV3iQ1zaNOC2yHL84rwMyAfJp7LUgPCTLDgmUKXyi6KXzkzKPkP6zu
+        Zd5zHaA0Qa21A5Yd12sV5MRx74M6a9uY/UjLN0qz21q0RrtHcza4NYfNq6mYkldravCErAcvjZdbfG/0
+        2l9LP3rKDKppYAAAAABJRU5ErkJgggcDAACJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EA
+        AAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpg
+        AAA6mAAAF3CculE8AAAACXBIWXMAAA6mAAAOpgGH3KlvAAACcElEQVQ4T42T7UtTURzH/S/6D4IgCCKI
+        KAh61YvAqHeGQWGKLwoCKxIm9UJfFIJJkWQP5gPaMlN0utlwOafO1tRFzvmA6Vx+9uzu7p7udue686Yy
+        rejAgXP4nu+H7/md8ysq2jfWAxIj3wT6bSJ9UyI940FMdvCFYuw/W7DfyuUYcwq0m4NYlhMsIrHql1kh
+        wWe7m9b+WboGZ0ik0gdB2a2cT28Po50MIiug3O8ZictsxjPbeyGWonPQjqZxAEFMFkJsCxEa+927xryB
+        UIJTNyc5Uf6JQFjc1V51j1HbpCe5kySeknkxsKxE3SwApDNZalvnqG1xkJLUFOpMUa5pxWxbUlN8cfqp
+        b/taYM4f3PAnmF0K4AlEd7W0JCnrJAaTjTuPe1RAr2mRp+9sBwAfR39wrNRAcZVReQH1CnJGRk6JuJwL
+        lFW/VQHD1jWev58+ALC5vJwsMXP2+hDrgfC2ns3KJOMCntUVKmraVIDFsUF9u00Rtwogs8t+zlwxcr5C
+        h3dT2NYysowoBHG55rl2v0UFLLlD1DWPki/aXqFyONdCnL5k4EKZDlFKbGtRUSQR9aE3WrihaVcBeWOT
+        1orBslAAmPju59BxLYfPdbAeUgsZCvhICB4qa97wsnt87y8sKykePDMgxJO7kI4hF0eKOzh6sZUPxnly
+        snKNpJfOnmGu3mshHIk7Cr6y1bHGo2Y9Hq9XgaTJSiIxKUwsFkQMeZGiHvp0I1y+1cT0nPvPfTHjXKe6
+        oZeahm6m7A6S4k8iwVVM5gnu1rVzu07LtPMv5p04fuXNu3Q2Kh92UlL1mlIlruZJHyNW18Ee+Gd7/qf4
+        C7Hbj9b9+o+QAAAAAElFTkSuQmCCCw==
+</value>
+  </data>
+  <data name="ribeJumpTo.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barDockControlBottom.Appearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>493, 0</value>
+  </data>
+  <data name="barDockControlRight.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tlObjectTree.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="DevExpress.Data.v13.1" name="DevExpress.Data.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="barDockControlLeft.AllowHtmlText" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v13.1">
+    <value>Default</value>
+  </data>
+  <data name="ribeJumpTo.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colIsValid.Width" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="colDescription.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="barDockControlLeft.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v13.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;bar3.Name" xml:space="preserve">
+    <value>bar3</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 471</value>
+  </data>
+  <data name="&gt;&gt;riicSeverity.Name" xml:space="preserve">
+    <value>riicSeverity</value>
+  </data>
+  <data name="&gt;&gt;prNavigator.Name" xml:space="preserve">
+    <value>prNavigator</value>
+  </data>
+  <data name="barDockControlLeft.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="barDockControlLeft.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlObjectTree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="barDockControlTop.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v13.1">
+    <value>None</value>
+  </data>
+  <data name="colDescription.MinWidth" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="ribeJumpTo.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="riteDescription.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="&gt;&gt;riteDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rimeDescr.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>493, 0</value>
+  </data>
+  <data name="&gt;&gt;rimeDescr.Name" xml:space="preserve">
+    <value>rimeDescr</value>
+  </data>
+  <data name="riteDescription.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ribeJumpTo.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;icStatus.Type" xml:space="preserve">
+    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="barDockControlTop.Appearance.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="colDescription.Caption" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="&gt;&gt;riteDescription.Name" xml:space="preserve">
+    <value>riteDescription</value>
+  </data>
+  <data name="&gt;&gt;bmNavigator.Name" xml:space="preserve">
+    <value>bmNavigator</value>
+  </data>
+  <data name="ribeJumpTo.Buttons8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tlObjectTree.Name" xml:space="preserve">
+    <value>tlObjectTree</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UCNavigator</value>
+  </data>
+  <data name="ribeJumpTo.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v13.1">
+    <value>None</value>
+  </data>
+  <data name="toolTipItem1.Text" xml:space="preserve">
+    <value>Klicken Sie hier, um den Fehler anzuzeigen.</value>
+  </data>
+  <data name="ribeJumpTo.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ribeJumpTo.Buttons10" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;ribeJumpTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="tlObjectTree.Appearance.Preview.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
+    <value>Horizontal</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 471</value>
+  </data>
+  <data name="&gt;&gt;colIsValid.Type" xml:space="preserve">
+    <value>DevExpress.XtraTreeList.Columns.TreeListColumn, DevExpress.XtraTreeList.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="barDockControlBottom.Appearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
+    <value>Horizontal</value>
+  </data>
+  <data name="riteDescription.Mask.IgnoreMaskBlank" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="riteDescription.Mask.EditMask" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;colIsValid.Name" xml:space="preserve">
+    <value>colIsValid</value>
+  </data>
+  <data name="ribeJumpTo.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colIsValid.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;colDescription.Name" xml:space="preserve">
+    <value>colDescription</value>
+  </data>
+  <data name="&gt;&gt;ribeJumpTo.Name" xml:space="preserve">
+    <value>ribeJumpTo</value>
+  </data>
+  <data name="colIsValid.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="barDockControlBottom.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="riteDescription.Mask.ShowPlaceHolders" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ribeJumpTo.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="riteDescription.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tlObjectTree.Appearance.Preview.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;riceStatus.Name" xml:space="preserve">
+    <value>riceStatus</value>
+  </data>
+  <data name="ribeJumpTo.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ribeJumpTo.Buttons5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ribeJumpTo.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;riceStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="tlObjectTree.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;colBrokenRulesPreview.Type" xml:space="preserve">
+    <value>DevExpress.XtraTreeList.Columns.TreeListColumn, DevExpress.XtraTreeList.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="colBrokenRulesPreview.Caption" xml:space="preserve">
+    <value>BrokenRulesPreview</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="riteDescription.Mask.BeepOnError" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="icNodeIcons.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxMS4xLCBWZXJzaW9uPTExLjEu
+        Ny4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAAAChE
+        ZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0cmVhbWVyAAAAAAIAAAAL
+</value>
+  </data>
+  <data name="&gt;&gt;colDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraTreeList.Columns.TreeListColumn, DevExpress.XtraTreeList.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="ribeJumpTo.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="riceStatus.PictureUnchecked" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAldJREFUOE+tU11I
+        U2EYPmguNfuRLhq1ouhmWirhsjbTufzZZFZr9p9MW9psMLK8cWE4iLIsu8qFUhcpgRUxCiZCGYP+IAgm
+        QdQpL0q9ibawRmw77jx970bnIFlXfnD4zs37vM/fx3ELfYInTZo3DqPndUt14KW9KvSsaWcoYDMExhoq
+        PI+P6jX/3ceGHePOWn56qBc/vG4IF5sgnLUg3F6H9227MGLdyvvqtY55QWj4ncscmbnfB9zpBgY6gCvN
+        QKcVcOmBYwWYPFIIn2lTZMismQtCtMdbjfzMvevAo35guBd4eheiKCY/3D4P2AuRqFfhU50KtyrU/I3K
+        IlkOaZ4eZEO0mYaHLkF8+0ICEF/5gcbNmLWuQbwyC6MGFXp0eR5JChlGmpO0b3YC/ez/+UMZYHQQYoMa
+        wp5ViBoWI1iag3NbNgYkAHKbDENPC3CtFbh6AvD1yRIG3Egc3AChNhfR8jR80aajLW9dSAKgqISOvSnD
+        uvan7gs2CSDhKoNgUSJWnY2fpRwmStLQvF4pA1DO4TPmlNunDOwuB5xaxsYJsdue1C6YliJaxuGrlsNY
+        sQKHlCtlCVSSDyxnMoriQmMBxMvHJQaC24KYPh1hHYepEg7e/Czszl0mm0gN81uKeco5YV2LhGU1ZrsO
+        SABxz2F8Z9SntnEYKcrAvuWZfNWS7LmtpIY9qFFHJljOFFXMoEC83Yhfp2vwbTuHSbbZz4ZtKzIiukWK
+        +dtIDaOSUM7BHTn4zNz+yAx7wjR78zOTm/85/CcSahiVhHKmqMhtMow0/0V7IV7yb1TAo4vYLaiWAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>493, 496</value>
+  </data>
+  <data name="colBrokenRulesPreview.Width" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="riteDescription.Mask.SaveLiteral" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bbiExpandAll.Caption" xml:space="preserve">
+    <value>Alle expandieren</value>
+  </data>
+  <data name="&gt;&gt;bbiStandard.Name" xml:space="preserve">
+    <value>bbiStandard</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Windows.Core.Controls.UCBusinessControlBase, ManorWindows, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b9383eb3392436fa</value>
+  </data>
+  <data name="ribeJumpTo.Buttons6" type="DevExpress.XtraEditors.ImageLocation, DevExpress.XtraEditors.v13.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;colLinkIcon.Type" xml:space="preserve">
+    <value>DevExpress.XtraTreeList.Columns.TreeListColumn, DevExpress.XtraTreeList.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bsObjectTree.Name" xml:space="preserve">
+    <value>bsObjectTree</value>
+  </data>
+  <data name="$this.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v13.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="bbiStandard.Caption" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="barDockControlRight.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;bsObjectTree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;icNodeIcons.Type" xml:space="preserve">
+    <value>DevExpress.Utils.ImageCollection, DevExpress.Utils.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiStandard.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="riceStatus.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="barDockControlTop.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tlObjectTree.Type" xml:space="preserve">
+    <value>DevExpress.XtraTreeList.TreeList, DevExpress.XtraTreeList.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;icStatus.Name" xml:space="preserve">
+    <value>icStatus</value>
+  </data>
+  <data name="&gt;&gt;bbiExpandAll.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tlObjectTree.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;colLinkIcon.Name" xml:space="preserve">
+    <value>colLinkIcon</value>
+  </data>
+  <data name="colLinkIcon.Width" type="System.Int32, mscorlib">
+    <value>161</value>
+  </data>
+  <data name="barDockControlTop.AllowHtmlText" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v13.1">
+    <value>Default</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>493, 25</value>
+  </data>
+  <data name="tlObjectTree.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="barDockControlBottom.ToolTipIconType" type="DevExpress.Utils.ToolTipIconType, DevExpress.Utils.v13.1">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;bar3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="tlObjectTree.Appearance.Preview.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="riteDescription.Mask.AutoComplete" type="DevExpress.XtraEditors.Mask.AutoCompleteType, DevExpress.XtraEditors.v13.1">
+    <value>Default</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ribeJumpTo.Mask.PlaceHolder" type="System.Char, mscorlib" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 471</value>
+  </data>
+  <data name="barDockControlBottom.AllowHtmlText" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v13.1">
+    <value>Default</value>
+  </data>
+  <data name="barDockControlTop.Appearance.GradientMode" type="System.Drawing.Drawing2D.LinearGradientMode, System.Drawing">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;colBrokenRulesPreview.Name" xml:space="preserve">
+    <value>colBrokenRulesPreview</value>
+  </data>
+  <data name="barDockControlRight.AllowHtmlText" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v13.1">
+    <value>Default</value>
+  </data>
+  <data name="$this.AllowHtmlText" type="DevExpress.Utils.DefaultBoolean, DevExpress.Data.v13.1">
+    <value>Default</value>
+  </data>
+  <data name="ribeJumpTo.Buttons9" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="riicSeverity.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+    <value>Combo</value>
+  </data>
+  <data name="bar3.Text" xml:space="preserve">
+    <value>Status bar</value>
+  </data>
+  <data name="&gt;&gt;riicSeverity.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="barDockControlTop.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ripeLinkIcon.Name" xml:space="preserve">
+    <value>ripeLinkIcon</value>
+  </data>
+  <data name="&gt;&gt;bbiExpandAll.Name" xml:space="preserve">
+    <value>bbiExpandAll</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="icNodeIcons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>696, 17</value>
+  </metadata>
+  <metadata name="prNavigator.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>357, 17</value>
+  </metadata>
+  <metadata name="icStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>250, 17</value>
+  </metadata>
+  <metadata name="bsObjectTree.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>59</value>
+  </metadata>
+  <metadata name="bmNavigator.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>135, 17</value>
+  </metadata>
+  <metadata name="tcNavigator.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>588, 17</value>
+  </metadata>
+</root>

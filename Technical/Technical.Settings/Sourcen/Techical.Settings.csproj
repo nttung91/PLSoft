@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8418C9EF-C470-4147-A3BE-4528D6ADF705}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Technical.Settings</RootNamespace>
+    <AssemblyName>Technical.Settings</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Manor.Settings.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Misc\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Provider.cs" />
+    <Compile Include="Contracts\ESettingState.cs" />
+    <Compile Include="Contracts\ESettingScope.cs" />
+    <Compile Include="Contracts\IConfigAdmin.cs" />
+    <Compile Include="Contracts\IConfigSection.cs" />
+    <Compile Include="Contracts\IConfigProvider.cs" />
+    <Compile Include="Contracts\IConfigSectionAdmin.cs" />
+    <Compile Include="Contracts\ISetting.cs" />
+    <Compile Include="Contracts\ISettingInternals.cs" />
+    <Compile Include="Contracts\ISettingState.cs" />
+    <Compile Include="Contracts\ISettingValue.cs" />
+    <Compile Include="Empty\EmptyConfig.cs" />
+    <Compile Include="Empty\EmptySection.cs" />
+    <Compile Include="Empty\EmptySetting.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingException.cs" />
+    <Compile Include="SettingsMigrator.cs" />
+    <Compile Include="SettingPocoDatastore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Manor.Settings.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Technical.Reflection\Sourcen\Manor.Reflection\Techical.Reflection.csproj">
+      <Project>{7507aedb-aefe-49dc-a191-ab136882ae56}</Project>
+      <Name>Techical.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical.Utilities\Sourcen\Techical.Utilities.csproj">
+      <Project>{DDE7DD51-7E9F-4264-AA59-BADABED19DE3}</Project>
+      <Name>Techical.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

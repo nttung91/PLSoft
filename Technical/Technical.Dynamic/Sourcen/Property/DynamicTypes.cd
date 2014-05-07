@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Techical.Dynamic.Property.SimpleProperty&lt;T&gt;" Collapsed="true">
+    <Position X="2" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAFAAQABAwAAUkAACAAgQAACABAA0IIgAoAAAAAJA=</HashCode>
+      <FileName>Property\SimpleProperty.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Techical.Dynamic.Property.DynamicPropertyList" Collapsed="true">
+    <Position X="6.5" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EEAACAAAIAAAEgQAAAAAAAAAAAAAACAYAAABAAAAABA=</HashCode>
+      <FileName>Property\DynamicPropertyList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Techical.Dynamic.Property.IHasDynamicProperties">
+    <Position X="11" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Property\IHasDynamicProperties.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Techical.Dynamic.Property.IDynamicPropertyList">
+    <Position X="6.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EEAACAAAIAAAAgQAAAAAAAAAAAAAACAYAAABAAAAAAA=</HashCode>
+      <FileName>Property\IDynamicPropertyList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Techical.Dynamic.Property.IDynamicProperty">
+    <Position X="2" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAFAAAABAgAAQgAAAAAgAAACAAAAwIAAAoAAAAAAA=</HashCode>
+      <FileName>Property\IDynamicProperty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
