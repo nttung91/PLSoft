@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3D033FC-3FD0-4F5A-A80E-0DD31AA75F1E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhuLiNet.Business.Common</RootNamespace>
+    <AssemblyName>PhuLiNet.Business.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>Manor.Business.Common.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Csla">
+      <HintPath>..\..\ExternalLibs\cslacs-4.3.13.0\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\ExternalLibs\Newtonsoft.Json-5.0.8\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Misc\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Audit\AuditLogger.cs" />
+    <Compile Include="Audit\IUserAuditLogger.cs" />
+    <Compile Include="Audit\NoUserAuditLogger.cs" />
+    <Compile Include="Authorization\CheckCommand.cs" />
+    <Compile Include="Authorization\State\StateAuthorizationBase.cs" />
+    <Compile Include="Authorization\AuthorizationProgramIdAttribute.cs" />
+    <Compile Include="Authorization\Rules\AuthorizationRulesHelper.cs" />
+    <Compile Include="Authorization\Rules\CanDelete.cs" />
+    <Compile Include="Authorization\Rules\CanRead.cs" />
+    <Compile Include="Authorization\Rules\CanWrite.cs" />
+    <Compile Include="Authorization\State\IStateAuthorization.cs" />
+    <Compile Include="Authorization\State\IObjectStateAuthorization.cs" />
+    <Compile Include="Authorization\ICheckCommand.cs" />
+    <Compile Include="Authorization\Specific\EAuthorizationType.cs" />
+    <Compile Include="Authorization\Specific\ISpecificBusinessObjectAuthorizations.cs" />
+    <Compile Include="Barcodes\Barcode.cs" />
+    <Compile Include="Barcodes\BarcodeType.cs" />
+    <Compile Include="Barcodes\EBarcodeTypes.cs" />
+    <Compile Include="Barcodes\IBarcode.cs" />
+    <Compile Include="Calculation\MinMultiQtyRounder.cs" />
+    <Compile Include="Calculation\WeightedCalculatorParameters.cs" />
+    <Compile Include="Calculation\MinMultiQtyValidator.cs" />
+    <Compile Include="Calculation\TdmAverage.cs" />
+    <Compile Include="Calculation\WeightedCalculator.cs" />
+    <Compile Include="Commands\BusinessObjectDeleteCheckCommand.cs" />
+    <Compile Include="Constants\CommonConstants.cs" />
+    <Compile Include="CslaBase\ObjectFactory\ChildObjectFactoryBase.cs" />
+    <Compile Include="CslaBase\ObjectFactory\CompositeIdObjectFactoryBase.cs" />
+    <Compile Include="CslaBase\ObjectFactory\GenericObjectFactoryBase.cs" />
+    <Compile Include="CslaBase\ObjectFactory\IGenericObjectFactory.cs" />
+    <Compile Include="CslaBase\ObjectFactory\IObjectFactoryCreation.cs" />
+    <Compile Include="CslaBase\ObjectFactory\IObjectFactoryDataStorage.cs" />
+    <Compile Include="CslaBase\ObjectFactory\IObjectFactoryFetch.cs" />
+    <Compile Include="CslaBase\ObjectFactory\IObjectFactorySynchronization.cs" />
+    <Compile Include="CslaBase\ObjectFactory\PseudoRootObjectFactoryBase.cs" />
+    <Compile Include="CslaBase\ObjectFactory\ReadOnlyObjectFactoryBase.cs" />
+    <Compile Include="CslaBase\ObjectFactory\RootObjectFactoryBase.cs" />
+    <Compile Include="CslaBase\UnitOfWorkContextManager.cs" />
+    <Compile Include="Context\Base\AbstractContext.cs" />
+    <Compile Include="Context\Base\BaseContextHandler.cs" />
+    <Compile Include="Context\Base\EmptyDataAdapter.cs" />
+    <Compile Include="Context\Base\IBusinessContext.cs" />
+    <Compile Include="Context\Base\IContext.cs" />
+    <Compile Include="Context\Base\IContextDataAdapter.cs" />
+    <Compile Include="Context\Base\IContextHandler.cs" />
+    <Compile Include="Context\Base\JsonFileDataAdapter.cs" />
+    <Compile Include="Context\Base\JsonInit.cs" />
+    <Compile Include="Context\Base\SettingDataAdapter.cs" />
+    <Compile Include="Context\ContextHandler.cs" />
+    <Compile Include="Context\FileSystemWithPathContextHandler.cs" />
+    <Compile Include="Context\FileSystemContextHandler.cs" />
+    <Compile Include="Context\MemoryContextHandler.cs" />
+    <Compile Include="Context\SettingContextHandler.cs" />
+    <Compile Include="Context\UDriveContextHandler.cs" />
+    <Compile Include="CopyManager\CopyManagerBase.cs" />
+    <Compile Include="CopyManager\ICopyManager.cs" />
+    <Compile Include="CopyManager\ICopyValueManager.cs" />
+    <Compile Include="Authorization\CheckCommandResult.cs" />
+    <Compile Include="CopyManager\StandardCopyManager.cs" />
+    <Compile Include="CslaBase\IPhuLiBusinessBase.cs" />
+    <Compile Include="CslaBase\IPhuLiBusinessBindingListBase.cs" />
+    <Compile Include="CslaBase\IPhuLiReadOnlyBase.cs" />
+    <Compile Include="CslaBase\IPhuLiReadOnlyBindingListBase.cs" />
+    <Compile Include="CslaBase\IPhuLiReadOnlyRefreshableBindingListBase.cs" />
+    <Compile Include="CslaBase\PhuLiBusinessBase.cs" />
+    <Compile Include="CslaBase\PhuLiBusinessBaseVersionable.cs" />
+    <Compile Include="CslaBase\PhuLiBusinessBindingListBase.cs" />
+    <Compile Include="CslaBase\PhuLiCommandBase.cs" />
+    <Compile Include="CslaBase\PhuLiCommonBusinessRule.cs" />
+    <Compile Include="CslaBase\PhuLiCriteriaBase.cs" />
+    <Compile Include="CslaBase\PhuLiLookupBase.cs" />
+    <Compile Include="CslaBase\PhuLiLookupListBase.cs" />
+    <Compile Include="CslaBase\PhuLiNameValueListBase.cs" />
+    <Compile Include="CslaBase\PhuLiReadOnlyBase.cs" />
+    <Compile Include="CslaBase\PhuLiReadOnlyBindingListBase.cs" />
+    <Compile Include="CslaBase\PhuLIReadOnlyRefreshableBindingListBase.cs" />
+    <Compile Include="CslaListHelpers\FilterPropertyException.cs" />
+    <Compile Include="CslaListHelpers\FilterProviderHelper.cs" />
+    <Compile Include="Defaults\Organisation.cs" />
+    <Compile Include="Delivery\DeliveryDefinitions.cs" />
+    <Compile Include="Delivery\EFreightMethods.cs" />
+    <Compile Include="Delivery\ELfaIds.cs" />
+    <Compile Include="Delivery\ELocationLevel.cs" />
+    <Compile Include="Delivery\FreightMethodDefinitions.cs" />
+    <Compile Include="Delivery\JurisdictionDefinitions.cs" />
+    <Compile Include="Delivery\LocationLevel.cs" />
+    <Compile Include="Distribution\DistributionRelativ.cs" />
+    <Compile Include="Distribution\DistributionAbsolut.cs" />
+    <Compile Include="Distribution\DistributionBase.cs" />
+    <Compile Include="Distribution\DistributionElement.cs" />
+    <Compile Include="Distribution\IDistributable.cs" />
+    <Compile Include="Enums\EArticleOrProduct.cs" />
+    <Compile Include="Enums\EProductOrigin.cs" />
+    <Compile Include="Helper\DisplayTextHelper.cs" />
+    <Compile Include="ImageMgmt\EImageType.cs" />
+    <Compile Include="ImageMgmt\IImage.cs" />
+    <Compile Include="Interfaces\EditTreeDuplicator.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\IDisplayTexts.cs" />
+    <Compile Include="Interfaces\IDuplicateBusiness.cs" />
+    <Compile Include="Interfaces\IFilterSelection.cs" />
+    <Compile Include="Interfaces\IFindFirstWithFilter.cs" />
+    <Compile Include="Interfaces\IFindWithFilterAndSameTimePeriod.cs" />
+    <Compile Include="Interfaces\IEftvFromChange.cs" />
+    <Compile Include="Interfaces\IMarkableAsDuplicate.cs" />
+    <Compile Include="Interfaces\IRollbackBusiness.cs" />
+    <Compile Include="Interfaces\ISelectable.cs" />
+    <Compile Include="Interfaces\ITimePeriodeCloser.cs" />
+    <Compile Include="Interfaces\IFindWithFilterAndTimePeriod.cs" />
+    <Compile Include="Interfaces\IFindWithFilter.cs" />
+    <Compile Include="Interfaces\ITransactionalBusiness.cs" />
+    <Compile Include="Interfaces\IVersionableBusiness.cs" />
+    <Compile Include="Languages\DescriptionBase\IDescriptionEditObjectFactory.cs" />
+    <Compile Include="Languages\DescriptionBase\ShortAndLongDescriptionEditObjectFactory.cs" />
+    <Compile Include="Languages\DescriptionBase\LongDescriptionEditListBase.cs" />
+    <Compile Include="Languages\DescriptionBase\IDescriptionBusinessObject.cs" />
+    <Compile Include="Languages\DescriptionBase\LongDescriptionEditBase.cs" />
+    <Compile Include="Languages\DescriptionBase\ShortAndLongDescriptionEditListBase.cs" />
+    <Compile Include="Languages\DescriptionBase\LongDescriptionEditObjectFactory.cs" />
+    <Compile Include="Languages\DescriptionBase\ShortAndLongDescriptionEditBase.cs" />
+    <Compile Include="Languages\Provider\DutchLanguageProvider.cs" />
+    <Compile Include="Languages\Provider\EnglishLanguageProvider.cs" />
+    <Compile Include="Languages\Provider\FrenchLanguageProvider.cs" />
+    <Compile Include="Localization\DescriptionEdit.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DescriptionEdit.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\LanguageResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LanguageResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\CopyManagerMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CopyManagerMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\CslaBaseMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CslaBaseMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\FromToDate.Designer.cs">
+      <DependentUpon>FromToDate.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Languages\Provider\GermanLanguageProvider.cs" />
+    <Compile Include="Languages\Provider\ILanguageProvider.cs" />
+    <Compile Include="Localization\ImageRules.Designer.cs">
+      <DependentUpon>ImageRules.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Languages\Provider\ItalianLanguageProvider.cs" />
+    <Compile Include="Languages\Language.cs" />
+    <Compile Include="Languages\LanguageList.cs" />
+    <Compile Include="Localization\MoneyRules.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoneyRules.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\QuantityRules.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuantityRules.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\ResourcesValidation.Designer.cs">
+      <DependentUpon>ResourcesValidation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Languages\UserLanguage.cs" />
+    <Compile Include="Lookup\EmptyLookupListHandler.cs" />
+    <Compile Include="Lookup\ILookupObject.cs" />
+    <Compile Include="Lookup\ILookupObjectList.cs" />
+    <Compile Include="Lookup\LookupListHandler.cs" />
+    <Compile Include="Messages\Converter\BrokenRuleConverter.cs" />
+    <Compile Include="Messages\MessageSeverity.cs" />
+    <Compile Include="Messages\ValidationMessage.cs" />
+    <Compile Include="Messages\IValidationMessage.cs" />
+    <Compile Include="Messages\ValidationMessageList.cs" />
+    <Compile Include="Calculation\ITdmParameter.cs" />
+    <Compile Include="Calculation\ITdmValue.cs" />
+    <Compile Include="Calculation\TdmCalculator.cs" />
+    <Compile Include="Calculation\MwstCalculator.cs" />
+    <Compile Include="CslaListHelpers\FilterListHelper.cs" />
+    <Compile Include="Navigator\Interfaces\IBuildBusinessObjectTree.cs" />
+    <Compile Include="Navigator\Interfaces\INodeBrokenRules.cs" />
+    <Compile Include="Navigator\Interfaces\INodeExpandInfo.cs" />
+    <Compile Include="Navigator\Interfaces\INodeLink.cs" />
+    <Compile Include="Navigator\Interfaces\ITreeNode.cs" />
+    <Compile Include="Navigator\Interfaces\ITreeNodeBase.cs" />
+    <Compile Include="Navigator\Interfaces\ITreeNodeList.cs" />
+    <Compile Include="Navigator\TreeBuilder.cs" />
+    <Compile Include="Navigator\TreeNode.cs" />
+    <Compile Include="Navigator\TreeNodeBase.cs" />
+    <Compile Include="Navigator\TreeNodeList.cs" />
+    <Compile Include="Processing\AbstractBusinessProcess.cs" />
+    <Compile Include="Processing\AbstractBusinessProcessManager.cs" />
+    <Compile Include="Processing\BusinessProcessException.cs" />
+    <Compile Include="Processing\IBusinessProcess.cs" />
+    <Compile Include="Processing\IBusinessProcessLogger.cs" />
+    <Compile Include="PropertyFieldListConverter\PropertyDescriptionAttribute.cs" />
+    <Compile Include="PropertyFieldListConverter\IStringValueProperty.cs" />
+    <Compile Include="PropertyFieldListConverter\PropertyFieldListConverter.cs" />
+    <Compile Include="Rules\BrokenRulesCollector.cs" />
+    <Compile Include="Rules\BrokenRulesCollectorEx.cs" />
+    <Compile Include="Rules\BusinessPropertyValidator.cs" />
+    <Compile Include="Rules\CommonRules\BooleanFalse.cs" />
+    <Compile Include="Rules\CommonRules\BooleanTrue.cs" />
+    <Compile Include="Rules\CommonRules\ByteArrayMaxSize.cs" />
+    <Compile Include="Rules\CommonRules\DateFromToValid.cs" />
+    <Compile Include="Rules\CommonRules\DateTimeCurrentYear.cs" />
+    <Compile Include="Rules\CommonRules\DateTimeFuture.cs" />
+    <Compile Include="Rules\CommonRules\DateTimeFutureNumOfDays.cs" />
+    <Compile Include="Rules\CommonRules\DateTimeNoSaturday.cs" />
+    <Compile Include="Rules\CommonRules\DateTimeNoSunday.cs" />
+    <Compile Include="Rules\CommonRules\DateTimeTodayOrFuture.cs" />
+    <Compile Include="Rules\CommonRules\DecimalMaxValue.cs" />
+    <Compile Include="Rules\CommonRules\DecimalMinValue.cs" />
+    <Compile Include="Rules\CommonRules\IntegerMaxValue.cs" />
+    <Compile Include="Rules\CommonRules\IntegerMinValue.cs" />
+    <Compile Include="Rules\CommonRules\ObjectRequired.cs" />
+    <Compile Include="Rules\CommonRules\PropertyXCanNotBeEmptyIfPropertyYHasValue.cs" />
+    <Compile Include="Rules\CommonRules\StringNotCotaingingInvalidCharacters.cs" />
+    <Compile Include="Rules\CommonRules\StringHasBlanks.cs" />
+    <Compile Include="Rules\CommonRules\StringLowerCase.cs" />
+    <Compile Include="Rules\CommonRules\StringMaxCharsPerLine.cs" />
+    <Compile Include="Rules\CommonRules\StringMaxLines.cs" />
+    <Compile Include="Rules\CommonRules\StringToLowerCase.cs" />
+    <Compile Include="Rules\CommonRules\StringToUpperCase.cs" />
+    <Compile Include="Rules\CommonRules\StringUpperCase.cs" />
+    <Compile Include="Rules\CommonRules\StringValidation.cs" />
+    <Compile Include="Rules\CommonRules\IntegerLessThanOtherInteger.cs" />
+    <Compile Include="Rules\EditTreeValidator.cs" />
+    <Compile Include="Rules\ExtendedBrokenRule.cs" />
+    <Compile Include="Rules\ExtendedBrokenRulesCollection.cs" />
+    <Compile Include="Rules\IBrokenBusinessRules.cs" />
+    <Compile Include="Rules\IBrokenRulesCollector.cs" />
+    <Compile Include="Rules\IDisableBusinessRules.cs" />
+    <Compile Include="Rules\ImageRules\MaxImageSize.cs" />
+    <Compile Include="Rules\IValidateBusiness.cs" />
+    <Compile Include="Rules\MoneyRules\MoneyGreaterThanOtherMoney.cs" />
+    <Compile Include="Rules\MoneyRules\MoneyLessThanOtherMoney.cs" />
+    <Compile Include="Rules\MoneyRules\MoneyMinValue.cs" />
+    <Compile Include="Rules\MoneyRules\MoneyMaxValue.cs" />
+    <Compile Include="Rules\QuantityRules\QuantityMaxValue.cs" />
+    <Compile Include="Search\ISearchModel.cs" />
+    <Compile Include="Security\EPhuLiGroups.cs" />
+    <Compile Include="Security\PhuLiIdentity.cs" />
+    <Compile Include="Security\PhuLiPrincipal.cs" />
+    <Compile Include="Security\RoleValidator.cs" />
+    <Compile Include="TimePeriodManagement\Filter\PresentFutureFilter.cs" />
+    <Compile Include="TimePeriodManagement\Filter\ReferenceFilter.cs" />
+    <Compile Include="TimePeriodManagement\Filter\FutureFilter.cs" />
+    <Compile Include="TimePeriodManagement\Filter\PastFilter.cs" />
+    <Compile Include="TimePeriodManagement\Filter\PresentFilter.cs" />
+    <Compile Include="TimePeriodManagement\Filter\TimePeriodFilter.cs" />
+    <Compile Include="TimePeriodManagement\TimePeriod.cs" />
+    <Compile Include="TimePeriodManagement\Closer\TimePeriodCloser.cs" />
+    <Compile Include="Interfaces\ITimePeriodList.cs" />
+    <Compile Include="TimePeriodManagement\Closer\TimePeriodClosingInfo.cs" />
+    <Compile Include="TimePeriodManagement\Closer\TimePeriodMatchChecker.cs" />
+    <Compile Include="Interfaces\ITimePeriod.cs" />
+    <Compile Include="CslaListHelpers\SortListHelper.cs" />
+    <Compile Include="TimePeriodManagement\Filter\ETimePeriodFilterTypes.cs" />
+    <Compile Include="TimePeriodManagement\IApplyTimePeriodType.cs" />
+    <Compile Include="TimePeriodManagement\Filter\TimePeriodeFilterTypeGetter.cs" />
+    <Compile Include="Unit\Converters\MonthOfYearConverter.cs" />
+    <Compile Include="Unit\Converters\WeekOfYearConverter.cs" />
+    <Compile Include="Unit\ICurrency.cs" />
+    <Compile Include="Calculation\MoneyRounder.cs" />
+    <Compile Include="Unit\LookupHandler\MonthOfYearListHandler.cs" />
+    <Compile Include="Unit\MonthOfYear.cs" />
+    <Compile Include="Unit\Location.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Applications.cs" />
+    <Compile Include="Unit\Money.cs" />
+    <Compile Include="Unit\MonthOfYearList.cs" />
+    <Compile Include="Unit\Percent.cs" />
+    <Compile Include="Unit\Quantity.cs" />
+    <Compile Include="Unit\UnitOfMeasure.cs" />
+    <Compile Include="Unit\WeekOfYear.cs" />
+    <Compile Include="Rules\TimePeriodRules\CheckEftvFromBeforeOrEqualEftvTo.cs" />
+    <Compile Include="Rules\TimePeriodRules\DoubleEftvFrom.cs" />
+    <Compile Include="Rules\TimePeriodRules\FromDateFrozen.cs" />
+    <Compile Include="Rules\ImageRules\ByteArrayIsImage.cs" />
+    <Compile Include="Rules\MoneyRules\MoneyNotNegative.cs" />
+    <Compile Include="Rules\MoneyRules\MoneyPayable.cs" />
+    <Compile Include="Rules\QuantityRules\QuantityGreaterThanZero.cs" />
+    <Compile Include="Rules\QuantityRules\QuantityNotNegative.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Manor.Business.Common.snk" />
+    <None Include="Navigator\Navigator.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Manor.DbModel.Core\DbModel.Core.csproj">
+      <Project>{04b50f43-71c5-4148-ad3c-8c1e5e772be4}</Project>
+      <Name>DbModel.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical\Manor.Dynamic\Sourcen\Techical.Dynamic.csproj">
+      <Project>{9517EE68-C144-41BE-BE3A-222EF12A036D}</Project>
+      <Name>Techical.Dynamic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical\Manor.Imaging\Sourcen\Techical.Imaging.csproj">
+      <Project>{AACD61FA-AEEE-4AC0-A740-FDF7BB8317C0}</Project>
+      <Name>Techical.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical\Manor.Permissions\Techical.Permissions.csproj">
+      <Project>{d4f5c857-2204-4968-9b9b-decc7a24dba6}</Project>
+      <Name>Techical.Permissions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical\Manor.Reflection\Sourcen\Manor.Reflection\Techical.Reflection.csproj">
+      <Project>{7507AEDB-AEFE-49DC-A191-AB136882AE56}</Project>
+      <Name>Techical.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical\Manor.Settings\Sourcen\Techical.Settings.csproj">
+      <Project>{8418c9ef-c470-4147-a3be-4528d6adf705}</Project>
+      <Name>Techical.Settings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical\Manor.Utilities\Sourcen\Techical.Utilities.csproj">
+      <Project>{DDE7DD51-7E9F-4264-AA59-BADABED19DE3}</Project>
+      <Name>Techical.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\DescriptionEdit.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DescriptionEdit.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\LanguageResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LanguageResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\LanguageResources.en-GB.resx">
+      <DependentUpon>LanguageResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\LanguageResources.fr-CH.resx">
+      <DependentUpon>LanguageResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\LanguageResources.it-CH.resx">
+      <DependentUpon>LanguageResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\CopyManagerMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CopyManagerMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\CslaBaseMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CslaBaseMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\FromToDate.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FromToDate.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ImageRules.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageRules.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\MoneyRules.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MoneyRules.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\QuantityRules.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuantityRules.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ResourcesValidation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourcesValidation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Authorization\Specific\Refactoring.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

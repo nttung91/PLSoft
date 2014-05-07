@@ -1,0 +1,4 @@
+﻿Diese Klassen werden vom Wizard im Wholesale benutzt.
+Bitte diese Klassen nicht in anderen Projekten verwenden, hier ist ein Refactoring nötig.
+
+Holger

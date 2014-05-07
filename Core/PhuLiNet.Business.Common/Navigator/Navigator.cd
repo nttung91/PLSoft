@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Manor.Business.Navigator.TreeNodeBase">
+    <Position X="6.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Navigator\TreeNodeBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Manor.Business.Navigator.TreeNode">
+    <Position X="6.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAggAAAAAAAAAAAAAAAAAwBAAAAA=</HashCode>
+      <FileName>Navigator\TreeNode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.169" />
+  </Class>
+  <Class Name="Manor.Business.Rules.TreeBuilder">
+    <Position X="10.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAAABAAAAA=</HashCode>
+      <FileName>Navigator\TreeBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BusinessObjectTree" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Manor.Business.Navigator.TreeNodeList">
+    <Position X="9.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Navigator\TreeNodeList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Manor.Business.Navigator.Interfaces.INodeBrokenRules">
+    <Position X="2.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAgBAAAAA=</HashCode>
+      <FileName>Navigator\Interfaces\INodeBrokenRules.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Manor.Business.Navigator.Interfaces.INodeExpandInfo">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Navigator\Interfaces\INodeExpandInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Manor.Business.Navigator.Interfaces.INodeLink">
+    <Position X="2.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Navigator\Interfaces\INodeLink.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Manor.Business.Navigator.Interfaces.ITreeNode">
+    <Position X="2.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Navigator\Interfaces\ITreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Manor.Business.Navigator.IBuildBusinessObjectTree&lt;T&gt;">
+    <Position X="10.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Navigator\IBuildBusinessObjectTree.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Manor.Business.Navigator.ITreeNodeBase">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Navigator\ITreeNodeBase.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
