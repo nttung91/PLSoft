@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1AE5C702-D25A-4C96-8102-A913DF00ADAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Techical.MsExcel</RootNamespace>
+    <AssemblyName>Techical.MsExcel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Manor.MsExcel.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\ExternalLibs\epplus-3.1.3\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Misc\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Contracts\EBorderStyle.cs" />
+    <Compile Include="Contracts\EFillStyle.cs" />
+    <Compile Include="Contracts\EHorizontalAlignment.cs" />
+    <Compile Include="Contracts\EPrintOrientation.cs" />
+    <Compile Include="Contracts\IAddressCalculator.cs" />
+    <Compile Include="Contracts\IBorder.cs" />
+    <Compile Include="Contracts\IBorderItem.cs" />
+    <Compile Include="Contracts\ICellRange.cs" />
+    <Compile Include="Contracts\IColumn.cs" />
+    <Compile Include="Contracts\IDrawing.cs" />
+    <Compile Include="Contracts\IDrawingPosition.cs" />
+    <Compile Include="Contracts\IDrawings.cs" />
+    <Compile Include="Contracts\IExcel.cs" />
+    <Compile Include="Contracts\IFill.cs" />
+    <Compile Include="Contracts\IFont.cs" />
+    <Compile Include="Contracts\INumberFormat.cs" />
+    <Compile Include="Contracts\IPicture.cs" />
+    <Compile Include="Contracts\IRow.cs" />
+    <Compile Include="Contracts\IStyle.cs" />
+    <Compile Include="Contracts\IWorkbook.cs" />
+    <Compile Include="Contracts\IWorksheet.cs" />
+    <Compile Include="EExcelImplementation.cs" />
+    <Compile Include="EpPlus\AddressCalculator.cs" />
+    <Compile Include="EpPlus\Border.cs" />
+    <Compile Include="EpPlus\BorderItem.cs" />
+    <Compile Include="EpPlus\CellRange.cs" />
+    <Compile Include="EpPlus\Column.cs" />
+    <Compile Include="EpPlus\Drawing.cs" />
+    <Compile Include="EpPlus\DrawingPosition.cs" />
+    <Compile Include="EpPlus\Drawings.cs" />
+    <Compile Include="EpPlus\EpPlusExcelWrapper.cs" />
+    <Compile Include="EpPlus\Fill.cs" />
+    <Compile Include="EpPlus\Font.cs" />
+    <Compile Include="EpPlus\NumberFormat.cs" />
+    <Compile Include="EpPlus\Picture.cs" />
+    <Compile Include="EpPlus\Row.cs" />
+    <Compile Include="EpPlus\Style.cs" />
+    <Compile Include="EpPlus\Workbook.cs" />
+    <Compile Include="EpPlus\Worksheet.cs" />
+    <Compile Include="MsExcelSkuPictureLoader.cs" />
+    <Compile Include="MsExcelWrapperFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Manor.MsExcel.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

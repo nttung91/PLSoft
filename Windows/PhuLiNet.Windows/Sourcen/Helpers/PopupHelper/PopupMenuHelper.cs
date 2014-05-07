@@ -3,9 +3,9 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Grid;
-using Manor.Icons;
 using Windows.Core.DxExtensions;
 using Windows.Core.Localization;
+using Techical.Icons;
 
 namespace Windows.Core.Helpers.PopupHelper
 {

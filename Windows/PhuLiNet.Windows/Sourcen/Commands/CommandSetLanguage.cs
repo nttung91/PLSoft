@@ -1,7 +1,6 @@
 ﻿using System;
 using PhuLiNet.Business.Common.Languages;
 using PhuLiNet.Business.Common.Languages.Provider;
-using Manor.Caching;
 using Windows.Core.Localization;
 
 namespace Windows.Core.Commands
@@ -49,12 +48,6 @@ namespace Windows.Core.Commands
 
             CurrentCulture.Set(_language.WindowsCultureName);
             UserLanguage.Set(_language);
-
-            if (CacheFactory.HasCacheManager())
-            {
-                //Flush cache because of language specific data
-                CacheFactory.GetCacheManager().Flush();
-            }
         }
 
         #endregion

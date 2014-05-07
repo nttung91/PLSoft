@@ -1,5 +1,5 @@
 ﻿using System;
-using Manor.Utilities.Cryptography;
+using Technical.Utilities.Cryptography;
 
 namespace Manor.ConnectionStrings.Configuration
 {

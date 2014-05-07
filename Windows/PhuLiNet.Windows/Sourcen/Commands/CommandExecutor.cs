@@ -1,6 +1,5 @@
 ﻿using System.Windows.Forms;
 using PhuLiNet.Business.Common.Audit;
-using Manor.Logging;
 using Technical.Permissions.AttributeHelper;
 using MessageBox = Windows.Core.Forms.MessageBox;
 
@@ -40,11 +39,6 @@ namespace Windows.Core.Commands
             if (audit && cmd.Audit)
             {
                 AuditCommand(cmd);
-            }
-
-            if (log && cmd.Log)
-            {
-                Logger.GetInstance().Debug(typeof (CommandExecutor), "Executing command " + cmd.GetType().Name, null);
             }
 
             if (HasPermissionOnCmd(cmd))

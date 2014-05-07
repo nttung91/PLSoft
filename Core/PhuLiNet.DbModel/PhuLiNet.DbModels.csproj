@@ -42,6 +42,16 @@
     <Compile Include="Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhuLiNet.DbModel.Core\DbModel.Core.csproj">
+      <Project>{04b50f43-71c5-4148-ad3c-8c1e5e772be4}</Project>
+      <Name>DbModel.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhuLiNet.DbModel.Infrastructure\Core.DbModel.Infrastructure.csproj">
+      <Project>{3ffb8168-1155-422e-84ed-3997b230a21e}</Project>
+      <Name>Core.DbModel.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Manor.Utilities.Environment;
-using Manor.Utilities.Extensions;
+using Technical.Utilities.Environment;
 
 namespace Manor.ConnectionStrings.DbTypes
 {

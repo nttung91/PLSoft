@@ -374,33 +374,33 @@
     <None Include="Navigator\Navigator.cd" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Manor.DbModel.Core\DbModel.Core.csproj">
-      <Project>{04b50f43-71c5-4148-ad3c-8c1e5e772be4}</Project>
-      <Name>DbModel.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Technical\Manor.Dynamic\Sourcen\Techical.Dynamic.csproj">
-      <Project>{9517EE68-C144-41BE-BE3A-222EF12A036D}</Project>
+    <ProjectReference Include="..\..\Technical\Technical.Dynamic\Sourcen\Techical.Dynamic.csproj">
+      <Project>{9517ee68-c144-41be-be3a-222ef12a036d}</Project>
       <Name>Techical.Dynamic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Technical\Manor.Imaging\Sourcen\Techical.Imaging.csproj">
-      <Project>{AACD61FA-AEEE-4AC0-A740-FDF7BB8317C0}</Project>
+    <ProjectReference Include="..\..\Technical\Technical.Imaging\Sourcen\Techical.Imaging.csproj">
+      <Project>{aacd61fa-aeee-4ac0-a740-fdf7bb8317c0}</Project>
       <Name>Techical.Imaging</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Technical\Manor.Permissions\Techical.Permissions.csproj">
+    <ProjectReference Include="..\..\Technical\Technical.Permissions\Techical.Permissions.csproj">
       <Project>{d4f5c857-2204-4968-9b9b-decc7a24dba6}</Project>
       <Name>Techical.Permissions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Technical\Manor.Reflection\Sourcen\Manor.Reflection\Techical.Reflection.csproj">
-      <Project>{7507AEDB-AEFE-49DC-A191-AB136882AE56}</Project>
+    <ProjectReference Include="..\..\Technical\Technical.Reflection\Sourcen\Manor.Reflection\Techical.Reflection.csproj">
+      <Project>{7507aedb-aefe-49dc-a191-ab136882ae56}</Project>
       <Name>Techical.Reflection</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Technical\Manor.Settings\Sourcen\Techical.Settings.csproj">
+    <ProjectReference Include="..\..\Technical\Technical.Settings\Sourcen\Techical.Settings.csproj">
       <Project>{8418c9ef-c470-4147-a3be-4528d6adf705}</Project>
       <Name>Techical.Settings</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Technical\Manor.Utilities\Sourcen\Techical.Utilities.csproj">
-      <Project>{DDE7DD51-7E9F-4264-AA59-BADABED19DE3}</Project>
+    <ProjectReference Include="..\..\Technical\Technical.Utilities\Sourcen\Techical.Utilities.csproj">
+      <Project>{dde7dd51-7e9f-4264-aa59-badabed19de3}</Project>
       <Name>Techical.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhuLiNet.DbModel.Core\DbModel.Core.csproj">
+      <Project>{04b50f43-71c5-4148-ad3c-8c1e5e772be4}</Project>
+      <Name>DbModel.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -6,13 +6,12 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraLayout;
 using DevExpress.XtraPrinting;
-using Windows.Core.BaseForms;
 using Windows.Core.Commands;
 using Windows.Core.Controls;
 using Windows.Core.DxExtensions;
-using Windows.Core.Forms.Wizardv2;
 using Windows.Core.Helpers;
 using Windows.Core.Messaging.Handler;
+using Techical.Icons;
 
 namespace Windows.Core.BaseForms
 {
@@ -162,8 +161,7 @@ namespace Windows.Core.BaseForms
             var positionHandler = new FormPositionHandler(this);
             positionHandler.RememberPosition = _rememberPosition;
             positionHandler.SetDefaultPosition();
-            //TODO : NTG
-           // Icon = IconManager.GetIcon(EIcons.window_32);
+            Icon = IconManager.GetIcon(EIcons.window_32);
         }
 
         private void FrmBase_FormClosed(object sender, FormClosedEventArgs e)

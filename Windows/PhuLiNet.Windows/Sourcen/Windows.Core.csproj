@@ -501,7 +501,6 @@
     <Compile Include="BaseForms\ISavableForm.cs" />
     <Compile Include="BaseForms\ISwitchableForm.cs" />
     <Compile Include="Commands\CommandShowFilterRow.cs" />
-    <Compile Include="Commands\CommandShowLog.cs" />
     <Compile Include="Controls\GenericValueEditor.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -558,12 +557,6 @@
     <Compile Include="Instructions\Manager\BaseInstructionManager.cs" />
     <Compile Include="Instructions\Manager\InstructionManagerFactory.cs" />
     <Compile Include="Instructions\Manager\OnApplyInstructionEventHandler.cs" />
-    <Compile Include="Forms\Logging\FrmShowLog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Logging\FrmShowLog.Designer.cs">
-      <DependentUpon>FrmShowLog.cs</DependentUpon>
-    </Compile>
     <Compile Include="Localization\BaseFormMessages.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1069,12 +1062,6 @@
     <EmbeddedResource Include="Forms\Localization\FrmSelectLanguage.it-CH.resx">
       <DependentUpon>FrmSelectLanguage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Logging\FrmShowLog.fr-CH.resx">
-      <DependentUpon>FrmShowLog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Logging\FrmShowLog.it-CH.resx">
-      <DependentUpon>FrmShowLog.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Lookup\FrmLookupObject.fr-CH.resx">
       <DependentUpon>FrmLookupObject.cs</DependentUpon>
     </EmbeddedResource>
@@ -1292,10 +1279,6 @@
     <Content Include="Resources\InvertSelection.png" />
     <Content Include="Resources\SelectAll.png" />
     <Content Include="Resources\SelectGroup.png" />
-    <EmbeddedResource Include="Forms\Logging\FrmShowLog.resx">
-      <DependentUpon>FrmShowLog.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="SmartPart\Controls\SmartPartPlaceholder.bmp">
       <DependentUpon>SmartPartPlaceholder.cs</DependentUpon>
     </EmbeddedResource>
@@ -1313,7 +1296,9 @@
     <None Include="Properties\DataSources\Manor.Business.Common.Logging.ILogTableEntry.datasource">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Properties\DataSources\Manor.Business.Common.Messages.IValidationMessage.datasource" />
+    <None Include="Properties\DataSources\Manor.Business.Common.Messages.IValidationMessage.datasource">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\DataSources\Manor.Business.Context.AbstractContext.datasource" />
     <None Include="Properties\DataSources\Manor.Business.Localization.Language.datasource" />
     <None Include="Properties\DataSources\Manor.Business.Lookup.ILookupObject.datasource" />
@@ -1325,33 +1310,41 @@
     <None Include="Resources\manor_header_1_logo.gif" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Plugin\Manor.Plugin.Contracts\Sourcen\Manor.Plugin.Contracts.csproj">
-      <Project>{6d0e3256-004c-4cde-babd-7f9e334428d5}</Project>
-      <Name>Manor.Plugin.Contracts</Name>
+    <ProjectReference Include="..\..\..\Core\PhuLiNet.Business.Common\PhuLiNet.Business.Common.csproj">
+      <Project>{d3d033fc-3fd0-4f5a-a80e-0dd31aa75f1e}</Project>
+      <Name>PhuLiNet.Business.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Plugin\Manor.Plugin\Sourcen\Manor.Plugin.csproj">
-      <Project>{0a28be05-ce82-4c8e-b01c-aec6757ae79d}</Project>
-      <Name>Manor.Plugin</Name>
+    <ProjectReference Include="..\..\..\Technical\Technical.Dynamic\Sourcen\Techical.Dynamic.csproj">
+      <Project>{9517ee68-c144-41be-be3a-222ef12a036d}</Project>
+      <Name>Techical.Dynamic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Technical\Manor.Caching\Sourcen\Manor.Caching.csproj">
-      <Project>{8227516b-7920-4e87-8218-39df1a1facac}</Project>
-      <Name>Manor.Caching</Name>
+    <ProjectReference Include="..\..\..\Technical\Technical.Icons\Sourcen\Techical.Icons.csproj">
+      <Project>{fa611aeb-d058-4efc-ac58-debc477a9057}</Project>
+      <Name>Techical.Icons</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Technical\Manor.External.Commands\Sourcen\Manor.External.Commands.csproj">
-      <Project>{50748B6E-BC22-4AF5-A202-8725BEFA5DE2}</Project>
-      <Name>Manor.External.Commands</Name>
+    <ProjectReference Include="..\..\..\Technical\Technical.Imaging\Sourcen\Techical.Imaging.csproj">
+      <Project>{aacd61fa-aeee-4ac0-a740-fdf7bb8317c0}</Project>
+      <Name>Techical.Imaging</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Technical\Manor.Icons\Sourcen\Manor.Icons.csproj">
-      <Project>{FA611AEB-D058-4EFC-AC58-DEBC477A9057}</Project>
-      <Name>Manor.Icons</Name>
+    <ProjectReference Include="..\..\..\Technical\Technical.MsExcel\Techical.MsExcel.csproj">
+      <Project>{1ae5c702-d25a-4c96-8102-a913df00adae}</Project>
+      <Name>Techical.MsExcel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Technical\Manor.Logging\Sourcen\Manor.Logging.csproj">
-      <Project>{A85C8A77-A01B-4A9C-9556-31E9FA5B87C5}</Project>
-      <Name>Manor.Logging</Name>
+    <ProjectReference Include="..\..\..\Technical\Technical.Permissions\Techical.Permissions.csproj">
+      <Project>{d4f5c857-2204-4968-9b9b-decc7a24dba6}</Project>
+      <Name>Techical.Permissions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Technical\Manor.MsExcel\Manor.MsExcel.csproj">
-      <Project>{c15122a4-e5f4-40a5-9da4-3daafeee94a6}</Project>
-      <Name>Manor.MsExcel</Name>
+    <ProjectReference Include="..\..\..\Technical\Technical.Reflection\Sourcen\Manor.Reflection\Techical.Reflection.csproj">
+      <Project>{7507aedb-aefe-49dc-a191-ab136882ae56}</Project>
+      <Name>Techical.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Technical.Settings\Sourcen\Techical.Settings.csproj">
+      <Project>{8418c9ef-c470-4147-a3be-4528d6adf705}</Project>
+      <Name>Techical.Settings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Technical.Utilities\Sourcen\Techical.Utilities.csproj">
+      <Project>{dde7dd51-7e9f-4264-aa59-badabed19de3}</Project>
+      <Name>Techical.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

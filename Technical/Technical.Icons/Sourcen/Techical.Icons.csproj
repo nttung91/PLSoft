@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA611AEB-D058-4EFC-AC58-DEBC477A9057}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Techical.Icons</RootNamespace>
+    <AssemblyName>ch</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Manor.Icons.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Misc\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="EIcons.cs" />
+    <Compile Include="IconInfo.cs" />
+    <Compile Include="IconLibrary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconLibrary.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IconManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Manor.Icons.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IconLibrary.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IconLibrary.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_search_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_search_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacus_write_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacus_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacus_help_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacus_info_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacus_write_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacus_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacus_help_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacus_info_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_stack_help_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_stack_info_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_stack_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_stack_config_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_stack_info_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_stack_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_stack_config_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin_stack_help_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_info_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_help_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_info_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_help_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_add_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart_add_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reassort_Parm_2_24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reassort_Parm_2_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech_balloon_refresh_32.gif" />
+    <None Include="Resources\speech_balloon_refresh_24.gif" />
+    <None Include="Resources\relationship_32.gif" />
+    <None Include="Resources\relationship_24.gif" />
+    <None Include="Resources\relationship_16.gif" />
+    <None Include="Resources\supplier_add_32.gif" />
+    <None Include="Resources\supplier_add_24.gif" />
+    <None Include="Resources\supplier_add_16.gif" />
+    <None Include="Resources\supplier_info_32.gif" />
+    <None Include="Resources\supplier_info_24.gif" />
+    <None Include="Resources\supplier_info_16.gif" />
+    <None Include="Resources\world_24.gif" />
+    <None Include="Resources\world_32.gif" />
+    <None Include="Resources\world_16.gif" />
+    <None Include="Resources\supplier_32.gif" />
+    <None Include="Resources\supplier_24.gif" />
+    <None Include="Resources\supplier_16.gif" />
+    <None Include="Resources\sign_dollar_32.gif" />
+    <None Include="Resources\sign_dollar_24.gif" />
+    <None Include="Resources\sign_dollar_16.gif" />
+    <None Include="Resources\traffic_lights_ahead_32.gif" />
+    <None Include="Resources\traffic_lights_ahead_24.gif" />
+    <None Include="Resources\traffic_lights_ahead_16.gif" />
+    <None Include="Resources\traffic_light_stop_32.gif" />
+    <None Include="Resources\traffic_light_stop_24.gif" />
+    <None Include="Resources\traffic_light_stop_16.gif" />
+    <None Include="Resources\traffic_light_go_32.gif" />
+    <None Include="Resources\traffic_light_go_24.gif" />
+    <None Include="Resources\traffic_light_go_16.gif" />
+    <None Include="Resources\traffic_light_32.gif" />
+    <None Include="Resources\traffic_light_24.gif" />
+    <None Include="Resources\traffic_light_16.gif" />
+    <None Include="Resources\stop_32.gif" />
+    <None Include="Resources\stop_24.gif" />
+    <None Include="Resources\stop_16.gif" />
+    <None Include="Resources\ring_buoy_32.gif" />
+    <None Include="Resources\ring_buoy_24.gif" />
+    <None Include="Resources\ring_buoy_16.gif" />
+    <None Include="Resources\set_32.gif" />
+    <None Include="Resources\set_24.gif" />
+    <None Include="Resources\set_16.gif" />
+    <None Include="Resources\rejection_list_32.gif" />
+    <None Include="Resources\rejection_list_24.gif" />
+    <None Include="Resources\rejection_list_16.gif" />
+    <None Include="Resources\windows_add_32.gif" />
+    <None Include="Resources\windows_add_24.gif" />
+    <None Include="Resources\windows_add_16.gif" />
+    <None Include="Resources\window_write_32.gif" />
+    <None Include="Resources\window_write_24.gif" />
+    <None Include="Resources\window_write_16.gif" />
+    <None Include="Resources\window_remove_32.gif" />
+    <None Include="Resources\window_remove_24.gif" />
+    <None Include="Resources\window_remove_16.gif" />
+    <None Include="Resources\window_add_32.gif" />
+    <None Include="Resources\window_add_24.gif" />
+    <None Include="Resources\window_add_16.gif" />
+    <None Include="Resources\texture_editor_help_32.gif" />
+    <None Include="Resources\texture_editor_help_24.gif" />
+    <None Include="Resources\texture_editor_help_16.gif" />
+    <None Include="Resources\synchronization_32.gif" />
+    <None Include="Resources\synchronization_24.gif" />
+    <None Include="Resources\synchronization_16.gif" />
+    <None Include="Resources\shopping_cart_info_32.gif" />
+    <None Include="Resources\shopping_cart_info_24.gif" />
+    <None Include="Resources\shopping_cart_info_16.gif" />
+    <None Include="Resources\report_32.gif" />
+    <None Include="Resources\report_24.gif" />
+    <None Include="Resources\report_16.gif" />
+    <None Include="Resources\shopping_cart_search_32.gif" />
+    <None Include="Resources\shopping_cart_search_24.gif" />
+    <None Include="Resources\shopping_cart_search_16.gif" />
+    <None Include="Resources\scissors_32.gif" />
+    <None Include="Resources\scissors_24.gif" />
+    <None Include="Resources\scissors_16.gif" />
+    <None Include="Resources\zoom_32.gif" />
+    <None Include="Resources\zoom_24.gif" />
+    <None Include="Resources\zoom_16.gif" />
+    <None Include="Resources\wizard_32.gif" />
+    <None Include="Resources\wizard_24.gif" />
+    <None Include="Resources\wizard_16.gif" />
+    <None Include="Resources\window_refresh_32.gif" />
+    <None Include="Resources\window_refresh_24.gif" />
+    <None Include="Resources\window_refresh_16.gif" />
+    <None Include="Resources\window_next_32.gif" />
+    <None Include="Resources\window_next_24.gif" />
+    <None Include="Resources\window_next_16.gif" />
+    <None Include="Resources\window_info_16.gif" />
+    <None Include="Resources\window_close_32.gif" />
+    <None Include="Resources\window_close_24.gif" />
+    <None Include="Resources\window_close_16.gif" />
+    <None Include="Resources\window_32.gif" />
+    <None Include="Resources\window_24.gif" />
+    <None Include="Resources\window_16.gif" />
+    <None Include="Resources\users_info_16.gif" />
+    <None Include="Resources\users_help_16.gif" />
+    <None Include="Resources\users_16.gif" />
+    <None Include="Resources\star_remove_32.gif" />
+    <None Include="Resources\star_remove_24.gif" />
+    <None Include="Resources\star_remove_16.gif" />
+    <None Include="Resources\star_32.gif" />
+    <None Include="Resources\star_24.gif" />
+    <None Include="Resources\star_16.gif" />
+    <None Include="Resources\shopping_cart_add_16.gif" />
+    <None Include="Resources\shopping_cart_16.gif" />
+    <None Include="Resources\sales_16.gif" />
+    <None Include="Resources\abacus_16.gif" />
+    <Content Include="Resources\abacus_default_write_24.gif" />
+    <Content Include="Resources\abacus_default_write_32.gif" />
+    <None Include="Resources\write_24.gif" />
+    <None Include="Resources\write_16.gif" />
+    <None Include="Resources\tag_search_32.gif" />
+    <None Include="Resources\tag_search_24.gif" />
+    <None Include="Resources\tag_search_16.gif" />
+    <None Include="Resources\tag_info_32.gif" />
+    <None Include="Resources\tag_info_24.gif" />
+    <None Include="Resources\tag_info_16.gif" />
+    <None Include="Resources\tag_add_32.gif" />
+    <None Include="Resources\tag_add_24.gif" />
+    <None Include="Resources\tag_add_16.gif" />
+    <None Include="Resources\tag_32.gif" />
+    <None Include="Resources\tag_24.gif" />
+    <None Include="Resources\tag_16.gif" />
+    <None Include="Resources\refresh_32.gif" />
+    <None Include="Resources\refresh_24.gif" />
+    <None Include="Resources\refresh_16.gif" />
+    <None Include="Resources\add_16.gif" />
+    <None Include="Resources\add_24.gif" />
+    <None Include="Resources\add_32.gif" />
+    <None Include="Resources\binoculars_16.gif" />
+    <None Include="Resources\binoculars_24.gif" />
+    <None Include="Resources\binoculars_32.gif" />
+    <None Include="Resources\copy_16.gif" />
+    <None Include="Resources\copy_24.gif" />
+    <None Include="Resources\copy_32.gif" />
+    <None Include="Resources\delete_16.gif" />
+    <None Include="Resources\delete_24.gif" />
+    <None Include="Resources\delete_32.gif" />
+    <None Include="Resources\plug_16.gif" />
+    <None Include="Resources\plug_24.gif" />
+    <None Include="Resources\plug_32.gif" />
+    <None Include="Resources\plug_info_16.gif" />
+    <None Include="Resources\plug_info_24.gif" />
+    <None Include="Resources\plug_info_32.gif" />
+    <None Include="Resources\abacus_help_16.gif" />
+    <None Include="Resources\abacus_info_16.gif" />
+    <None Include="Resources\abacus_write_16.gif" />
+    <None Include="Resources\administrator_16.gif" />
+    <None Include="Resources\administrator_config_16.gif" />
+    <None Include="Resources\close_a_16.gif" />
+    <None Include="Resources\close_a_24.gif" />
+    <None Include="Resources\close_a_32.gif" />
+    <None Include="Resources\close_b_16.gif" />
+    <None Include="Resources\close_b_24.gif" />
+    <None Include="Resources\close_b_32.gif" />
+    <None Include="Resources\coin_stack_16.gif" />
+    <None Include="Resources\coin_stack_config_16.gif" />
+    <None Include="Resources\coin_stack_help_16.gif" />
+    <None Include="Resources\coin_stack_info_16.gif" />
+    <None Include="Resources\control_panel_16.gif" />
+    <None Include="Resources\control_panel_24.gif" />
+    <None Include="Resources\control_panel_32.gif" />
+    <None Include="Resources\diskette_16.gif" />
+    <None Include="Resources\diskette_24.gif" />
+    <None Include="Resources\diskette_32.gif" />
+    <None Include="Resources\filter_data_16.gif" />
+    <None Include="Resources\filter_data_24.gif" />
+    <None Include="Resources\filter_data_32.gif" />
+    <None Include="Resources\gear_16.gif" />
+    <None Include="Resources\group_ok_16.gif" />
+    <None Include="Resources\help_16.gif" />
+    <None Include="Resources\help_24.gif" />
+    <None Include="Resources\help_32.gif" />
+    <None Include="Resources\printer_16.gif" />
+    <None Include="Resources\printer_24.gif" />
+    <None Include="Resources\printer_32.gif" />
+    <None Include="Resources\product_16.gif" />
+    <None Include="Resources\product_search_16.gif" />
+    <None Include="Resources\damage_24.gif" />
+    <None Include="Resources\damage_32.gif" />
+    <None Include="Resources\house_24.gif" />
+    <None Include="Resources\house_32.gif" />
+    <None Include="Resources\list_wizard_24.gif" />
+    <None Include="Resources\list_wizard_32.gif" />
+    <None Include="Resources\info_16.gif" />
+    <None Include="Resources\info_24.gif" />
+    <None Include="Resources\info_32.gif" />
+    <None Include="Resources\home_16.gif" />
+    <None Include="Resources\inventory_24.gif" />
+    <None Include="Resources\inventory_32.gif" />
+    <None Include="Resources\inventory_add_24.gif" />
+    <None Include="Resources\inventory_add_32.gif" />
+    <None Include="Resources\arrow_16.gif" />
+    <None Include="Resources\arrow_24.gif" />
+    <None Include="Resources\arrow_32.gif" />
+    <None Include="Resources\arrow_bi_16.gif" />
+    <None Include="Resources\arrow_bi_24.gif" />
+    <None Include="Resources\arrow_bi_32.gif" />
+    <None Include="Resources\arrow_left_16.gif" />
+    <None Include="Resources\arrow_left_24.gif" />
+    <None Include="Resources\arrow_left_32.gif" />
+    <None Include="Resources\back_16.gif" />
+    <None Include="Resources\back_24.gif" />
+    <None Include="Resources\back_32.gif" />
+    <None Include="Resources\next_16.gif" />
+    <None Include="Resources\next_24.gif" />
+    <None Include="Resources\next_32.gif" />
+    <None Include="Resources\monitor_config_16.gif" />
+    <None Include="Resources\monitor_config_24.gif" />
+    <None Include="Resources\monitor_config_32.gif" />
+    <None Include="Resources\network_monitor_16.gif" />
+    <None Include="Resources\network_monitor_24.gif" />
+    <None Include="Resources\network_monitor_32.gif" />
+    <None Include="Resources\excel_16.gif" />
+    <None Include="Resources\excel_24.gif" />
+    <None Include="Resources\excel_32.gif" />
+    <None Include="Resources\import_export_acrobat_16.gif" />
+    <None Include="Resources\import_export_acrobat_24.gif" />
+    <None Include="Resources\import_export_acrobat_32.gif" />
+    <None Include="Resources\import_export_excel_16.gif" />
+    <None Include="Resources\import_export_excel_24.gif" />
+    <None Include="Resources\import_export_excel_32.gif" />
+    <None Include="Resources\import_export_word_16.gif" />
+    <None Include="Resources\import_export_word_24.gif" />
+    <None Include="Resources\import_export_word_32.gif" />
+    <None Include="Resources\export_16.gif" />
+    <None Include="Resources\export_24.gif" />
+    <None Include="Resources\export_32.gif" />
+    <None Include="Resources\export_save_16.gif" />
+    <None Include="Resources\export_save_24.gif" />
+    <None Include="Resources\export_save_32.gif" />
+    <None Include="Resources\damage_16.gif" />
+    <None Include="Resources\damage_new_16.gif" />
+    <None Include="Resources\damage_new_24.gif" />
+    <None Include="Resources\damage_new_32.gif" />
+    <None Include="Resources\damage_qry_16.gif" />
+    <None Include="Resources\damage_qry_24.gif" />
+    <None Include="Resources\damage_qry_32.gif" />
+    <None Include="Resources\invoice_clock_16.gif" />
+    <None Include="Resources\invoice_clock_24.gif" />
+    <None Include="Resources\invoice_clock_32.gif" />
+    <None Include="Resources\invoice_info_16.gif" />
+    <None Include="Resources\invoice_info_24.gif" />
+    <None Include="Resources\invoice_info_32.gif" />
+    <None Include="Resources\invoice_up_16.gif" />
+    <None Include="Resources\invoice_up_24.gif" />
+    <None Include="Resources\invoice_up_32.gif" />
+    <None Include="Resources\library_16.gif" />
+    <None Include="Resources\library_24.gif" />
+    <None Include="Resources\library_32.gif" />
+    <None Include="Resources\lock_16.gif" />
+    <None Include="Resources\lock_24.gif" />
+    <None Include="Resources\lock_32.gif" />
+    <None Include="Resources\manager_16.gif" />
+    <None Include="Resources\manager_24.gif" />
+    <None Include="Resources\manager_32.gif" />
+    <None Include="Resources\arrow_add_16.gif" />
+    <None Include="Resources\arrow_add_24.gif" />
+    <None Include="Resources\arrow_add_32.gif" />
+    <None Include="Resources\arrow_fav_16.gif" />
+    <None Include="Resources\arrow_fav_24.gif" />
+    <None Include="Resources\arrow_fav_32.gif" />
+    <None Include="Resources\arrow_ok_16.gif" />
+    <None Include="Resources\arrow_ok_24.gif" />
+    <None Include="Resources\arrow_ok_32.gif" />
+    <None Include="Resources\arrow_reload_16.gif" />
+    <None Include="Resources\arrow_reload_24.gif" />
+    <None Include="Resources\arrow_reload_32.gif" />
+    <None Include="Resources\magic_ward_16.gif" />
+    <None Include="Resources\magic_ward_24.gif" />
+    <None Include="Resources\magic_ward_32.gif" />
+    <None Include="Resources\ManorLogo.ico" />
+    <None Include="Resources\manor_logo_16.png" />
+    <None Include="Resources\manor_logo_24.png" />
+    <None Include="Resources\manor_logo_32.png" />
+    <None Include="Resources\manor-wws-16.png" />
+    <None Include="Resources\manor-wws-24.png" />
+    <None Include="Resources\manor-wws-32.png" />
+    <None Include="Resources\product_finished_16.gif" />
+    <None Include="Resources\product_finished_24.gif" />
+    <None Include="Resources\product_finished_32.gif" />
+    <None Include="Resources\product_finished_add_16.gif" />
+    <None Include="Resources\product_finished_add_24.gif" />
+    <None Include="Resources\product_finished_add_32.gif" />
+    <None Include="Resources\product_finished_remove_16.gif" />
+    <None Include="Resources\product_finished_remove_24.gif" />
+    <None Include="Resources\product_finished_remove_32.gif" />
+    <None Include="Resources\product_in_proccess_16.gif" />
+    <None Include="Resources\product_in_proccess_24.gif" />
+    <None Include="Resources\product_in_proccess_32.gif" />
+    <None Include="Resources\product_in_proccess_add_16.gif" />
+    <None Include="Resources\product_in_proccess_add_24.gif" />
+    <None Include="Resources\product_in_proccess_add_32.gif" />
+    <None Include="Resources\product_in_proccess_remove_16.gif" />
+    <None Include="Resources\product_in_proccess_remove_24.gif" />
+    <None Include="Resources\product_in_proccess_remove_32.gif" />
+    <None Include="Resources\No_entry_16.gif" />
+    <None Include="Resources\No_entry_24.gif" />
+    <None Include="Resources\No_entry_32.gif" />
+    <None Include="Resources\No_parking_16.gif" />
+    <None Include="Resources\No_parking_24.gif" />
+    <None Include="Resources\No_parking_32.gif" />
+    <None Include="Resources\oneway_street_16.gif" />
+    <None Include="Resources\oneway_street_24.gif" />
+    <None Include="Resources\oneway_street_32.gif" />
+    <None Include="Resources\barcode_16.gif" />
+    <None Include="Resources\barcode_24.gif" />
+    <None Include="Resources\barcode_32.gif" />
+    <None Include="Resources\box_24.gif" />
+    <None Include="Resources\box_32.gif" />
+    <None Include="Resources\box_16.gif" />
+    <None Include="Resources\document_16.gif" />
+    <None Include="Resources\document_24.gif" />
+    <None Include="Resources\document_32.gif" />
+    <None Include="Resources\ok_16.gif" />
+    <None Include="Resources\ok_24.gif" />
+    <None Include="Resources\ok_32.gif" />
+    <None Include="Resources\folder_16.gif" />
+    <None Include="Resources\folder_24.gif" />
+    <None Include="Resources\folder_32.gif" />
+    <None Include="Resources\folder_next_16.gif" />
+    <None Include="Resources\folder_next_24.gif" />
+    <None Include="Resources\folder_next_32.gif" />
+    <None Include="Resources\play_16.gif" />
+    <None Include="Resources\play_24.gif" />
+    <None Include="Resources\play_32.gif" />
+    <None Include="Resources\archive_restore_32.gif" />
+    <None Include="Resources\archive_restore_16.gif" />
+    <None Include="Resources\archive_restore_24.gif" />
+    <None Include="Resources\archive_add_16.gif" />
+    <None Include="Resources\archive_add_24.gif" />
+    <None Include="Resources\archive_add_32.gif" />
+    <None Include="Resources\inventory_16.gif" />
+    <None Include="Resources\inventory2_16.gif" />
+    <None Include="Resources\inventory2_24.gif" />
+    <None Include="Resources\inventory2_32.gif" />
+    <None Include="Resources\inventory_add_16.gif" />
+    <None Include="Resources\decrease_indent_16.gif" />
+    <None Include="Resources\increase_indent_16.gif" />
+    <None Include="Resources\decrease_indent_24.gif" />
+    <None Include="Resources\increase_indent_24.gif" />
+    <None Include="Resources\decrease_indent_32.gif" />
+    <None Include="Resources\increase_indent_32.gif" />
+    <None Include="Resources\arrow_bottom_16.gif" />
+    <None Include="Resources\arrow_bottom_24.gif" />
+    <None Include="Resources\arrow_bottom_32.gif" />
+    <None Include="Resources\arrow_down_16.gif" />
+    <None Include="Resources\arrow_down_24.gif" />
+    <None Include="Resources\arrow_down_32.gif" />
+    <None Include="Resources\arrow_top_16.gif" />
+    <None Include="Resources\arrow_top_24.gif" />
+    <None Include="Resources\arrow_top_32.gif" />
+    <None Include="Resources\arrow_up_16.gif" />
+    <None Include="Resources\arrow_up_24.gif" />
+    <None Include="Resources\arrow_up_32.gif" />
+    <None Include="Resources\ping_16.gif" />
+    <None Include="Resources\ping_24.gif" />
+    <None Include="Resources\ping_32.gif" />
+    <None Include="Resources\oracleforms_16.gif" />
+    <None Include="Resources\oracleforms_24.gif" />
+    <None Include="Resources\oracleforms_32.gif" />
+    <None Include="Resources\exchange_rate_search_16.gif" />
+    <None Include="Resources\exchange_rate_search_24.gif" />
+    <None Include="Resources\exchange_rate_search_32.gif" />
+    <None Include="Resources\exchange_rate_add_16.gif" />
+    <None Include="Resources\exchange_rate_add_24.gif" />
+    <None Include="Resources\exchange_rate_add_32.gif" />
+    <None Include="Resources\currency_16.gif" />
+    <None Include="Resources\currency_24.gif" />
+    <None Include="Resources\currency_32.gif" />
+    <None Include="Resources\payment_16.gif" />
+    <None Include="Resources\payment_24.gif" />
+    <None Include="Resources\payment_32.gif" />
+    <Content Include="Resources\Reassort_Parm_24.gif" />
+    <Content Include="Resources\Reassort_Parm_32.gif" />
+    <None Include="Resources\write_32.gif" />
+    <None Include="Resources\wws_24.gif" />
+    <None Include="Resources\wws_32.gif" />
+    <None Include="Resources\administrator_24.gif" />
+    <None Include="Resources\administrator_32.gif" />
+    <None Include="Resources\administrator_config_32.gif" />
+    <None Include="Resources\administrator_config_24.gif" />
+    <Content Include="Resources\benchmarking_24.gif" />
+    <Content Include="Resources\benchmarking_32.gif" />
+    <None Include="Resources\sales_32.gif" />
+    <None Include="Resources\sales_24.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

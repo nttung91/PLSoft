@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
-using Manor.Icons;
 using Windows.Core.Localization;
 
 namespace Windows.Core.Controls.DXEditors.GridLookups
@@ -19,7 +18,8 @@ namespace Windows.Core.Controls.DXEditors.GridLookups
         {
             GenericGridLookUpEditRepositoryItem.RegisterGenericRepositoryItemGridLookUpEdit();
             _imageListClearButton = new ImageList();
-            _imageListClearButton.Images.Add(IconManager.GetIcon(EIcons.close_a_16));
+            //NTG TODO
+            //_imageListClearButton.Images.Add(IconManager.GetIcon(EIcons.close_a_16));
         }
 
         public override string EditorTypeName

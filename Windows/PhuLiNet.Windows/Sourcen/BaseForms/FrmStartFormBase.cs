@@ -4,8 +4,8 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using Manor.Icons;
 using Windows.Core.Commands;
+using Techical.Icons;
 
 namespace Windows.Core.BaseForms
 {

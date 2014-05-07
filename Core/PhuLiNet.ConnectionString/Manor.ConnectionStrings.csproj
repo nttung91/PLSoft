@@ -131,9 +131,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Technical\Manor.Utilities\Sourcen\Techical.Utilities.csproj">
+    <ProjectReference Include="..\..\Technical\Technical.Utilities\Sourcen\Techical.Utilities.csproj">
       <Project>{dde7dd51-7e9f-4264-aa59-badabed19de3}</Project>
-      <Name>Manor.Utilities</Name>
+      <Name>Techical.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Runtime.Serialization;
-using Manor.Utilities.Exceptions;
+using Technical.Utilities.Exceptions;
 
 namespace Manor.ConnectionStrings
 {
     [Serializable]
-    public class ConnectionStringRegistryException : ManorException
+    public class ConnectionStringRegistryException : PhuLiException
     {
         public ConnectionStringRegistryException()
         {

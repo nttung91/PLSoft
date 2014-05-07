@@ -1,6 +1,5 @@
 ﻿using System.Security.Principal;
-using Manor.Utilities.Environment;
-using Manor.Utilities.Extensions;
+using Technical.Utilities.Extensions;
 
 namespace Manor.ConnectionStrings
 {

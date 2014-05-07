@@ -1,6 +1,5 @@
 using System;
 using DevExpress.XtraEditors;
-using Manor.Icons;
 
 namespace Windows.Core.Forms
 {
@@ -9,7 +8,6 @@ namespace Windows.Core.Forms
         internal FrmExceptionMessageBox(Exception exception)
         {
             InitializeComponent();
-
             picError.Image = IconManager.GetBitmap(EIcons.close_b_32);
             meExceptionText.Text = exception.ToString();
             if (exception.InnerException != null) meInnerException.Text = exception.InnerException.ToString();

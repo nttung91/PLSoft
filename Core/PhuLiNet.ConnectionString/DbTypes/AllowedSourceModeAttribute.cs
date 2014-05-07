@@ -1,5 +1,5 @@
 ﻿using System;
-using Manor.Utilities.Environment;
+using Technical.Utilities.Environment;
 
 namespace Manor.ConnectionStrings.DbTypes
 {
