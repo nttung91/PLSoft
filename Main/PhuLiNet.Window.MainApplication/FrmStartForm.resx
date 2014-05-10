@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,32 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ceWaitForm.Properties.Caption" xml:space="preserve">
-    <value>Far apparire finestra d'attesa</value>
-  </data>
+  <metadata name="depBase.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="barManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>115, 17</value>
+  </metadata>
+  <metadata name="dockManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>233, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ceWaitForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 19</value>
-  </data>
-  <data name="gcMisc.Text" xml:space="preserve">
-    <value>Altri</value>
-  </data>
-  <data name="ceNurNeueStyles.Properties.Caption" xml:space="preserve">
-    <value>Far apparire solamente nuovi styles</value>
-  </data>
-  <data name="ceNurNeueStyles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 19</value>
-  </data>
-  <data name="gcGridStyle.Text" xml:space="preserve">
-    <value>Struttura Style per liste</value>
-  </data>
-  <data name="sbAbbrechen.Text" xml:space="preserve">
-    <value>&amp;Annullare</value>
-  </data>
-  <data name="xtpApplication.Text" xml:space="preserve">
-    <value>Parametri d'applicazione</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Opzioni</value>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
+        AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIiIAAAAAAAAAA
+        AAAAAIiIiIiIAAAAAAAAAAAACIiIiP/4iIAAAAAAAAAIiIiIj///+IiAAAAAAAiIiIiI//////iIAAAA
+        AIiIiIiP///////4iAAACIiIiI//////////+IgAAAiIiP////////////iIAACIj//////////////4
+        iAAAiI//////////////+IgAAIiP//////////////iIAACIj//////////////4iAAAiI//////////
+        ////+HgAAIiP/////////////4h4AACIj/////////////+IeAAAiI//////////////iHgAAIiP////
+        ////+IiIiIh4AACIj//////4iIiIiIiIeAAAiI/////4iIiIiIiIeHgAAIiP///4iIiId3d4eIh4AACI
+        j/+IiId3eId4eHiIeAAAiIiId3eIiIiIiIiIh3AAAIh4iIiIj///iIiIiHeAAACIj/////iIiIiHd3iI
+        AAAAiP//+IiIh3d3iIgAAAAAAIj/iIh3d4iIgAAAAAAAAAAIh3eIiIAAAAAAAAAAAAAAAIiAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////wf///AD//+AAf/4
+        AAH/gAAD/AAAA+AAAAPgAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AA
+        AAPAAAADwAAAA8AAAAfAAAAHwAAAD8AAAP/AAB//4Af///H//////////////w==
+</value>
   </data>
 </root>

@@ -48,23 +48,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\PhuLiNet.DbModel.Core\DbModel.Core.csproj">
+    <ProjectReference Include="..\PhuLiNet.DbModel.Core\DbModel.Core.csproj">
       <Project>{04b50f43-71c5-4148-ad3c-8c1e5e772be4}</Project>
       <Name>DbModel.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core\PhuLiNet.DbModel.Infrastructure\Core.DbModel.Infrastructure.csproj">
+    <ProjectReference Include="..\PhuLiNet.DbModel.Infrastructure\Core.DbModel.Infrastructure.csproj">
       <Project>{3ffb8168-1155-422e-84ed-3997b230a21e}</Project>
       <Name>Core.DbModel.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core\PhuLiNet.DbModel\PhuLiNet.DbModels.csproj">
+    <ProjectReference Include="..\PhuLiNet.DbModel\PhuLiNet.DbModels.csproj">
       <Project>{2d5b8e11-da38-4fd9-b830-f69bdee00800}</Project>
       <Name>PhuLiNet.DbModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core\PhuLiNet.Maps\PhuLiNet.Maps.csproj">
+    <ProjectReference Include="..\PhuLiNet.Maps\PhuLiNet.Maps.csproj">
       <Project>{646f11c6-9d76-4852-9fc1-12110f50f73f}</Project>
       <Name>PhuLiNet.Maps</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core\PhuLiNet.Repository\PhuLiNet.Repository.csproj">
+    <ProjectReference Include="..\PhuLiNet.Repository\PhuLiNet.Repository.csproj">
       <Project>{34a19776-c9e6-4e56-96e4-69594248c3e5}</Project>
       <Name>PhuLiNet.Repository</Name>
     </ProjectReference>

@@ -48,7 +48,7 @@
       <Project>{d3d033fc-3fd0-4f5a-a80e-0dd31aa75f1e}</Project>
       <Name>PhuLiNet.Business.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Manor.DbModel.Core\DbModel.Core.csproj">
+    <ProjectReference Include="..\PhuLiNet.DbModel.Core\DbModel.Core.csproj">
       <Project>{04b50f43-71c5-4148-ad3c-8c1e5e772be4}</Project>
       <Name>DbModel.Core</Name>
     </ProjectReference>
