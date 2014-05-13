@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5FDD0FB8-B856-4B4E-BCA2-B377D35E96D2}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{6D32750F-979D-410E-9DEB-4944B9CC4451}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PhuliNet.Window.Customer</RootNamespace>
-    <AssemblyName>PhuliNet.Window.Customer</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>PhuLiNet.Window.MainApplication</RootNamespace>
+    <AssemblyName>PhuLiNet.Window.MainApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -21,18 +21,15 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
@@ -88,44 +85,93 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\StartCustomerForm.cs" />
-    <Compile Include="Customer\Form1.cs">
+    <Compile Include="AppStartup\DefaultApplicationStartup.cs" />
+    <Compile Include="AppStartup\Shutdown.cs" />
+    <Compile Include="AppStartup\Startup.cs" />
+    <Compile Include="Executions\PluginExecutor.cs" />
+    <Compile Include="Extenders\BarSubItemExtender.cs" />
+    <Compile Include="Extenders\ComboboxShortcutExtender.cs" />
+    <Compile Include="Extenders\IMenuExtender.cs" />
+    <Compile Include="Extenders\MenuItemImageHandler.cs" />
+    <Compile Include="Extenders\TileControlExtender.cs" />
+    <Compile Include="Extenders\ToolbarExtender.cs" />
+    <Compile Include="Extenders\TreeListExtender.cs" />
+    <Compile Include="FrmStartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmStartForm.Designer.cs">
+      <DependentUpon>FrmStartForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PluginStartCustomer.cs" />
+    <Compile Include="Host\HostApplicationInfo.cs" />
+    <Compile Include="Host\PluginHost.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Customer\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmStartForm.resx">
+      <DependentUpon>FrmStartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Main\PhuliNet.Window.Customer\PhuliNet.Window.Customer.csproj">
+      <Project>{5fdd0fb8-b856-4b4e-bca2-b377d35e96d2}</Project>
+      <Name>PhuliNet.Window.Customer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Plugin\Manor.Plugin.Contracts\Sourcen\PhuLiNet.Plugin.Contracts.csproj">
       <Project>{6d0e3256-004c-4cde-babd-7f9e334428d5}</Project>
       <Name>PhuLiNet.Plugin.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugin\Manor.Plugin\Sourcen\PhuLiNet.Plugin.csproj">
+      <Project>{0a28be05-ce82-4c8e-b01c-aec6757ae79d}</Project>
+      <Name>PhuLiNet.Plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical\Technical.Icons\Sourcen\Techical.Icons.csproj">
+      <Project>{fa611aeb-d058-4efc-ac58-debc477a9057}</Project>
+      <Name>Techical.Icons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Technical\Technical.Utilities\Sourcen\Techical.Utilities.csproj">
+      <Project>{dde7dd51-7e9f-4264-aa59-badabed19de3}</Project>
+      <Name>Techical.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Windows\PhuLiNet.Windows\Sourcen\Windows.Core.csproj">
       <Project>{07cb80c9-b2fa-4a96-b82a-4c19945f63ea}</Project>
       <Name>Windows.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PhuliNet.Business.Customer\PhuliNet.Business.Customer.csproj">
-      <Project>{23437b54-e564-42b6-a868-9e34d92094a7}</Project>
-      <Name>PhuliNet.Business.Customer</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PhuLiNetMenu.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

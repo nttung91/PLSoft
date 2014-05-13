@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A28BE05-CE82-4C8E-B01C-AEC6757AE79D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhuLiNet.Plugin</RootNamespace>
+    <AssemblyName>PhuLiNet.Plugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\ExternalLibs\Newtonsoft.Json-5.0.8\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\..\ExternalLibs\StructureMap-2.6.4.1\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Misc\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Application\ApplicationInfo.cs" />
+    <Compile Include="Application\ApplicationFactory.cs" />
+    <Compile Include="Application\ConfigurationFactory.cs" />
+    <Compile Include="Application\Configurations.cs" />
+    <Compile Include="Application\MenuConfigByDb.cs" />
+    <Compile Include="Application\DependencyFactory.cs" />
+    <Compile Include="Application\Dependencies.cs" />
+    <Compile Include="Application\Dependency.cs" />
+    <Compile Include="Application\DataAdapter\IAppDataAdapter.cs" />
+    <Compile Include="Application\DataAdapter\XmlDataAdapter.cs" />
+    <Compile Include="Application\IApplicationInfo.cs" />
+    <Compile Include="Application\Configuration.cs" />
+    <Compile Include="Application\IMenuConfig.cs" />
+    <Compile Include="Application\MenuConfigByFile.cs" />
+    <Compile Include="DependencyLoader.cs" />
+    <Compile Include="DependencyLoaderFactory.cs" />
+    <Compile Include="EMenuSource.cs" />
+    <Compile Include="Manager\IPluginValidator.cs" />
+    <Compile Include="Manager\PluginConvention.cs" />
+    <Compile Include="IDependencyLoader.cs" />
+    <Compile Include="IHostApplicationInternals.cs" />
+    <Compile Include="Manager\IPluginManager.cs" />
+    <Compile Include="Manager\PluginManager.cs" />
+    <Compile Include="Manager\PluginManagerFactory.cs" />
+    <Compile Include="Manager\PluginSummary.cs" />
+    <Compile Include="Manager\PluginValidator.cs" />
+    <Compile Include="Menu\IMenuItemListExtensions.cs" />
+    <Compile Include="Menu\MainMenu\IMenuRepository.cs" />
+    <Compile Include="Menu\MainMenu\Repository\Languages.cs" />
+    <Compile Include="Menu\MainMenu\Repository\PluginMenuRepository.cs" />
+    <Compile Include="Menu\IMenuItem.cs" />
+    <Compile Include="Menu\MainMenu\IMenuManager.cs" />
+    <Compile Include="Menu\MenuCaptionComparer.cs" />
+    <Compile Include="Menu\MenuSequenceAndCaptionComparer.cs" />
+    <Compile Include="Menu\MenuDepthCalculator.cs" />
+    <Compile Include="Menu\MenuItemBase.cs" />
+    <Compile Include="Menu\MenuItemDefault.cs" />
+    <Compile Include="Menu\MainMenu\MenuManager.cs" />
+    <Compile Include="Menu\MainMenu\MenuManagerFactory.cs" />
+    <Compile Include="Menu\MainMenu\MenuValidator.cs" />
+    <Compile Include="InternalHostApplication.cs" />
+    <Compile Include="HostApplicationFactory.cs" />
+    <Compile Include="Menu\Plugins\PluginProxy.cs" />
+    <Compile Include="Menu\Plugins\PluginProxyRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PluginProxyRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Permissions\MenuTreePermissionHandler.cs" />
+    <Compile Include="Permissions\PermissionHandler.cs" />
+    <Compile Include="PluginAllocator.cs" />
+    <Compile Include="PluginHostException.cs" />
+    <Compile Include="PluginStarter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartParameter.cs" />
+    <Compile Include="Xml\XmlLoader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Menu\Plugins\PluginProxyRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PluginProxyRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\DataAdapter\PluginApp.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MainMenu\Repository\MenuItems.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\PhuLiNet.DbModel.Core\DbModel.Core.csproj">
+      <Project>{04b50f43-71c5-4148-ad3c-8c1e5e772be4}</Project>
+      <Name>DbModel.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\PhuLiNet.DbModel.Infrastructure\Core.DbModel.Infrastructure.csproj">
+      <Project>{3ffb8168-1155-422e-84ed-3997b230a21e}</Project>
+      <Name>Core.DbModel.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Technical.Icons\Sourcen\Techical.Icons.csproj">
+      <Project>{FA611AEB-D058-4EFC-AC58-DEBC477A9057}</Project>
+      <Name>Techical.Icons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Technical.Permissions\Techical.Permissions.csproj">
+      <Project>{D4F5C857-2204-4968-9B9B-DECC7A24DBA6}</Project>
+      <Name>Techical.Permissions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Technical\Technical.Utilities\Sourcen\Techical.Utilities.csproj">
+      <Project>{dde7dd51-7e9f-4264-aa59-badabed19de3}</Project>
+      <Name>Techical.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Manor.Plugin.Contracts\Sourcen\PhuLiNet.Plugin.Contracts.csproj">
+      <Project>{6d0e3256-004c-4cde-babd-7f9e334428d5}</Project>
+      <Name>PhuLiNet.Plugin.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

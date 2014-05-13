@@ -12,7 +12,7 @@ namespace PhuLiNet.Business.Common.Processing
         protected bool _hasException = false;
         protected IBusinessProcessLogger _logger;
 
-        public AbstractBusinessProcess()
+        protected AbstractBusinessProcess()
         {
         }
 

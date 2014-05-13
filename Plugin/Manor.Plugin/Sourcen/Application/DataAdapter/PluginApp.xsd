@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PluginApp"
+    targetNamespace="http://www.manor.ch/PluginApp.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://www.manor.ch/PluginApp.xsd"
+    xmlns:mstns="http://www.manor.ch/PluginApp.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  
+  <!-- definition of simple elements -->
+  <xs:simpleType name="stringType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"></xs:minLength>      
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="boolType">
+    <xs:restriction base="xs:boolean">
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="datetimeType">
+    <xs:restriction base="xs:dateTime">
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="menuType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="main"></xs:enumeration>
+      <xs:enumeration value="toolbar"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType> 
+
+  <!-- definition of complex elements -->  
+  <xs:complexType name="settingsType">
+    <xs:sequence>
+      <xs:element name="appName" type="stringType" minOccurs="1" maxOccurs="1"></xs:element>
+      <xs:element name="appVersion" type="stringType" minOccurs="1" maxOccurs="1"></xs:element>
+      <xs:element name="appDate" type="datetimeType" minOccurs="1" maxOccurs="1"></xs:element>
+      <xs:element name="autoStart" type="boolType" minOccurs="0" maxOccurs="1"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="menuConfigType">
+    <xs:attribute name="type" type="menuType" use="required"/>
+    <xs:attribute name="file" type="stringType"/>
+    <xs:attribute name="database" type="stringType"/>
+  </xs:complexType>
+
+  <xs:complexType name="configList">
+    <xs:sequence>
+      <xs:element name="menu" maxOccurs="unbounded" type="menuConfigType"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="stringType" use="required"/>
+    <xs:attribute name="default" type="boolType" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="dependencyConfigType">
+    <xs:attribute name="id" type="stringType" use="required"/>
+    <xs:attribute name="file" type="stringType" use="required"/>
+    <xs:attribute name="type" type="stringType" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="dependencyList">
+    <xs:sequence>
+      <xs:element name="dependency" maxOccurs="unbounded" type="dependencyConfigType"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="pluginapptype">
+    <xs:sequence>
+      <xs:element name="settings" maxOccurs="1" type="settingsType"/>
+      <xs:element name="dependencies" maxOccurs="1" type="dependencyList"/>
+      <xs:element name="config" maxOccurs="unbounded" type="configList"/>      
+    </xs:sequence>   
+  </xs:complexType>
+
+  <xs:element name="pluginAppConfig" type="pluginapptype"/>
+  
+</xs:schema>

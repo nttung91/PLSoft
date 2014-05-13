@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MenuItems"
+    targetNamespace="http://www.manor.ch/MenuItems.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://www.manor.ch/MenuItems.xsd"
+    xmlns:mstns="http://www.manor.ch/MenuItems.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  
+  <!-- definition of simple elements -->
+  <xs:simpleType name="stringtype">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"></xs:minLength>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="boolType">
+    <xs:restriction base="xs:boolean">
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- definition of complex elements -->  
+  <xs:complexType name="menuitemtype">
+    <xs:sequence>
+      <xs:element name="menuitem" type="menuitemtype" minOccurs="0" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="stringtype" use="required"/>
+    <xs:attribute name="plugin" type="stringtype" use="optional"/>
+    <xs:attribute name="caption" type="stringtype" use="optional"/>
+    <xs:attribute name="caption-en" type="stringtype" use="optional"/>
+    <xs:attribute name="caption-fr" type="stringtype" use="optional"/>
+    <xs:attribute name="caption-it" type="stringtype" use="optional"/>
+    <xs:attribute name="tooltip" type="stringtype" use="optional"/>
+    <xs:attribute name="smallIcon" type="stringtype" use="optional"/>
+    <xs:attribute name="largeIcon" type="stringtype" use="optional"/>
+    <xs:attribute name ="autoStart" type="boolType" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="menutreetype">
+    <xs:sequence>
+      <xs:element name="menuitem" maxOccurs="unbounded" type="menuitemtype"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="menutree" type="menutreetype"/>
+  
+</xs:schema>
