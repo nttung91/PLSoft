@@ -1,4 +1,4 @@
-﻿namespace Techical.MsExcel.Contracts
+﻿namespace Manor.MsExcel.Contracts
 {
     public enum EPrintOrientation
     {

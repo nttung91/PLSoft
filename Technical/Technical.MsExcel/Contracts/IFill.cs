@@ -1,5 +1,4 @@
 ﻿using System.Drawing;
-using Techical.MsExcel.Contracts;
 
 namespace Manor.MsExcel.Contracts
 {

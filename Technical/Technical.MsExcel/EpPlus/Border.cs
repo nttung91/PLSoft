@@ -1,5 +1,4 @@
 ﻿using Manor.MsExcel.Contracts;
-using Techical.MsExcel.Contracts;
 
 namespace Techical.MsExcel.EpPlus
 {

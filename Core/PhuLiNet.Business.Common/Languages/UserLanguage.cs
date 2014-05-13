@@ -9,10 +9,10 @@ namespace PhuLiNet.Business.Common.Languages
     {
         public static Language Get()
         {
-            var identity = ApplicationContext.User.Identity as PhuLiIdentity;
-            if (identity != null)
+            var manorIdentity = ApplicationContext.User.Identity as PhuLiIdentity;
+            if (manorIdentity != null)
             {
-                return identity.Language;
+                return manorIdentity.Language;
             }
 
             return GetDefault();

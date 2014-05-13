@@ -1,6 +1,4 @@
-﻿using Manor.MsExcel.Contracts;
-
-namespace Techical.MsExcel.Contracts
+﻿namespace Manor.MsExcel.Contracts
 {
     public interface IBorder
     {

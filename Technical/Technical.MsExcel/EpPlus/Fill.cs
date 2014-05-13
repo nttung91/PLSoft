@@ -1,7 +1,6 @@
 ﻿using System.Drawing;
 using Manor.MsExcel.Contracts;
 using OfficeOpenXml.Style;
-using Techical.MsExcel.Contracts;
 
 namespace Techical.MsExcel.EpPlus
 {
