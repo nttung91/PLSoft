@@ -147,11 +147,11 @@
       <Project>{5fdd0fb8-b856-4b4e-bca2-b377d35e96d2}</Project>
       <Name>PhuliNet.Window.Customer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Plugin\Manor.Plugin.Contracts\Sourcen\PhuLiNet.Plugin.Contracts.csproj">
+    <ProjectReference Include="..\..\Plugin\PhuLiNet.Plugin.Contracts\Sourcen\PhuLiNet.Plugin.Contracts.csproj">
       <Project>{6d0e3256-004c-4cde-babd-7f9e334428d5}</Project>
       <Name>PhuLiNet.Plugin.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Plugin\Manor.Plugin\Sourcen\PhuLiNet.Plugin.csproj">
+    <ProjectReference Include="..\..\Plugin\PhuLiNet.Plugin\Sourcen\PhuLiNet.Plugin.csproj">
       <Project>{0a28be05-ce82-4c8e-b01c-aec6757ae79d}</Project>
       <Name>PhuLiNet.Plugin</Name>
     </ProjectReference>

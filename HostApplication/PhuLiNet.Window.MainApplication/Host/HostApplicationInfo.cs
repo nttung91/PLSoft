@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using Windows.Core.WindowsManager;
-using Manor.Plugin.Contracts;
+using PhuLiNet.Plugin.Contracts;
 
 namespace PhuLiNet.Window.MainApplication.Host
 {

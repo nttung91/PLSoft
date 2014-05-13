@@ -5,7 +5,6 @@ using Windows.Core.BaseForms;
 using Windows.Core.DxExtensions;
 using DevExpress.XtraBars;
 using DevExpress.XtraTreeList;
-using Manor.Plugin.Contracts;
 using PhuLiNet.Plugin;
 using PhuLiNet.Plugin.Contracts;
 using PhuLiNet.Plugin.Menu;

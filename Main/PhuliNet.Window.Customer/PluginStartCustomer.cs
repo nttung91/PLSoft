@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using Windows.Core.Commands;
 using Windows.Core.WindowsManager;
-using Manor.Plugin.Contracts;
 using PhuLiNet.Plugin.Contracts;
 using PhuliNet.Window.Customer.Commands;
 

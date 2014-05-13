@@ -114,9 +114,13 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Plugin\Manor.Plugin.Contracts\Sourcen\PhuLiNet.Plugin.Contracts.csproj">
+    <ProjectReference Include="..\..\Plugin\PhuLiNet.Plugin.Contracts\Sourcen\PhuLiNet.Plugin.Contracts.csproj">
       <Project>{6d0e3256-004c-4cde-babd-7f9e334428d5}</Project>
       <Name>PhuLiNet.Plugin.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugin\PhuLiNet.Plugin\Sourcen\PhuLiNet.Plugin.csproj">
+      <Project>{0a28be05-ce82-4c8e-b01c-aec6757ae79d}</Project>
+      <Name>PhuLiNet.Plugin</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Windows\PhuLiNet.Windows\Sourcen\Windows.Core.csproj">
       <Project>{07cb80c9-b2fa-4a96-b82a-4c19945f63ea}</Project>

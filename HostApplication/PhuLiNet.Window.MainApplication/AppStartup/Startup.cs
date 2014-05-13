@@ -5,7 +5,6 @@ using Windows.Core.WindowsManager;
 using DevExpress.XtraBars;
 using Manor.Plugin;
 using Manor.Plugin.Application;
-using Manor.Plugin.Contracts;
 using PhuLiNet.Plugin;
 using PhuLiNet.Plugin.Contracts;
 using PhuLiNet.Window.MainApplication.Host;

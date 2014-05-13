@@ -61,9 +61,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuLiNet.Window.MainApplica
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HostApplication", "HostApplication", "{7727C24E-9E1C-49A6-A276-2A4ECFF254A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuLiNet.Plugin", "Plugin\Manor.Plugin\Sourcen\PhuLiNet.Plugin.csproj", "{0A28BE05-CE82-4C8E-B01C-AEC6757AE79D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuLiNet.Plugin", "Plugin\PhuLiNet.Plugin\Sourcen\PhuLiNet.Plugin.csproj", "{0A28BE05-CE82-4C8E-B01C-AEC6757AE79D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuLiNet.Plugin.Contracts", "Plugin\Manor.Plugin.Contracts\Sourcen\PhuLiNet.Plugin.Contracts.csproj", "{6D0E3256-004C-4CDE-BABD-7F9E334428D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuLiNet.Plugin.Contracts", "Plugin\PhuLiNet.Plugin.Contracts\Sourcen\PhuLiNet.Plugin.Contracts.csproj", "{6D0E3256-004C-4CDE-BABD-7F9E334428D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

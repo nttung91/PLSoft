@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using DevExpress.XtraEditors.Repository;
-using Manor.Plugin.Contracts;
 using PhuLiNet.Plugin.Contracts;
 
 namespace PhuLiNet.Window.MainApplication.Extenders
