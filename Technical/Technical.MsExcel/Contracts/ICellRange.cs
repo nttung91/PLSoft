@@ -1,7 +1,6 @@
 ﻿using System;
-using Techical.MsExcel.Contracts;
 
-namespace Manor.MsExcel.Contracts
+namespace Techical.MsExcel.Contracts
 {
     public interface ICellRange
     {

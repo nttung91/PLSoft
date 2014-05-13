@@ -1,7 +1,6 @@
 ﻿using System;
-using Techical.MsExcel.Contracts;
 
-namespace Manor.MsExcel.Contracts
+namespace Techical.MsExcel.Contracts
 {
     /// <summary>
     /// Excel-Wrapper used for Read and Write to Excel-Files

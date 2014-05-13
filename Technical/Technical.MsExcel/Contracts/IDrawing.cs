@@ -1,4 +1,6 @@
-﻿namespace Manor.MsExcel.Contracts
+﻿using Manor.MsExcel.Contracts;
+
+namespace Techical.MsExcel.Contracts
 {
     public interface IDrawing
     {
