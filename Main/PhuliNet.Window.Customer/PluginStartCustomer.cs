@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Windows.Core.Commands;
-using Windows.Core.WindowsManager;
+﻿using Windows.Core.Commands;
 using PhuLiNet.Plugin.Contracts;
 using PhuliNet.Window.Customer.Commands;
 
