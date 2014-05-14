@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pluginAppConfig xmlns="http://www.manor.ch/PluginApp.xsd"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="PluginApp.xsd">
+  <settings>
+    <appName>ELCA DEV</appName>
+    <appVersion>4.4.7.0</appVersion>
+    <appDate>2013-08-26T09:00:00</appDate>
+    <autoStart>true</autoStart>
+  </settings>
+  
+  <dependencies>
+    <dependency id="startup" file="Dependencies/Startup.xml" type="StructureMap"/>    
+  </dependencies>
+
+  <config id="dev" default="true">
+    <menu type="main" file="Configurations/DevMenu.xml"/>
+    <menu type="toolbar" file="Configurations/DevToolbar.xml"/>
+  </config>
+  
+</pluginAppConfig>
+

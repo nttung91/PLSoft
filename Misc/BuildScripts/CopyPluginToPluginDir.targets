@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+
+  <PropertyGroup>
+    <CopyOutputToPluginDirDependsOn/>
+  </PropertyGroup>
+
+  <Target Name="CopyOutputToPluginDir" DependsOnTargets="$(CopyOutputToPluginDirDependsOn)">
+
+    <Message Importance="high" Text="POSTBUILDSTEP for $(ProjectName) and PluginApplicationPath $(PluginApplicationPath)"/>
+
+    <CreateItem Condition="'$(PluginApplicationPath)'!=''" Include="$(ProjectDir)$(OutDir)**\*.*">
+      <Output TaskParameter="Include" ItemName="PluginItemsToCopy"/>
+    </CreateItem>
+
+    <Copy Condition="'$(PluginApplicationPath)'!=''" 
+          SourceFiles="@(PluginItemsToCopy)" 
+          DestinationFolder="$(PluginApplicationPath)\%(RecursiveDir)" SkipUnchangedFiles="true">
+      <Output TaskParameter="CopiedFiles" ItemName="CopiedPluginItems"/>
+    </Copy>
+
+    <Message Importance="low" Text="Copied Items: @(CopiedPluginItems)"/>
+
+    <Message Condition="'@(CopiedPluginItems)'!=''" Importance="high" Text="Copied all items."/>
+    <Message Condition="'@(CopiedPluginItems)'==''" Importance="high" Text="Copied no items."/>
+    
+    <Message Importance="high" Text="POSTBUILDSTEP for $(ProjectName) COMPLETED."/>
+
+  </Target>
+  
+  <PropertyGroup>
+    <AfterBuildDependsOn>
+      $(AfterBuildDependsOn);
+      CopyOutputToPluginDir
+    </AfterBuildDependsOn>
+  </PropertyGroup>
+  <Target Name="AfterBuild"
+          DependsOnTargets="$(AfterBuildDependsOn)">
+  </Target>
+    
+</Project>

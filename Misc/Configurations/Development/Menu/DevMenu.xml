@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menutree xmlns="http://www.manor.ch/MenuItems.xsd"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="MenuItems.xsd">
+
+  <menuitem id="Admin" caption="Admin" tooltip="Administration Tools" smallIcon="administrator_24" largeIcon="administrator_32">
+    <menuitem id="PluginJobModuleNames" plugin="PluginJobModuleNames"/>
+  </menuitem>
+
+
+</menutree>

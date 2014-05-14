@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menutree xmlns="http://www.manor.ch/MenuItems.xsd"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="MenuItems.xsd">
+
+  <menuitem id="Options" caption="Optionen" tooltip="Programmeinstellungen" smallIcon="gear_ok_24" largeIcon="gear_ok_32">
+    <menuitem id="Language" plugin="PluginSelectLanguage"></menuitem>
+    <menuitem id="DisplayOptions" plugin="PluginDisplayOptions"></menuitem>
+  </menuitem>
+
+
+</menutree>

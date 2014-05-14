@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StructureMap MementoStyle="Attribute">
+  <!-- Cache Manager-->
+  <DefaultInstance Key="Memory" PluginType="Manor.Caching.ICacheManager, Manor.Caching" PluggedType="Manor.Caching.CacheManagerMemory, Manor.Caching" Scope="PerRequest"/>
+  <AddInstance Key="None" PluginType="Manor.Caching.ICacheManager, Manor.Caching" PluggedType="Manor.Caching.CacheManagerNone, Manor.Caching" Scope="PerRequest"/>
+
+  <!-- Context Handler -->
+  <DefaultInstance Key="UDrive" PluginType="Manor.Business.Common.Context.Base.IContextHandler, Manor.Business.Common" PluggedType="Manor.Business.Common.Context.UDriveContextHandler, Manor.Business.Common" Scope="PerRequest" appName="WWS"/>
+  <AddInstance Key="Memory" PluginType="Manor.Business.Common.Context.Base.IContextHandler, Manor.Business.Common" PluggedType="Manor.Business.Common.Context.MemoryContextHandler, Manor.Business.Common" Scope="PerRequest"/>
+  <AddInstance Key="UserHome" PluginType="Manor.Business.Common.Context.Base.IContextHandler, Manor.Business.Common" PluggedType="Manor.Business.Common.Context.FileSystemContextHandler, Manor.Business.Common" Scope="PerRequest"/>
+
+  <!-- Language Provider -->
+  <DefaultInstance Key="German" PluginType="Manor.Business.Common.Languages.Provider.ILanguageProvider, Manor.Business.Common" PluggedType="Manor.Business.Common.Languages.Provider.GermanLanguageProvider, Manor.Business.Common" Scope="PerRequest"/>
+  <AddInstance Key="French" PluginType="Manor.Business.Common.Languages.Provider.ILanguageProvider, Manor.Business.Common" PluggedType="Manor.Business.Common.Languages.Provider.FrenchLanguageProvider, Manor.Business.Common" Scope="PerRequest"/>
+  <AddInstance Key="Italian" PluginType="Manor.Business.Common.Languages.Provider.ILanguageProvider, Manor.Business.Common" PluggedType="Manor.Business.Common.Languages.Provider.ItalianLanguageProvider, Manor.Business.Common" Scope="PerRequest"/>
+  <AddInstance Key="English" PluginType="Manor.Business.Common.Languages.Provider.ILanguageProvider, Manor.Business.Common" PluggedType="Manor.Business.Common.Languages.Provider.EnglishLanguageProvider, Manor.Business.Common" Scope="PerRequest"/>
+
+  <!-- Logging -->
+  <DefaultInstance Key="Log4Net" PluginType="Manor.Logging.ILogger, Manor.Logging" PluggedType="Manor.Logging.LoggerLog4Net, Manor.Logging" Scope="PerRequest"/>
+  <AddInstance Key="None" PluginType="Manor.Logging.ILogger, Manor.Logging" PluggedType="Manor.Logging.LoggerNothing, Manor.Logging" Scope="PerRequest"/>
+  <AddInstance Key="TextWriter" PluginType="Manor.Logging.ILogger, Manor.Logging" PluggedType="Manor.Logging.LoggerTextWriter, Manor.Logging" Scope="PerRequest" clearDefaultListeners="true"/>
+
+  <!-- Auditing -->
+  <DefaultInstance Key="None" PluginType="Manor.Business.Common.Audit.IUserAuditLogger, Manor.Business.Common" PluggedType="Manor.Business.Common.Audit.NoUserAuditLogger, Manor.Business.Common" Scope="PerRequest"/>
+
+  <!-- Settings Provider -->
+  <DefaultInstance Key="None" PluginType="Manor.Settings.Contracts.IConfigProvider, Manor.Settings" PluggedType="Manor.Settings.Empty.EmptyConfig, Manor.Settings" Scope="PerRequest" appName="WWS" instance="OFFICE-V1"/>
+
+  <!-- Permissions Provider -->
+  <DefaultInstance Key="All" PluginType="Manor.Permissions.Contracts.IPermissionProvider, Manor.Permissions" PluggedType="Manor.Permissions.Empty.AllPermissionsProvider, Manor.Permissions" Scope="PerRequest"/>
+  <AddInstance Key="None" PluginType="Manor.Permissions.Contracts.IPermissionProvider, Manor.Permissions" PluggedType="Manor.Permissions.Empty.NoPermissionsProvider, Manor.Permissions" Scope="PerRequest"/>
+
+  <!-- Help Provider -->
+  <DefaultInstance Key="FileSystem" PluginType="Manor.Windows.HelpProvider.IHelpProvider, Manor.Windows" PluggedType="Manor.Windows.HelpProvider.HelpFromFileSystemProvider, Manor.Windows" Scope="PerRequest"/>
+  <AddInstance Key="Sharepoint" PluginType="Manor.Windows.HelpProvider.IHelpProvider, Manor.Windows" PluggedType="Manor.Windows.HelpProvider.HelpFromSharepointProvider, Manor.Windows" Scope="PerRequest"/>
+
+  <!-- Feature Toggle Service -->
+  <DefaultInstance Key="None" PluginType="Manor.FeatureToggle.IFeatureToggleService, Manor.FeatureToggle" PluggedType="Manor.FeatureToggle.Fake.FeatureToggleAllOff, Manor.FeatureToggle" Scope="PerRequest"/>
+  <AddInstance Key="BySettings" PluginType="Manor.FeatureToggle.IFeatureToggleService, Manor.FeatureToggle" PluggedType="Manor.FeatureToggle.BySetting.FeatureToggleBySettings, Manor.FeatureToggle" Scope="PerRequest"/>
+
+  <!-- NHibernate Profiler -->
+  <AddInstance Key="None" PluginType="Manor.DbModel.Infrastructure.Profiling.IProfiler, Manor.DbModel.Infrastructure" PluggedType="Manor.DbModel.Infrastructure.Profiling.NoneProfiler, Manor.DbModel.Infrastructure" Scope="PerRequest"/>
+  <DefaultInstance Key="RhinosProfiler" PluginType="Manor.DbModel.Infrastructure.Profiling.IProfiler, Manor.DbModel.Infrastructure" PluggedType="Manor.DbModel.Infrastructure.Profiling.RhinosProfiler, Manor.DbModel.Infrastructure" Scope="PerRequest"/>
+
+  <!-- Early initialization phase (All registerd IEarlyInitialize implementations are executed on application startup)-->
+  <AddInstance Key="DbModelMainDb" PluginType="Manor.Utilities.AppInit.IEarlyInitialize, Manor.Utilities" PluggedType="Manor.DbModel.MainDb.Repository.EarlyInitialize, Manor.DbModel.MainDb.Repository" Scope="PerRequest"/>
+
+</StructureMap>

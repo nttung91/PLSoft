@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <GallioPath Condition="'$(GallioPath)'==''">C:\Program Files\Gallio\bin</GallioPath>
+    <GallioReportDirectory Condition="'$(GallioReportDirectory)'==''">$(SolutionPath)TestReports</GallioReportDirectory>
+	<GallioTestReportNameFormat>gallio-test-report</GallioTestReportNameFormat>
+    <OpenCoverPath Condition="'$(OpenCoverPath)'==''">C:\Program Files (x86)\OpenCover</OpenCoverPath>	
+	
+	<MSTestPath Condition="'$(MSTestPath)'==''">C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\mstest.exe</MSTestPath>
+	
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ReleaseProductName>CommonLibs</ReleaseProductName>
+    <ReleaseZipTargetDir>$(SolutionPath)Release</ReleaseZipTargetDir>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <WorkingRevision>$(SVN_REVISION)</WorkingRevision> <!-- set by jenkins -->
+  </PropertyGroup>
+
+  <UsingTask TaskName="MSBuild.Community.Tasks.XmlUpdate" AssemblyFile="$(SolutionPath)Misc\BuildScripts\CommunityTasks\MSBuild.Community.Tasks.dll"/>
+  <UsingTask TaskName="Gallio" AssemblyFile="$(GallioPath)\Gallio.MsBuildTasks.dll"/>
+
+  <UsingTask TaskName="Zip" AssemblyFile="$(SolutionPath)Misc\BuildScripts\CommunityTasks\MSBuild.Community.Tasks.dll"/>
+  <UsingTask TaskName="Time" AssemblyFile="$(SolutionPath)Misc\BuildScripts\CommunityTasks\MSBuild.Community.Tasks.dll"/>
+  
+  <UsingTask TaskName="FileUpdate" AssemblyFile="$(SolutionPath)Misc\BuildScripts\CommunityTasks\MSBuild.Community.Tasks.dll"/>
+  
+  <UsingTask TaskName="Attrib" AssemblyFile="$(SolutionPath)\Misc\BuildScripts\CommunityTasks\MSBuild.Community.Tasks.dll" />
+  
+  <UsingTask TaskName="TFS.Access.Tasks.TfsWorkspaceVersion" AssemblyFile="$(SolutionPath)\Misc\BuildScripts\TFS.Access\TFS.Access.Tasks.dll"/>
+  
+
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+    <ExternalLibsPath>$(SolutionPath)ExternalLibs/</ExternalLibsPath>
+	<PluginAppPath>$(SolutionPath)PluginApp/Sourcen/bin/$(Configuration)/</PluginAppPath>
+	<DevExpressLibsPath>$(SolutionPath)Misc/ELCA/DevExpress/</DevExpressLibsPath>
+    <OutputLibs Condition="'$(OutputLibs)'==''">$(SolutionPath)OutputLibs/$(Configuration)/</OutputLibs>
+    <PluginApplicationPath Condition="'$(PluginApplicationPath)'==''">$(SolutionPath)Test-App-Main</PluginApplicationPath>
+    <TargetEnvironment  Condition="'$(TargetEnvironment)'==''">Development</TargetEnvironment>		
+  </PropertyGroup>
+  
+  <Target Name="CopyPluginAppToOutput">
+    <Message Text="Copy Plugin App to $(OutputLibs)"/>
+    <CreateItem Include="$(PluginAppPath)**/*.*" Exclude="$(PluginAppPath)\**\*.svn\**\*.*">
+      <Output TaskParameter="Include" ItemName="FilesToCopy"/>
+    </CreateItem>
+    
+    <Message Text="Files: @(FilesToCopy)"/>
+
+    <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(OutputLibs)/%(RecursiveDir)" />
+  </Target>    
+  
+  <Target Name="CopyDevExpressLibsToOutput">
+    <Message Text="Copy DevExpress Libs to $(OutputLibs)"/>
+    <CreateItem Include="$(DevExpressLibsPath)Framework/**/*.*" Exclude="$(DevExpressLibsPath)\**\*.svn\**\*.*">
+      <Output TaskParameter="Include" ItemName="FilesToCopyDx"/>
+    </CreateItem>
+    <Copy SourceFiles="@(FilesToCopyDx)" DestinationFolder="$(OutputLibs)/%(RecursiveDir)" />
+  </Target>
+  
+  <Target Name="CopyConfigurationsToOutput">
+    <Message Text="Copy Configuration Files and Dependencies for Environment $(TargetEnvironment) to $(OutputLibs)"/>
+	
+	<Error Text="Config Source $(SolutionPath)Misc/Configurations/$(TargetEnvironment) not available"
+	       Condition="!Exists('$(SolutionPath)Misc/Configurations/$(TargetEnvironment)')" />
+	
+	<MakeDir Directories="$(OutputLibs)/Configurations"   Condition="!Exists('$(OutputLibs)/Configurations')"/>
+	<MakeDir Directories="$(OutputLibs)/Dependencies"   Condition="!Exists('$(OutputLibs)/Dependencies')"/>
+
+    <CreateItem Include="$(SolutionPath)Misc/Configurations/$(TargetEnvironment)/Menu/**/*.*" Exclude="$(SolutionPath)\**\*.svn\**\*.*" >
+      <Output TaskParameter="Include" ItemName="ConfFilesToCopy"/>
+    </CreateItem>
+    <Copy SourceFiles="@(ConfFilesToCopy)" DestinationFolder="$(OutputLibs)/Configurations/%(RecursiveDir)" />
+
+	<CreateItem Include="$(SolutionPath)Misc/Configurations/$(TargetEnvironment)/Dependencies/**/*.*" Exclude="$(SolutionPath)\**\*.svn\**\*.*">
+      <Output TaskParameter="Include" ItemName="DepFilesToCopy"/>
+    </CreateItem>
+    <Copy SourceFiles="@(DepFilesToCopy)" DestinationFolder="$(OutputLibs)/Dependencies/%(RecursiveDir)" />
+  </Target>
+
+  <Target Name="RemoveAssemblyBindingRedirectsCodeBaseInAppConfig">
+    <XmlUpdate XmlFileName="$(OutputLibs)\PluginApplication.exe.config"
+      XPath="/configuration/runtime/*[local-name()='assemblyBinding']/*[local-name()='dependentAssembly']/*[local-name()='codeBase']" 
+      Delete="true" />
+  </Target>
+
+  <Target Name="SetCorFlags32OnPluginApp">
+    <Exec Command='"$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\corflags.exe" /32BIT+ /Force "$(OutputLibs)\PluginApplication.exe"'>
+    </Exec>
+  </Target>
+  
+  <Target Name="CleanOutDir">    
+	
+	<CreateItem Include="$(OutputLibs)\">
+      <Output TaskParameter="Include" ItemName="DirsToClean"/>
+    </CreateItem>
+    
+	<Message Text="Delete Directory: @(DirsToClean)" /> 
+  
+  	<RemoveDir Directories="@(DirsToClean)" /> 
+ 
+  </Target>
+    
+  <Target Name="RunTests">
+  
+    <CreateItem Include="$(SolutionPath)\**\bin\$(Configuration)\Manor.Business.Admin.ITests.dll">
+      <Output TaskParameter="Include" ItemName="TestFiles"/>
+    </CreateItem>
+  
+    <Gallio RunnerType="IsolatedProcess" Files="@(TestFiles)" IgnoreFailures="true" ReportTypes="xml" ReportNameFormat="$(GallioTestReportNameFormat)" ReportDirectory="$(GallioReportDirectory)">
+	  <Output TaskParameter="ExitCode" PropertyName="ExitCode" />
+	</Gallio>
+  
+    <Message Text="Tests execution failed" Condition=" '$(ExitCode)' != 0 And '@(TestFiles)' != '' " Importance="High" />
+	
+  </Target>
+  
+  <PropertyGroup>
+  	<OpenCoverFilter>+[Manor.Business.Admin]* +[Manor.DbModel.MainDb]* +[Manor.DbModel.MainDb.Maps]* +[Manor.DbModel.MainDb.Repository]*</OpenCoverFilter>
+  </PropertyGroup>
+  
+  <Target Name="RunTestCoverage">
+  
+    <CreateItem Include="$(SolutionPath)\**\bin\$(Configuration)\Manor.Business.Admin.ITests.dll">
+      <Output TaskParameter="Include" ItemName="TestFiles"/>
+    </CreateItem>
+	
+	<MakeDir Directories="$(GallioReportDirectory)"   Condition="!Exists('$(GallioReportDirectory)')"/>
+	
+	<Exec Command="&quot;$(OpenCoverPath)\OpenCover.Console.exe&quot; -register:user -targetdir:&quot;$(GallioReportDirectory)&quot; -target:&quot;$(GallioPath)\Gallio.Echo.exe&quot; -targetargs:&quot;/r:IsolatedProcess /report-directory:\&quot;$(GallioReportDirectory)\&quot; /report-name-format:gallio-report /report-type:Xml \&quot;@(TestFiles)\&quot;&quot; -mergebyhash -filter:&quot;$(OpenCoverFilter)&quot; -output:&quot;$(GallioReportDirectory)\coverage-report.xml&quot;" />
+	
+  </Target>
+  
+  
+  <PropertyGroup>
+    <CoreBuildDependsOn/>
+  </PropertyGroup>
+  <Target Name="CoreBuild" DependsOnTargets="$(CoreBuildDependsOn)">
+    <MakeDir Directories="$(PluginApplicationPath)"   Condition="!Exists('$(PluginApplicationPath)')"/> 
+    <MSBuild Projects="$(SolutionName)"
+             Targets="Build"
+             Properties="Configuration=$(Configuration);PluginApplicationPath=$(PluginApplicationPath)" />
+  </Target>
+
+
+
+  <PropertyGroup>
+    <GetCurrentDateDependsOn/>
+  </PropertyGroup>
+  <Target Name="GetCurrentDate" DependsOnTargets="$(GetCurrentDateDependsOn)">
+    <Time>
+      <Output TaskParameter="Month" PropertyName="Month" />
+      <Output TaskParameter="Day" PropertyName="Day" />
+      <Output TaskParameter="Year" PropertyName="Year" />
+    </Time>
+  </Target>
+
+  <PropertyGroup>
+    <GetSourceReleaseZipNameDependsOn>
+      GetCurrentDate;
+	  SetRevision
+    </GetSourceReleaseZipNameDependsOn>
+  </PropertyGroup>
+  <Target Name="GetSourceReleaseZipName" DependsOnTargets="$(GetSourceReleaseZipNameDependsOn)">
+    <CreateProperty Value="$(ReleaseProductName)-R$(WorkingRevision)-$(Day)_$(Month)_$(Year)-SrcRelease.zip">
+      <Output PropertyName="SrcReleaseZipFileName" TaskParameter="Value"/>
+    </CreateProperty>
+  </Target>
+
+  <PropertyGroup>
+    <GetBinReleaseZipNameDependsOn>
+      GetCurrentDate;
+	  SetRevision
+    </GetBinReleaseZipNameDependsOn>
+  </PropertyGroup>
+  <Target Name="GetBinReleaseZipName" DependsOnTargets="$(GetBinReleaseZipNameDependsOn)">
+    <CreateProperty Value="$(ReleaseProductName)-R$(WorkingRevision)-$(Day)_$(Month)_$(Year)-BinRelease.zip">
+      <Output PropertyName="BinReleaseZipFileName" TaskParameter="Value"/>
+    </CreateProperty>
+  </Target>
+
+
+  <PropertyGroup>
+    <ZipSourcesDependsOn>
+      GetSourceReleaseZipName
+    </ZipSourcesDependsOn>
+  </PropertyGroup>
+  <Target Name="ZipSources" DependsOnTargets="$(ZipSourcesDependsOn)">
+    <Message Text="Zip Sources in $(SolutionPath) into $(SrcReleaseZipFileName)" /> 
+	<CreateItem Include="$(SolutionPath)\**\*.*" 
+                Exclude="@(SourceExcludeFiles);$(SolutionPath)\**\*.svn\**\*.*;$(SolutionPath)\**\bin\**\*.*;$(SolutionPath)\**\obj\**\*.*;$(PluginApplicationPath)\**\*.*;$(SolutionPath)\Misc\Tools\**\*.*">
+      <Output TaskParameter="Include" ItemName="ZipSources"/>
+    </CreateItem>
+    <Zip Files="@(ZipSources)"
+         WorkingDirectory="$(SolutionPath)" 
+		 ParallelCompression="false"
+         ZipFileName="$(SrcReleaseZipFileName)"/>
+    <Copy
+      SourceFiles="$(SrcReleaseZipFileName)"
+      DestinationFolder="$(ReleaseZipTargetDir)" />    
+    <Delete Files="$(SrcReleaseZipFileName)" />
+  </Target>
+
+  <Target Name="SetRevision" Condition="$(WorkingRevision)==''">
+    
+	<TfsWorkspaceVersion LocalPath="$(MSBuildProjectDirectory)" ContinueOnError="WarnAndContinue">
+	   <Output TaskParameter="Changeset" PropertyName="TFSChangeset" />
+	</TfsWorkspaceVersion>
+	
+    <CreateProperty Value="$(TFSChangeset)" Condition="$(TFSChangeset)!=''">
+      <Output TaskParameter="Value" PropertyName="WorkingRevision" />
+    </CreateProperty>    
+	
+	<CreateProperty Value="0" Condition="$(WorkingRevision)==''">
+      <Output TaskParameter="Value" PropertyName="WorkingRevision" />
+    </CreateProperty>
+	
+  </Target>
+
+  <PropertyGroup>
+    <UpdateVersionFilesDependsOn>  
+      SetRevision    
+    </UpdateVersionFilesDependsOn>
+  </PropertyGroup>
+  <Target Name="UpdateVersionFiles" DependsOnTargets="$(UpdateVersionFilesDependsOn)">
+    
+    <CreateProperty Value="$([System.IO.File]::ReadAllText($(SolutionPath)\Misc\Version.txt))">
+      <Output TaskParameter="Value" PropertyName="MajorMinorAndPatch"/>
+    </CreateProperty>
+
+	<Message Text="Set Version Major, Minor and Patch to $(MajorMinorAndPatch)" /> 
+	
+	<Attrib Files="$(SolutionPath)\Misc\SharedAssemblyInfo.cs" ReadOnly="false" />
+	
+	<FileUpdate Files="$(SolutionPath)\Misc\SharedAssemblyInfo.cs" Encoding="windows-1252"                				
+				Regex="AssemblyFileVersion\(&quot;(\d+)\.(\d+)\.(\d+)\.(\d+)&quot;\)"				
+                ReplacementText="AssemblyFileVersion(&quot;$(MajorMinorAndPatch).$(WorkingRevision)&quot;)" />
+
+	<FileUpdate Files="$(SolutionPath)\Misc\SharedAssemblyInfo.cs" Encoding="windows-1252"                				
+				Regex="AssemblyInformationalVersion\(&quot;(\d+)\.(\d+)&quot;\)"				
+                ReplacementText="AssemblyInformationalVersion(&quot;$(MajorMinorAndPatch)&quot;)" />				
+
+	<CreateItem Include="$(SolutionPath)\**\Menu\*.xml" Exclude="$(SolutionPath)\**\*.svn\**\*.*;$(SolutionPath)\**\Menu\*Menu.xml;$(SolutionPath)\**\Menu\*Toolbar.xml"> 
+      <Output TaskParameter="Include" ItemName="AppConfigFiles"/>
+    </CreateItem>			
+	
+	<Message Text="Update version in files: @(AppConfigFiles)." /> 
+	
+	<Attrib Files="@(AppConfigFiles)" ReadOnly="false" />
+	
+    <XmlUpdate XmlFileName="%(AppConfigFiles.FullPath)"
+      XPath="/*[local-name()='pluginAppConfig']/*[local-name()='settings']/*[local-name()='appVersion']" 
+      Value="$(MajorMinorAndPatch).$(WorkingRevision)" />		  	  	  	  
+			  
+
+    <CreateProperty Value="$([System.DateTime]::Now.ToString(`yyyy-MM-ddThh:mm:ss`))">
+      <Output TaskParameter="Value" PropertyName="Today"/>
+    </CreateProperty>
+
+	
+	
+	<XmlUpdate XmlFileName="%(AppConfigFiles.FullPath)"
+      XPath="/*[local-name()='pluginAppConfig']/*[local-name()='settings']/*[local-name()='appDate']" 
+      Value="$(Today)" />		  
+	
+  </Target>
+  
+  
+  <PropertyGroup>
+    <ZipBinariesDependsOn>
+      GetBinReleaseZipName
+    </ZipBinariesDependsOn>
+  </PropertyGroup>
+  <Target Name="ZipBinaries" DependsOnTargets="$(ZipBinariesDependsOn)">
+
+    <CreateItem Include="$(PluginApplicationPath)\**\*.*" Exclude="$(PluginApplicationPath)\**\*.svn\**\*.*"> 
+      <Output TaskParameter="Include" ItemName="ReleasedFiles"/>
+    </CreateItem>
+    
+	<Message Text="Zip files: @(ReleasedFiles)" Importance="low" />
+	
+    <Zip Files="@(ReleasedFiles)"
+         WorkingDirectory="$(PluginApplicationPath)\" 
+         ZipFileName="$(BinReleaseZipFileName)"
+		 ParallelCompression="false" />
+		 
+    <Copy
+      SourceFiles="$(BinReleaseZipFileName)"
+      DestinationFolder="$(ReleaseZipTargetDir)" />    
+    <Delete Files="$(BinReleaseZipFileName)" />
+		 
+  </Target>
+ 
+ 
+  <UsingTask TaskName="Folder" AssemblyFile="$(MSBuildProjectDirectory)/Misc/BuildScripts/MSBuildExtensions/MSBuild.ExtensionPack.dll"/>
+  <Target Name="CleanupIntegration">
+    <Folder TaskAction="RemoveContent" Path="$(IntegrationDeployPath)"/>
+  </Target>
+
+</Project>
