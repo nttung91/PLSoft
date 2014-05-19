@@ -18,7 +18,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Csla">
+      <HintPath>..\..\ExternalLibs\cslacs-4.3.13.0\Csla.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,8 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Customer\Edit\CustomerEdit.cs" />
+    <Compile Include="Customer\Edit\CustomerEditGroup.cs" />
+    <Compile Include="Customer\Edit\CustomerEditList.cs" />
+    <Compile Include="Customer\Edit\CustomerGroupObjectFactory.cs" />
+    <Compile Include="Customer\Edit\CustomerObjectFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\PhuLiNet.Business.Common\PhuLiNet.Business.Common.csproj">
+      <Project>{d3d033fc-3fd0-4f5a-a80e-0dd31aa75f1e}</Project>
+      <Name>PhuLiNet.Business.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\PhuLiNet.DbModel.Core\DbModel.Core.csproj">
+      <Project>{04b50f43-71c5-4148-ad3c-8c1e5e772be4}</Project>
+      <Name>DbModel.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\PhuLiNet.DbModel.Infrastructure\Core.DbModel.Infrastructure.csproj">
+      <Project>{3ffb8168-1155-422e-84ed-3997b230a21e}</Project>
+      <Name>Core.DbModel.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\PhuLiNet.DbModel\PhuLiNet.DbModels.csproj">
+      <Project>{2d5b8e11-da38-4fd9-b830-f69bdee00800}</Project>
+      <Name>PhuLiNet.DbModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\PhuLiNet.Repository\PhuLiNet.Repository.csproj">
+      <Project>{34a19776-c9e6-4e56-96e4-69594248c3e5}</Project>
+      <Name>PhuLiNet.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
